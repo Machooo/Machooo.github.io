@@ -1,378 +1,543 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<meta name="viewport" id='viewport' content="width=device-width, initial-scale=1">
-	<style>body{visibility: hidden;}</style>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header id="header">
-		<div class="container flex justify">
-			<div class="inline chance">Вероятность получения<br> военного билета<br> <span>99,9%</span></div>
-			<div class="contacts inline">
-				<a href="tel:+7(495)1557824" class="phone">+7 (495) 155 78 24</a>
-				<span>Ежедневно с 9:00 до 21:00</span>
-			</div>
-		</div>
-	</header>
-	<section id="welcome-screen">
-		<div class="list paroller" data-paroller-factor="0.3" data-paroller-type="foreground" data-paroller-direction="horizontal"></div>
-		<div class="container">
-			<div class="arrow-text">
-				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52px" height="54px"><path fill-rule="evenodd"  fill="rgb(94, 0, 0)" d="M50.220,49.692 C48.594,49.793 47.001,49.798 45.437,49.730 C40.526,50.237 35.775,51.399 31.131,53.274 C29.221,54.047 27.673,51.937 30.000,50.997 C32.210,50.105 35.785,49.490 39.273,49.008 C17.314,44.815 2.794,23.846 0.488,1.581 C0.262,-0.605 2.792,0.990 3.000,2.996 C5.253,24.751 18.173,45.163 44.065,46.463 C39.907,44.151 34.462,40.623 32.000,37.997 C30.232,36.111 32.063,35.368 33.556,36.961 C37.927,41.624 43.179,44.750 49.392,46.332 C49.620,46.390 49.819,46.502 50.000,46.637 C51.615,47.255 52.430,49.556 50.220,49.692 Z"/></svg>
-			</div>
-			<div class="text">
-				<h1>получи военный<br> билет или отсрочку<br> <strong>от армии</strong></h1>
-				<div class="city pac">в Москве</div>
-				<div class="bg-text">законно и с гарантией<br> результата</div>
-				<p>Быстрая помощь в получении<br> военного билета <span>законными<br> способами</span></p>
-			</div>
-		</div>
-	</section>
-	<div id="benefits" class="section">
-		<div class="container">
-			<ol>
-				<li>
-					<div class="number"></div>
-					<div class="name pac">всего за 3 месяца</div>
-					<p>Получи отсрочку за 3 месяца.<br> А потом военный билет<br> за 1-2 призыва.</p>
-				</li>
-				<li>
-					<div class="number"></div>
-					<div class="name pac">уважаем закон</div>
-					<p>Ты получишь свой военник<br> законно, без взяток<br> и нарушений</p>
-				</li>
-				<li>
-					<div class="number"></div>
-					<div class="name pac">постоянно на связи</div>
-					<p>Всегда на связи, всегда<br> поможем и ответим<br> на твой звонок</p>
-				</li>
-				<li>
-					<div class="number"></div>
-					<div class="name pac">даже если ты "здоров"</div>
-					<p>Поможем тебе, если твой<br> военкомат сказал "годен"</p>
-				</li>
-				<li>
-					<div class="number"></div>
-					<div class="name pac">минимум проблем</div>
-					<p>Заключи договор и расслабься,<br> мы все сделаем</p>
-				</li>
-			</ol>
-		</div>
-	</div>
-	<div id="this-is-my-story" class="section">
-		<div class="container">
-			<div class="text">
-				<img src="images/face.png" alt="">
-				<p>Короче, ребят, служу два месяца в пехоте мотострелки. Служить пошел сам.<br> Но вот в чем фигня — на гражданке были проблемы с желудком, я о них не сказал<br> в военкомеи пошел служить. И вот, отслужив 1.5 месяца, прошел кмб и попал в часть,<br> а она модульная, то есть, полевые условия жизни. <strong>И на первой неделе у меня<br> начались дикие боли, я не мог ходить, всем было пофиг.</strong></p> 
-				<p>В санчасти таблетки давали, в госпиталь везти не хотели, еле увезли.<br> Лежу щас в госпитале, прошел лечение — гастрит хронический<br> и рубец. Сказали, с этим служат, просто таблетки пить и все.<br> <strong>Отношение офицеров стандартное — вы все говно.</strong></p>
-				<p>К этому, ладно, привык, пофиг, но деды борзеют, отжимают телефоны, если спалился,<br> или воруют их, а чтоб вернуть, просят бабки. Сами они не русские, дагестанцы,<br> все их боятся. Но дело не в нации, дело в людях — просто их толпучка всегда<br> и разговаривать ними безполезно, им пофиг. Из-за этого все угнетает, морально<br> тяжело, как с этим всем служить хз,а еще 10 месяцев.</p>
-				<p>Драться не варик — сразу впарят. Еще щас и поля там — ни попить воды нормально,<br> ни помыться, все грязные, еда и вода питьевая фиг пойми какая, все блюют,<br> в туалет каждый час бегают из-за диареи.</p>
-				<div class="pac">В общем, армия — это жесть, не думал,<br> что так будет. </div>
-				<div class="ps">Подскажите, как служить, как поступать, как морально прожить<br> 10 месяцев. Боюсь за себя и свое здоровье...</div>
-				<div class="author">Аноним</div>
-			</div>
-		</div>
-	</div>
-	<div id="happy-letter" class="section">
-		<div class="container">
-			<div class="list paroller" data-paroller-factor="0.3" data-paroller-type="foreground" data-paroller-direction="horizontal"></div>
-			<div class="box wow bounceInDown"></div>
-			<div class="text">
-				<p>Ну, что ж, этот день настал. <br> Ты открыл почтовый ящик, а там она, <span class="big">ПОВЕСТКА.</span></p>
-				<p>Поздравляю! Ты выиграл автооомо...<br> Нет) шучу.</p>
-				<p><strong>Теперь ты <u>обязан</u> явиться<br> в военкомат для прохождения<br> медкомиссии.</strong></p>
-				<div class="quote-block wow fadeInLeft">
-					<div class="smile"><img src="images/smile1.png" alt=""></div>
-					<p>Очень смешно ...</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="main-thing" class="section flex">
-		<div class="container">
-			<div class="man wow fadeInLeft"></div>
-			<div class="text">
-				<p>Да ладно тебе.</p>
-				<p>Все нормально, если ты полностью<br> здоровый молодой человек, экстраверт,<br> которому <strong>нравится жить с кучей потных<br> мужиков.</strong></p>
-				<p>А также если ты любитель выполнять<br> приказы без раздумий, даже если они тебе<br> не нравятся или не понятны, <strong>а человек,<br> который их отдает, не отличается умом<br> и cообразительностью.</strong></p>
-				<p>А возможно, ты точно любитель спорта,<br> который может постоять за себя и, конечно, <span>самое главное ...</span></p>
-			</div>
-			<div class="quote-block wow fadeIn">
-				<div class="smile"><img src="images/smile2.png" alt=""></div>
-				<p>Что?</p>
-			</div>
-		</div>
-	</div>
-	<div id="year" class="section">
-		<div class="list paroller" data-paroller-factor="-0.3" data-paroller-type="foreground" data-paroller-direction="horizontal"></div>
-		<div class="container">
-			<div class="title">У тебя есть лишние <span>365 дней жизни?</span></div>
-			<div class="quote-block wow fadeInDown">
-				<img src="images/smile3.png" alt="">
-				<p><strong>Да в том то и дело, что нет!</strong></p>
-				<p>Я только закончил институт и у меня целая куча планов.<br> Хочу открыть свой бизнес, у меня девушка и мы планируем<br> свадьбу, вообще очень много дел и проектов.</p>
-			</div>
-		</div>
-	</div>
+    <header class="header">
+        <div class="container">
+            <div class="header__menu">
+                <ul>
+                    <li><a href="#">Виды потолков </a></li>
+                    <li><a href="#">Преимущества</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="header__meta">
+                <a href="/" class="header__logo"><img src="images/logo.png"></a>
+                <div class="header__address"><address>г. Москва, 2-й Магистральный тупик д. 7А, стр. 2, Пн-Пт с 9:00 до 18:00</address></div>
+                <div class="header__phone"><a href="tel:+7 (495) 118-40-84">+7 (495) 118-40-84</a></div>
+            </div>
+        </div>
+    </header>
 
-	<div id="no-hold" class="section">
-		<div class="container">
-			<div class="title">И ты не можешь <span>отложить?</span></div>
-			<div class="text">
-				<div class="quote-block">
-					<img src="images/smile6.png" alt="">
-					<p>Конечно, нет!</p>
-				</div>
-				<p>А если девушка найдет за год другого?<br> Нет нет.<br> Да я кучу всего могу за год сделать!<br> За год у меня уже мое дело начнет приносить<br> прибыль... Я могу выучить английский язык,<br> поехать в путешествие...</p>
-				<div class="big"><span>Да, это мой год</span> и мое право, куда его<br> потратить.</div>
-				<p class="no-br">Захочу, буду целыми днями валяться и играть<br> в Dota2 с PUBG. Вот моя война! В Починках<br> и Сосновке.</p>
-				<p>Да и вообще, у меня хронический гайморит,<br> не дай бог в поле застужу. Чем мне его будут<br> лечить? Активированным углем?<br> В нос вставлять?</p>
-			</div>
-		</div>
-	</div>
+    <div class="welcome-screen section">
+        <div class="container">
+            <div class="text">
+                <div class="title">
+                    <h1>Устойчивые и ровные<br> натяжные потолки<br> от производителя</h1>
+                    <div class="sub-title">с профессиональной установкой за 1 день</div>
+                </div>
+                <div class="text-benefits">
+                    <div class="item">Без посредников</div>
+                    <div class="item">В рассрочку</div>
+                    <div class="item">Без предоплаты</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ico-benefits section">
+        <div class="container">
+            <div class="item">
+                <div class="ico"><img src="images/ben1.png" alt=""></div>
+                <div class="name">Работаем<br> с 2009 года</div>
+            </div>
+            <div class="item">
+                <div class="ico"><img src="images/ben2.png" alt=""></div>
+                <div class="name">Собственный<br> склад и служба<br> доставки</div>
+            </div>
+            <div class="item">
+                <div class="ico"><img src="images/ben3.png" alt=""></div>
+                <div class="name">Гарантия 10 лет<br> на материал</div>
+            </div>
+            <div class="item">
+                <div class="ico"><img src="images/ben4.png" alt=""></div>
+                <div class="name">Гарантия 2 года<br> на монтаж</div>
+            </div>
+        </div>
+    </div>
+    <div class="what-happened section">
+        <div class="container">
+            <div class="text">
+                <div class="title">С чем мы сталкиваемся,<br> когда начинаем искать<br> натяжные потолки?</div>
+                <p>Открываем несколько сайтов и почти<br> на каждом видим одно и то же...</p>
+            </div>
+        </div>
+    </div>
+    <div class="yeah-yeah section">
+        <div class="container">
+            <div class="text">
+                <div class="sec-title">- Да-да! Везде обещают<br> огромные скидки<br> и космические гарантии<br> по 20 лет.</div>
+                <p class="sec-text">Верится с трудом. А мне надо качественно,<br> но без переплат. Как быть? Я пока даже<br> не знаю какой потолок мне подойдёт.</p>
+            </div>
+        </div>
+    </div>
+    <div class="room section">
+        <div class="container">
+            <div class="sec-title">Многое зависит от помещения.</div>
+            <p class="sec-text">Например, ошибка при выборе полотна для загородного<br> дома может закончится тем, что вместо отдыха придется<br> все выходные заниматься ремонтом потолка.</p>
+            <div class="images flex justify">
+                <img src="images/img.jpg" alt="">
+                <img src="images/img2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="types section" id="types">
+        <div class="container">
+            <div class="sec-title">Давайте начнём с простого, но самого важного.<br> Разберёмся какие вообще бывают натяжные потолки.</div>
+            <div class="plen">
+                <div class="left">
+                    <div class="name">ПВХ потолки (плёночные)</div>
+                    <p>Сделаны из эластичной<br> и экологичной ПВХ плёнки. Плёнка<br> прочная и пожаробезопасная, но она<br> не выдержит низкую температуру. </p>
+                    <p>Поэтому для дома без постоянного<br> отопления используют не ПВХ,<br> а тканевые потолки.</p>
+                </div>
+                <div class="right">
+                    <div class="name">Есть 3 вида ПВХ потолков:</div>
+                    <div class="block flex">
+                        <div class="img"><img src="images/ceil1.png" alt=""></div>
+                        <div class="text">
+                            <strong>Глянцевые</strong>
+                            <p>Глянцевые потолки отражают предметы. Их часто выбирают, для придания визуального объема помещению. Светлые потолки подходят для детской, коридора или прихожей, а темные тона для спальни или гостиной.</p>
+                        </div>
+                    </div>
+                    <div class="block flex">
+                        <div class="img"><img src="images/ceil2.png" alt=""></div>
+                        <div class="text">
+                            <strong>Матовые</strong>
+                            <p>Пожалуй, самый популярный выбор. Матовые натяжные потолки не создает бликов, не искажают цвет и оттенок. Отлично смотрятся в залах, гостиных или больших помещениях.</p>
+                        </div>
+                    </div>
+                    <div class="block flex">
+                        <div class="img"><img src="images/ceil3.png" alt=""></div>
+                        <div class="text">
+                            <strong>Сатиновые</strong>
+                            <p>Сатиновые потолки имеют мягкое светоотражение и приятную текстуру. Хорошо подойдут для создания уюта в спальне или детской комнате.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tkan flex">
+                <div class="left">
+                    <div class="name">Тканевые потолки</div>
+                    <ul>
+                        <li>Обладают высокой прочностью<br> и водостойкостью.</li>
+                        <li>Отлично переносят перепады<br> температур.</li>
+                        <li>Идеально подходят практически<br> для любого помещения, включая<br> неотапливаемые дома.</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img src="images/tkan1.png" alt="">
+                    <img src="images/tkan2.png" alt="">
+                    <img src="images/tkan3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<div id="generation-z" class="section">
-		<div class="container">
-			<div class="pac quote-block quote1 wow bounceIn">
-				<img src="images/smile4.png" alt="">
-				<p>Пришла повестка!<br> Что делать, бро?</p>
-			</div>
-			<div class="pac quote-block quote2 wow bounceIn">
-				<img src="images/smile5.png" alt="">
-				<p>Ммм... какой<br> котик</p>
-			</div>
-			<div class="text">
-				<p>Я тебя прекрасно понимаю, даже если ты<br> здоровый и сильный,то год жизни — это очень<br> много.</p>
-				<p><strong>А если не здоровый?</strong></p>
-				<p>К нам за помощью обращается огромное<br> количество призывников,которые просто<br> напросто не приспособлены к армии. </p>
-				<p>Сейчас новое поколение молодежи, которое<br> все больше сидитв социальных сетях,<br> телефонах и гаджетах. </p>
-				<div class="z wow slideInLeft">поколение z</div>
-				<p>В основном, они все интроверты.</p>
-			</div>
-		</div>
-	</div>
+    <div class="many-fake section">
+        <div class="container">
+            <div class="sec-title">Вы уже могли слышать,<br> что на российском рынке<br> появилось очень много<br> подделок. </div>
+            <div class="list">
+                <div class="item">
+                    <div class="ico"><img src="images/ico1.svg" alt=""></div>
+                    <span>Неэкологичных</span>
+                </div>
+                <div class="item">
+                    <div class="ico"><img src="images/ico2.svg" alt=""></div>
+                    <span>Небезопасных</span>
+                </div>
+                <div class="item">
+                    <div class="ico"><img src="images/ico3.svg" alt=""></div>
+                    <span>Просто хрупких</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="advanteges section">
+        <div class="container">
+            <div class="text">
+                <div class="sec-title">Все потолки, которые мы<br> устанавливаем - подлинные<br> и соответствуют самым<br> высоким требованиям<br> качества</div>
+                <div class="list">
+                    <div class="item">
+                        <div class="ico"><img src="images/advant1.png" alt=""></div>
+                        <span>Пожаробезопасны.<br> Они не воспламеняются</span>
+                    </div>
+                    <div class="item">
+                        <div class="ico"><img src="images/advant2.png" alt=""></div>
+                        <span>Устойчивы к влаге<br> и не боятся потопа сверху</span>
+                    </div>
+                    <div class="item">
+                        <div class="ico"><img src="images/advant3.png" alt=""></div>
+                        <span>Экологически чисты</span>
+                    </div>
+                    <div class="item">
+                        <div class="ico"><img src="images/advant4.png" alt=""></div>
+                        <span>Не издают<br> и не впитывают запахи</span>
+                    </div>
+                    <div class="item">
+                        <div class="ico"><img src="images/advant5.png" alt=""></div>
+                        <span>За ними легко<br> ухаживать</span>
+                    </div>
+                    <div class="item">
+                        <div class="ico"><img src="images/advant6.png" alt=""></div>
+                        <span>Снижают уровень<br> шума</span>
+                    </div>
+                </div>
+            </div>
+            <div class="man"></div>
+        </div>
+    </div>
 
-	<div id="army-dont-care" class="section">
-		<div class="container">
-			<p><strong>И для такого интроверта целый год<br> с кучей людей — это просто ад.</strong></p>
-			<p>Ты не можешь спокойно поесть, поспать<br> и даже сходить в туалет. Кругом люди, люди,<br> люди, и ты не можешь просто побыть один.</p>
-			<div class="big"><span>Думаешь, кто-то</span> будет<br> подстраиваться <span>под<br> тебя в армии?</span></div>
-			<p>Я уже не говорю про элементарные<br> физические упражнения.</p>
-		</div>
-	</div>
+    <div class="provider section">
+        <div class="container">
+            <div class="sec-title">- Почему вы так в этом уверены?</div>
+            <p><span>Мы прямые поставщики немецких потолков Pongs.</span></p>
+            <p>Да, эксклюзив, который made in Germany. Их нет в строительных гипермаркетах.</p>
+            <p>Да, те самые, которые используются в декоре знаменитых выставок и театров<br> Европы.</p>
+            <p>Да, именно их выбирают футбольные фанаты для растягивания руками<br> огромных баннеров (50Х30м). Ведь полотна выдерживают силу натяжения ПЯТИ.<br> ТЫСЯЧ. ЧЕЛОВЕК.</p>
+            <div class="man"></div>
+            <div class="logo"></div>
+        </div>
+    </div>
 
-	<div id="where-exit" class="section">
-		<div class="list paroller" data-paroller-factor="0.3" data-paroller-type="foreground" data-paroller-direction="horizontal"></div>
-		<div class="container">
-			<div class="quote-block">
-				<img src="images/smile7.png" alt="">
-				<p>Да я представляю... <span>И что же делать?</span></p>
-			</div>
-			<div class="title wow fadeIn">Какой есть <span>выход?</span></div>
-			<div class="name">У тебя есть целых <span>3 варианта</span> развития<br> событий</div>
-		</div>
-	</div>
+    <div class="official section">
+        <div class="container">
+            <div class="text">
+                <div class="sec-title">Кстати, в  России всего<br> 4 официальных<br> поставщика PONGS.</div>
+                <p>Мы также поставляем в Россию потолки MSD (Китай)<br> и тканевые потолки D-Premium.</p>
+                <p>У нас широкая дилерская сеть по всей России.<br> И эксклюзивные цены на оптовые закупки.<br> Мы будем рады новым партнёрам - монтажным компаниям<br> и дилерам. Присоединяйтесь.</p>
+                <div class="btn"><span>Получить прайс</span></div>
+            </div>
+        </div>
+    </div>
 
-	<div id="exit1" class="section">
-		<div class="container">
-			<div class="text">
-				<div class="title">
-					<div class="number pac">1 <img src="images/circle_white.svg" class="svg" alt=""></div>
-					<p>Пойти<br> в армию...</p>
-				</div>
-				<div class="quote-block wow fadeInUp">
-					<img src="images/smile8.png" alt="">
-					<p>Ага, щас...<br> какие еще два?</p>
-				</div>
+    <div class="quote-block section">
+        <div class="container">
+            <div class="text">- Официальный дилер немецкого полотна?<br> Это значит, что у вас дорого и долго?  </div>
+        </div>
+    </div>
 
-			</div>
-		</div>
-	</div>
+    <div class="for-clients section">
+        <div class="container">
+            <div class="sec-title">Для наших клиентов это<br> значит вот что:</div>
+            <div class="list">
+                <div class="item">
+                    <div class="img"><img src="images/advice1.jpg" alt=""></div>
+                    <div class="text-wrap">
+                        <div class="name" data-num="01">Низкая цена на потолки. Без доплаты<br> посредникам.</div>
+                        <div class="text">
+                            <p>Мы работаем напрямую с заводом Pongs в Германии.<br> <strong>И наши клиенты получают материалы без посреднической<br> наценки.</strong></p>
+                            <p>Как там часто пишут в рекламе?... “Немецкие потолки за 82 р/м2!”</p>
+                            <p><span class="advice">Совет:</span>  знаешь, где можно купить неподдельный Pongs за 82р?<br> Звони! Будем закупаться у тебя.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img"><img src="images/advice2.jpg" alt=""></div>
+                    <div class="text-wrap">
+                        <div class="name" data-num="02">Гарантируем подлинность материала<br> и его качество.</div>
+                        <div class="text">
+                            <p>Взаимодействуем с заводом по отслеживанию брака.<br> И обеспечиваем двойной контроль качества.</p>
+                            <p><strong>Предоставляем сертификаты подлинности и гарантию<br> на материалы 10 лет.</strong></p>
+                            <p><span class="advice">Совет:</span> не забывайте хотя бы  проверять маркировку <br> при покупке “немецкого потолка”.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img"><img src="images/advice3.jpg" alt=""></div>
+                    <div class="text-wrap">
+                        <div class="name" data-num="03">Собственное производство, открытое<br> для посещения.</div>
+                        <div class="text">
+                            <p>А что нам скрывать? Секретов и коммерческих тайн тут нет. <br> Технологию производства все конкуренты знают. А соблюдают ли?</p>
+                            <p>Каждому клиенту открыт доступ в производственный цех. <br> Приходите на экскурсию.</p>
+                            <p><span class="advice">Совет:</span> и ты, шпион конкурента, тоже приходи, учись.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="images/advice4.jpg" alt="">
+                        <p><span class="advice">Совет:</span> фраза <i>“индивидуально закупаем материалы только под ваш<br> супер-уникальный проект, поэтому не держим запасов на складе” -</i><br> первый признак  фирмы-однодневки.</p>
+                    </div>
+                    <div class="text-wrap">
+                        <div class="name" data-num="04">Работаем без предоплат.<br> Можно в рассрочку 0%</div>
+                        <div class="text">
+                            <p>Фирмы-однодневки готовы дать липовые скидки, но не могут<br> работать без аванса, потому что у них:</p>
+                            <ul>
+                                <li>нет материалов в наличии, они закупаются у таких как мы,<br> и только после предоплаты от клиента.</li>
+                                <li>нет штатных монтажников. Только неофициальные рабочие,<br> которые работают по предоплате.</li>
+                                <li>как следствие - нет уверенности в качестве работ<br> и успешной сдаче их заказчику</li>
+                            </ul>
+                            <div class="btn"><span>Получить потолок в рассрочку</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<div id="exit2" class="section">
-		<div class="container">
-			<div class="title">
-				<div class="number pac">2 <img src="images/circle_white.svg" class="svg" alt=""></div>
-				<p><span>Попробовать самому пройти<br> необходимые</span> медицинские<br> обследования <span>в военкомате.</span></p>
-			</div>
-			<div class="text">
-				<p>Предоставить все нужные бумаги, справки<br> и записи из медицинских карт, а перед этим<br> попробовать получить их в больницах.</p>
-				<p>Если повезет, тебя признают негодным.</p>
-			</div>
-			<div class="quote-block wow fadeInLeft">
-				<div class="name"><img src="images/smile9.png" alt=""> <p>Ты серьезно?</p></div>
-				<p>Структура, которая сама набирает призывников,<br> будет определять, годен я или нет? Я думаю 90% на<br> то, что годен, <strong>даже с ножом в спине.</strong></p>
-			</div>
-		</div>
-	</div>
+    <div class="quote-block section second-quote">
+        <div class="container">
+            <div class="text">Давайте подробнее про производство и монтаж. Как это происходит?<br> И что у вас за сотрудники? Мне нужно знать кого я пускаю в свой дом</div>
+        </div>
+    </div>
 
-	<div id="exit3" class="section">
-		<div class="container">
-			<div class="title">
-				<div class="number pac">3 <img src="images/circle_white.svg" class="svg" alt=""></div>
-				<p>Довериться<br> мне</p>
-			</div>
-			<div class="document">
-				<div class="quality">100 из 100</div>
-				<p>Из 100 призывников<br> обратившихся ко мне, <span>военный билет<br> получают 100</span></p>
-			</div>
-			<div class="quote wow slideInRight">
-				<p>Привет, меня зовут <strong>Максим Береза</strong><br> и я уже 11 лет занимаюсь тем, что<br> помогаю призывникам получать<br> военные билеты.</p>
-			</div>
-		</div>
-	</div>
+    <div class="measure section stage-screen">
+        <div class="container">
+            <div class="text">
+                <div class="sec-title">Все начинается<br> с замеров помещения</div>
+                <div class="ruler"></div>
+                <p>К вам выезжает один из наших замерщиков.<br> Возможно это будет Антон. Вот он, этот улыбчивый парень.<br> Он сделает точные замеры и отправит данные в офис для быстрого<br> расчёта сметы на работы и материалы.</p>
+                <p><strong>Выезд замерщика - бесплатный!</strong><br> Закажите сейчас на удобное время.</p>
+                <div class="btn">Заказать замер</div>
+            </div>
+            <div class="man-info">
+                <img src="images/man_ico.svg" alt="">
+                <strong>Антон</strong>
+                <span>Замерщик</span>
+            </div>
+            <div class="man"></div>
+        </div>
+    </div>
 
-	<div id="results" class="section">
-		<div class="list paroller" data-paroller-factor="-0.3" data-paroller-type="foreground" data-paroller-direction="horizontal"></div>
-		<div class="container">
-			<div class="man wow fadeInUp"></div>
-			<div class="title">За <span>11 лет</span> я помог более чем</div>
-			<div class="more-than">4000 <span>призывникам</span></div>
-			<div class="gallery">
-				<div class="item">
-					<a href="images/help1.png" class="fancybox" style="background-image: url(images/help1.png);"></a>
-				</div>
-				<div class="item">
-					<a href="images/help1.png" class="fancybox" style="background-image: url(images/help1.png);"></a>
-				</div>
-				<div class="item">
-					<a href="images/help1.png" class="fancybox" style="background-image: url(images/help1.png);"></a>
-				</div>
-				<div class="item">
-					<a href="images/help1.png" class="fancybox" style="background-image: url(images/help1.png);"></a>
-				</div>
-				<div class="item">
-					<a href="images/help1.png" class="fancybox" style="background-image: url(images/help1.png);"></a>
-				</div>
-				<div class="item">
-					<a href="images/help1.png" class="fancybox" style="background-image: url(images/help1.png);"></a>
-				</div>
-			</div>
-			<div class="title second">Я могу помочь и тебе. <br> Не тяни, просто позвони прямо сейчас</div>
-			<a href="tel:+7(495)1557824" class="phone">+7(495) 155 78 24</a>
-		</div>
-	</div>
+    <div class="samples section stage-screen">
+        <div class="container">
+            <div class="text">
+                <div class="sec-title">Антонио познакомит вас<br> с образцами потолков,<br> светильников и фурнитуры.</div>
+                <div class="catalog-text">
+                    <p><strong>Полистайте наш каталог!</strong></p>
+                    <p>Там огромный выбор цветов, текстур<br> и различных дизайнерских решений.<br> Возможно вам понравятся многоуровневые,<br> комбинированные или парящие потолки.</p>
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/samples.jpg" alt="">
+            </div>
+            <div class="catalog"></div>
+        </div>
+    </div>
 
-	<div id="stages" class="section">
-		<div class="container">
-			<div class="quote-block wow bounceIn">
-				<img src="images/smile10.png" alt="">
-				<p><span>Не не не, подожди, у меня еще есть вопросы</span><br> Допустим, у меня на руках повестка,<br> я звоню тебе и говорю "Максим, выручай".<br> Что будет происходить дальше?</p>
-			</div>
-			<div class="list">
-				<div class="stage">
-					<div class="img wow slideInLeft"></div>
-					<div class="text">
-						<div class="text-wrap">
-							<div class="name">Мы с тобой<br> заключаем договор</div>
-							<p>Договор нужен для того, чтобы ты был<br> спокоен, все оформлено официально,<br> с гарантией результата.</p>
-						</div>
-					</div>
-				</div>
-				<div class="stage">
-					<div class="img wow slideInRight"></div>
-					<div class="text">
-						<div class="text-wrap">
-							<div class="name">Дальше мы организуем<br> твое полное<br> обследование<br> <span>(скрининг)</span></div>
-							<p>В независимых клиниках, где врачи<br> не заинтересованы выполнить план призыва<br> в армию. Тебя детально обследуют, выявляют<br> все проблемы со здоровьем, которые<br> препятствуют призыву на военую службу.</p>
-						</div>
-					</div>
-				</div>
-				<div class="stage">
-					<div class="img wow slideInLeft"></div>
-					<div class="text">
-						<div class="text-wrap">
-							<div class="name">Если тебя уже завтра<br> забирают <span>на вокзал<br> в Сызрань</span><br> десантником,</div>
-							<p>мы добиваемся получения отсрочки, обычно<br> на 6 месяцев, которых хватает на завершение<br> обследования и постановку диагноза.
-							<p>Или через суд отменяем решение о призыве<br> в армию.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="title">Но лучше не доводить ситуацию до критического момента,<br>  когда тебя побритого и переодетого в форму<br> грузят в поезд.</div>
-		</div>
-	</div>
+    <div class="demo-project section stage-screen">
+        <div class="container">
+            <div class="img"><img src="images/demop.jpg" alt=""></div>
+            <div class="text">
+                <div class="sec-title">В это время Ксюша<br> и Настя создадут<br> предварительный проект</div>
+                <p><strong>и рассчитают стоимость установки вашего потолка.</strong><br> С учётом ваших пожеланий и образцов, которые<br> вам понравятся.</p>
+                <div class="dogovor">Если вас всё устраивает – подписываем договор<br> и фиксируем в нём стоимость и сроки.</div>
+            </div>
+        </div>
+    </div>
 
-	<div id="go-to-dungeon" class="section">
-		<div class="container">
-			<div class="title">А дальше приносим диагноз в военкомат.</div>
-			<div class="quote-block">
-				<img src="images/smile12.png" alt="">
-				<p>Так, а дальше что? Что будет в военкомате?<br> Я боюсь...</p>
-				<p><span>А вдруг я что-то не то скажу?</span></p>
-			</div>
-			<div class="text">
-				<p><strong>Просто расслабься.</strong></p>
-				<p>Я дам тебе детальную инструкцию по прохождению<br> всех врачей. Определю дату похода в военкомат.<br> Подготовлю тебя к самому походу в военкомат.<br> Расскажу, как себя вести и что говорить, какие<br> документы показывать.</p>
-				<div class="name">Ты будешь подкован как с медицинского<br> фронта, так и с юридического.<br> <span>Полностью.</span></div>
-				<p>Если и этого будет мало, я лично схожу с тобой<br> в военкомат и обеспечу твою безопасность.</p>
-			</div>
-			<div class="quote second wow bounceIn">
-				<img src="images/smile13.png" alt="">
-				<p>Что мне нужно сделать, чтобы<br> <span>получить</span> военный билет?</p>
-			</div>
-			<div class="list">
-				<ol>
-					<li>
-						<div class="number"></div>
-						<div class="name pac">оплатить<br> мою работу</div>
-					</li>
-					<li>
-						<div class="number"></div>
-						<div class="name pac">строго следовать<br> инструкциям</div>
-					</li>
-					<li>
-						<div class="number"></div>
-						<div class="name pac">быть все время<br> на связи со мной</div>
-					</li>
-				</ol>
-			</div>
-		</div>
-	</div>
+    <div class="development section stage-screen">
+        <div class="container">
+            <div class="text">
+                <div class="sec-title">Николай и Ирина<br> приступают к производству<br> потолка</div>
+                <p>Нежные руки Ирины бережливо отрежут нужное количество<br> полотна , строго по проекту чтобы не было перерасхода материала.</p>
+                <p>Николай обрабатывает  полотно на современном станке,<br> упаковывает и готовит к доставке.</p>
+            </div>
+            <div class="img"><img src="images/development.jpg" alt=""></div>
+        </div>
+    </div>
 
-	<div id="price" class="section">
-		<div class="container">
-			<div class="quote-block wow bounceIn">
-				<img src="images/smile11.png" alt="">
-				<p>Максим, и сколько стоит<br> Ваша помощь?</p>
-			</div>
-			<p>Цена сильно зависит от твоей текущий ситуации<br> и состояния твоего здоровья, как давно ты получил<br> повестку и насколько сильно бегает за тобой<br> военкомат.</p>
-			<div class="title">В любом случае, по сравнению<br> <span>с 1 годом твоей жизни,</span> цена просто<br> смешная.</div>
-			<div class="contacts wow fadeInLeft">
-				<p>Просто позвони прямо сейчас</p>
-				<a href="tel:+7(495)1557824">+7(495) 155 78 24</a>
-				<p>и узнай цену.</p>
-			</div>
-		</div>
-	</div>
+    <div class="delivery section stage-screen">
+        <div class="container">
+            <div class="img"></div>
+            <div class="text">
+                <div class="sec-title">Собственная служба<br> доставки привезет ваш<br> потолок</div>
+                <div class="box"><strong>и все комплектующие точно по адресу и в срок.</strong><br> Поднимут всё на этаж и положат там, где покажете.<br> Доставка материалов - за наш счёт.</div>
+            </div>
+        </div>
+    </div>
 
-	<div id="contacts" class="section">
-		<div class="container">
-			<div class="title">Ты ищешь не команию, а именно человека,<br> которому ты сможешь доверять.</div>
-			<p><strong>Человека, который полностью снимет с тебя проблемы общения<br> с жестокой бюрократической машиной и поможет.</strong></p>
-			<p><strong>Поможет не на словах, а на деле.</strong><br> (С момента подписания договора мы только и делаем,<br> что 22 часа в сутки думаем о том, как решить твою проблему)</p>
-			<div class="title second">Не тяни, просто позвони прямо сейчас</div>
-			<a href="tel:+7(495)1557824" class="phone">+7(495) 155 78 24</a>
-			<p><strong>Я жду. Максим.</strong></p>
-		</div>
-	</div>
+    <div class="production section stage-screen">
+        <div class="container">
+            <div class="text">
+                <div class="sec-title">Монтажники Евгений<br> и Борис на глазах<br> у изумлённой публики</div>
+                <p><strong>быстро и профессионально устанавливают<br> натяжной потолок в вашем помещении.</strong></p>
+                <p>В комнату до 20 м<sup>2</sup> установят за 2 часа.<br> В квартиру 70 м<sup>2</sup> за 6 часов.</p>
+                <p>Они не курят, не пьют и не знают нецензурных<br> слов и носят с собой сменную обувь.</p>
+                <p>Разумеется, после работ они вынесут весь<br> мусор и уберутся за собой.</p>
+            </div>
+            <div class="img"></div>
+            <div class="icos">
+                <div class="svg"><img src="images/prod_ico1.svg" alt=""></div>
+                <div class="svg"><img src="images/prod_ico2.svg" alt=""></div>
+                <div class="svg"><img src="images/prod_ico3.svg" alt=""></div>
+            </div>
+        </div>
+    </div>
 
-	<footer id="footer">
-		<div class="container">
-			<p>Все решения о получении военного билета и отсрочки от призыва принимаются исключительно призывной комиссией или на основании решения суда. Ни одна другая<br> организация не обладает полномочиями по освобождению от призыва на военную службу, предоставления отсрочки от призыва и выдачи военного билета.</p>
-			<p class='lh'>© 2018, Школа Призывника<br> ИП Берёза Максим Владимирович<br> ОГРНИП: 317774600139200<br> <a href="mailto:info@slujbenet.ru">info@slujbenet.ru</a></p>
-			<div class="creator">
-				<p>создание сайта - <a href='http://xn--80aakfoi3ahjpn2f6a8a.xn--p1ai/' target='_blank'>продающиесайты.рф</a>,</p>
-				<p>идея, тексты - <a href='https://vk.com/nnmaster' target='_blank'>Александр Чипижко</a></p>
-			</div>
-		</div>
-	</footer>
-	
-	<script type="text/javascript" src="js/libs.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+    <div class="portfolio section">
+        <div class="container">
+            <div class="sec-title">На фото видны результаты нашей работы.<br> Вернее - их малая часть</div>
+            <div class="portfolio__nav">
+                <div class="item js-ajax active" data-id="1">На кухне</div>
+                <div class="item js-ajax" data-id="1">В ванной</div>
+                <div class="item js-ajax" data-id="1">В детской</div>
+                <div class="item js-ajax" data-id="1">В офисе</div>
+                <div class="item js-ajax" data-id="1">В спальне</div>
+                <div class="item js-ajax" data-id="1">В гостиной</div>
+            </div>
+            <div class="portfolio__slider">
+                <div class="owl-carousel" data-slider-id="1">
+                    <div class="img" style="background-image: url(images/slide.jpg);"></div>
+                    <div class="img" style="background-image: url(images/slide.jpg);"></div>
+                    <div class="img" style="background-image: url(images/slide.jpg);"></div>
+                    <div class="img" style="background-image: url(images/slide.jpg);"></div>
+                    <div class="img" style="background-image: url(images/slide.jpg);"></div>
+                    <div class="img" style="background-image: url(images/slide.jpg);"></div>
+                </div>
+                <div class="owl-thumbs" data-slider-id="1">
+                    <button class="owl-thumb-item" style="background-image: url(images/slide.jpg);"></button>
+                    <button class="owl-thumb-item" style="background-image: url(images/slide.jpg);"></button>
+                    <button class="owl-thumb-item" style="background-image: url(images/slide.jpg);"></button>
+                    <button class="owl-thumb-item" style="background-image: url(images/slide.jpg);"></button>
+                    <button class="owl-thumb-item" style="background-image: url(images/slide.jpg);"></button>
+                    <button class="owl-thumb-item" style="background-image: url(images/slide.jpg);"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="painting section">
+        <div class="container">
+            <div class="img">
+                <img src="images/paint1.jpg" alt="">
+                <div class="flex">
+                    <img src="images/paint2.jpg" alt="">
+                    <img src="images/paint3.jpg" alt="">
+                </div>
+            </div>
+            <div class="text">
+                <div class="sec-title">- А рисунок на потолке можно<br> разместить? У меня есть крутые <br> идеи на этот счёт.</div>
+                <p>Да, можем нанести любой рисунок хорошего качества. Напечатаем<br> на специальном широкоформатном принтере.</p>
+                <p>Подготовка шаблона для печати и цветопроба  для одного шаблона - в подарок!</p>
+                <div class="catalog">
+                    <span>Получите каталог с идеями для фотопечати<br> и примерами реализации</span>
+                    <div class="btn">Получить</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lighting section">
+        <div class="container">
+            <div class="text">
+                <div class="sec-title">- С этим понятно. А  светильники?<br> Какие у вас есть? Поможете<br> подобрать?</div>
+                <p>Уже много лет мы используем светодиодные лампы и светильники Ecola.<br> У них большой выбор встраиваемых светильников для натяжных потолков.<br> Они быстро монтируются и легко заменяются.</p>
+                <p>Ecola специализируется на потолочных светильниках, они весьма надежные,<br> экономичные и недорогие. </p>
+                <p>Некоторые образцы привезет наш замерщик и поможет с выбором.</p>
+                <p><strong>Получите полный каталог светильников и решений на почту</strong></p>
+                <div class="btn">Получить</div>
+            </div>
+            <div class="img"></div>
+        </div>
+    </div>
+
+    <div class="contact-map section">
+        <div class="container">
+            <div class="sec-title">- А можно вживую увидеть образцы потолков<br> и светильников? Заодно посмотреть ваш офис<br> и производство...</div>
+            <p>Конечно! Будем рады вас видеть. Приезжайте в рабочее время. Вас встретят наши сотрудники</p>
+            <div class="map">
+                <div class="left"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5093c1e1ac4cc6c1b19d16b89c53604e1e98a8a13597d7825f031dc108d25907&amp;width=100%25&amp;height=570&amp;lang=ru_RU&amp;scroll=true"></script></div>
+                <div class="right">
+                    <div class="address">
+                        <strong>Центральный офис-склад:</strong>
+                        <address>г. Москва, 2-й Магистральный тупик д. 7А, стр. 2</address>
+                    </div>
+                    <div class="list flex">
+                        <div class="item">
+                            <span>Офис, склад</span>
+                            Пн-Пт с 9:00 до 18:00
+                        </div>
+                        <div class="item">
+                            <span>Склад</span>
+                            Сб-Вс и праздничные<br> дни с 10:00 до 17:00
+                        </div>
+                        <div class="item">
+                            <span>Телефон</span>
+                            <a href="tel:+7 (495) 118-40-84">+7 (495) 118-40-84</a>
+                        </div>
+                        <div class="item">
+                            <span>Бесплатно по РФ</span>
+                            <a href="tel:8 (800) 700-93-88">8 (800) 700-93-88</a>
+                        </div>
+                        <div class="item">
+                            <span>Электронная почта</span>
+                            <a href="mailto:zakaz@potolki-nikomaks.ru">zakaz@potolki-nikomaks.ru</a>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <a href="images/office1.png" class="img fancybox" data-fancybox="contacts" style="background-image: url('images/office1.png');"></a>
+                        <a href="images/office2.png" class="img fancybox" data-fancybox="contacts" style="background-image: url('images/office2.png');"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews section">
+        <div class="container">
+            <div class="reviews__text">
+                <div class="sec-title">- Есть у вас отзывы<br> реальных людей?</div>
+                <p><strong>Сможете доказать, что они ваши? Я не верю<br> заказным отзывам на сайтах-отзовиках.</strong></p>
+                <p class="padding">Конечно есть, и все они - настоящие!<br> Видео-отзыв - лучший способ доказать <br> их подлинность. Убедитесь сами</p>
+            </div>
+            <div class="reviews__slider">
+                <div class="owl-carousel">
+                    <a href="https://www.youtube.com/watch?v=E_wxPpRSgho" data-count="1" class="item fancybox" style="background-image: url('images/rev1.png');"></a>
+                    <a href="https://www.youtube.com/watch?v=E_wxPpRSgho" data-count="2" class="item fancybox" style="background-image: url('images/rev2.png');"></a>
+                    <a href="https://www.youtube.com/watch?v=E_wxPpRSgho" data-count="3" class="item fancybox" style="background-image: url('images/rev1.png');"></a>
+                    <a href="https://www.youtube.com/watch?v=E_wxPpRSgho" data-count="4" class="item fancybox" style="background-image: url('images/rev2.png');"></a>
+                </div>
+                <div class="counter"><span>1</span> / 4</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="guarantee section">
+        <div class="container">
+            <div class="text">
+                <div class="sec-title">Ну... Теперь, если честно<br> расскажете  про свои<br> гарантии то …<br> считайте, что убедили.</div>
+                <p>Мы не обещаем космических гарантий по 20 лет или “пожизненно”. Такое<br> обещают только те, кому нечего терять. Сменил юрлицо - и никаких проблем.</p>
+                <p><span class="yellow bg1">Наша реальная гарантия на работы - 2 года.</span> Она прописывается в договоре.<br> Мы на рынке с 2009 года и очень дорожим своей репутацией, поэтому не ищем<br> лазеек для избегания ответственности. И свои гарантийные обязательства<br> выполняем.</p>
+                <p><span class="yellow bg2">Гарантия на материалы - 10 лет.</span> Она предоставляется заводом-производителем.<br> А с производителями мы взаимодействуем напрямую без посредников.</p>
+            </div>
+            <div class="img"></div>
+        </div>
+    </div>
+
+    <div class="contacts-block section">
+        <div class="container">
+            <p>Если вы не гонитесь за ложной гарантией и мнимыми скидками, Если вам нужен качественный натяжной потолок<br> без предоплат, по выгодной цене и с реальными гарантиями. </p>
+            <div class="list">
+                <div class="item phone">
+                    <span>Позвоните нам прямо сейчас</span>
+                    <a href="tel:+7 (495) 118-40-84">+7 (495) 118-40-84</a>
+                    <div class="num">01</div>
+                </div>
+                <div class="item callback"><span>Или <a href="#">оставьте заявку</a></span><div class="num">02</div></div>
+            </div>
+            <p><strong>и уже 30 июня вы будете любоваться новым потолком и хвастаться друзьям.</strong></p>
+        </div>
+    </div>
+
+<footer class="footer">
+    <div class="container">
+        <a href="/" class="footer__logo"><img src="images/footer_logo.png"></a>
+        <div class="footer__links">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Договор оферты</a>
+        </div>
+        <div class="footer__devs">Создание сайта <br> <a href="#">Александр Чипижко</a></div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/libs.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
-<link rel="stylesheet" href="css/libs.min.css">
-<link rel="stylesheet" href="css/main.css">
+
