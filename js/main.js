@@ -1,10 +1,31 @@
 (function(){
 
+	$('.header .burger, .header__menu a').click(function(){
+		$('.header .burger, .header__menu').toggleClass('active');
+		if( typeof  $(this).attr('href') !== 'undefined' ) {
+			console.log(1);
+	        $('html, body').animate({
+	            scrollTop: $($(this).attr('href')).offset().top}, 1500);
+	        return false;
+		}
+	});
+
 	var gallery_slider = jQuery('.gallery__slider .owl-carousel').owlCarousel({
 		items: 3,
 		margin: 40,
 		nav: true,
-		loop: true
+		loop: true,
+		responsive: {
+			0 : {
+				items: 1
+			},
+			535 : {
+				items: 2
+			},
+			960 : {
+				items: 3
+			}
+		}
 	});
 
 	gallery_slider.on('changed.owl.carousel', function (e) {
