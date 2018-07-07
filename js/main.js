@@ -1,63 +1,57 @@
-$(document).ready(function() {
-    $('.fancybox').fancybox();
+(function(){
 
-    var wow = new WOW({ // wow animate
-        offset: 150,
-        mobile: false
-    });
-
-    wow.init();
-
-
-    $('.portfolio__slider .owl-carousel').owlCarousel({
-		items: 1,
+	var gallery_slider = jQuery('.gallery__slider .owl-carousel').owlCarousel({
+		items: 3,
+		margin: 40,
 		nav: true,
-		loop: true,
-		dots: false,
-        thumbs: true,
-        thumbsPrerendered: true
-    });
+		loop: true
+	});
 
-	var owl = $('.reviews__slider .owl-carousel').owlCarousel({
-		items: 2,
-		margin: 30,
-		loop: true,
-		nav: true,
-		dots: false
-    });
-
-	owl.on('changed.owl.carousel', function (e) {
+	gallery_slider.on('changed.owl.carousel', function (e) {
 		var current = e.item.index;
         var index = $(e.target).find(".owl-item").eq(current).find('.item').attr('data-count');
-        $('.reviews__slider .counter span').text(index);
+        $('.gallery__slider .slider-counter span').text(index);
 	});
 
 
-    $('img.svg').each(function() {
-        var $img = jQuery(this);
-        var imgID = $img.attr('id');
-        var imgClass = $img.attr('class');
-        var imgURL = $img.attr('src');
-        jQuery.get(imgURL, function(data) {
-            // Get the SVG tag, ignore the rest
-            var $svg = jQuery(data).find('svg');
-            // Add replaced image ID to the new SVG
-            if (typeof imgID !== 'undefined') {
-                $svg = $svg.attr('id', imgID);
-            }
-            // Add replaced image classes to the new SVG
-            if (typeof imgClass !== 'undefined') {
-                $svg = $svg.attr('class', imgClass + ' replaced-svg');
-            }
-            // Remove any invalid XML tags as per http://validator.w3.org
-            $svg = $svg.removeAttr('xmlns:a');
-            // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
-            if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-                $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
-            }
+	var products_slider = jQuery('.products__slider .owl-carousel').owlCarousel({
+		items: 1,
+		nav: true,
+		loop: true,
+		autoHeight: true
+	});
 
-            // Replace image with new SVG
-            $img.replaceWith($svg);
-        }, 'xml');
-    });
-});
+	products_slider.on('changed.owl.carousel', function (e) {
+		var current = e.item.index;
+        var index = $(e.target).find(".owl-item").eq(current).find('.item').attr('data-count');
+        $('.products__slider .slider-counter span').text(index);
+	});
+
+
+
+	jQuery('img.svg').each(function(){
+	    var $img = jQuery(this),
+	    	imgID = $img.attr('id'),
+	    	imgClass = $img.attr('class'),
+	    	imgURL = $img.attr('src'),
+			imgWidth = $img.attr('width'),
+			imgHeight = $img.attr('height');
+	    jQuery.get(imgURL, function(data) {
+	        var $svg = jQuery(data).find('svg');
+	        if(typeof imgID !== 'undefined') {
+	            $svg = $svg.attr('id', imgID);
+	        }
+	        if(typeof imgClass !== 'undefined') {
+	            $svg = $svg.attr('class', imgClass+' replaced-svg');
+	        }
+			if(typeof imgWidth !== 'undefined') {
+				$svg = $svg.attr('width', imgWidth);
+			}
+			if(typeof imgHeight !== 'undefined') {
+				$svg = $svg.attr('height', imgHeight);
+			}
+	        $svg = $svg.removeAttr('xmlns:a');
+	        $img.replaceWith($svg);
+	    }, 'xml');
+	});
+})(jQuery);
