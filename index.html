@@ -9,40 +9,292 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
-<body class="homepage">
-	<ul>
-		<li><a href="main.html">main.html</a></li>
-		<li><a href="profile-notification.html">profile-notification.html</a></li>
-		<li><a href="profile-organizer.html">profile-organizer.html</a></li>
-	</ul>
-
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-2 footer__contacts">
-					<div class="footer__title">Сотрудничество:</div>
-					<a href="mailto:info@myrace.ru" class="email">info@myrace.ru</a>
-				</div>
-				<div class="col-3 offset-2 footer__subscribe">
-					<div class="footer__title">Подпишитесь на рассылку:</div>
-					<form action="#">
-						<input type="email" placeholder="Введите email">
-						<button class="submit"><img src="images/icos/read_more.svg" alt="" class="svg"></button>
-					</form>
-				</div>
-				<div class="col-auto ml-auto footer__social">
-					<div class="footer__title">Будь в курсе:</div>
-					<div class="links">
-						<a href="#" class="fb"><img src="images/icos/social_fb.svg" alt="" class="svg"></a>
-						<a href="#" class="tw"><img src="images/icos/social_tw.svg" alt="" class="svg"></a>
-						<a href="#" class="inst"><img src="images/icos/social_inst.svg" alt="" class="svg"></a>
-					</div>
-				</div>
-				<div class="col-12 footer__copyright">&copy; 2018 MyRace</div>
+<body>
+<header class="header">
+	<div class="container">
+		<div class="row justify-content-end">
+			<div class="main-menu col">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Карта</a></li>
+					<li><a href="#">О проекте</a></li>
+					<li><a href="#">Поддержка</a></li>
+					<li><a href="#" class="log-in">Войти</a></li>
+				</ul>
 			</div>
 		</div>
-	</footer>
-	<script type="text/javascript" src="js/libs.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	</div>
+</header>
+
+<div class="filters-screen">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-10 col-sm-12">
+				<div class="row filters-screen__inputs">
+					<div class="col-md-3 col-sm-12 tabs-navigation">
+						<div class="row">
+							<div class="col-6 tab active">Прошедшие</div>
+							<div class="col-6 tab">Предстоящие</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="row no-gutters">
+							<div class="flex">
+								<input type="text" class="br-l city" name='city' placeholder="Город">
+								<input type="text" name='date' class="datepicker" placeholder="Дата">
+								<div class="custom-select sports-type">
+									<select name="sports_type" id="">
+										<option value="default">Вид спорта</option>
+										<option value="vid1">Вид спорта</option>
+										<option value="vid2">Вид спорта</option>
+										<option value="vid3">Вид спорта</option>
+										<option value="vid4">Вид спорта</option>
+									</select>
+								</div>
+								<div class="custom-select filters last">
+									<select name="filters" id="">
+										<option value="default">Фильтры</option>
+										<option value="filters1">Вид спорта</option>
+										<option value="filters2">Вид спорта</option>
+										<option value="filters3">Вид спорта</option>
+										<option value="filters4">Вид спорта</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<input type='text' class="search col-md-2 col-sm-12" placeholder="Поиск">
+				</div>
+				<div class="row justify-content-center filters-screen__submit">
+					<div class="col-3">
+						<button>Найти соревнования</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="events-list">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-10 col-sm-12">
+				<div class="row justify-content-end events-list__showby">
+					<div class="col-auto">
+						<div class="btn"><img src="images/icos/show_blocks.svg" alt="" class="svg"></div>
+						<div class="btn active"><img src="images/icos/show_row.svg" alt="" class="svg"></div>
+					</div>
+				</div>
+				<div class="events-list__item row">
+					<div class="col-5 no-gutter-left info">
+						<div class="row">
+							<div class="col-auto date">14 МАРТА 2018</div>
+							<div class="col registration-status">Регистрация открыта</div>
+						</div>
+						<h2>Презедентский марафон</h2>
+					</div>
+					<div class="col-4 meta">
+						<div class="row">
+							<div class="col-4"><div class="counter">202</div></div>
+							<div class="col live">LIVE</div>
+							<div class="w-100"></div>
+							<div class="col-4"><div class="type">Бег</div></div>
+							<div class="col difficult">Региональные</div>
+						</div>
+					</div>
+					<div class="col-auto no-gutter-right ml-auto">
+						<a class='button transparent' href='#'>Подробнее <img src="images/icos/read_more.svg" alt="" class="svg"></a>
+					</div>
+				</div>
+				<div class="events-list__item row">
+					<div class="col-5 no-gutter-left info">
+						<div class="row">
+							<div class="col-auto date">14 МАРТА 2018</div>
+							<div class="col registration-status">Регистрация открыта</div>
+						</div>
+						<h2>Презедентский марафон</h2>
+					</div>
+					<div class="col-4 meta">
+						<div class="row">
+							<div class="col-4"><div class="counter">202</div></div>
+							<div class="col live">LIVE</div>
+							<div class="w-100"></div>
+							<div class="col-4"><div class="type">Бег</div></div>
+							<div class="col difficult">Региональные</div>
+						</div>
+					</div>
+					<div class="col-auto no-gutter-right ml-auto">
+						<a class='button transparent' href='#'>Подробнее <img src="images/icos/read_more.svg" alt="" class="svg"></a>
+					</div>
+				</div>
+				<div class="events-list__item row">
+					<div class="col-5 no-gutter-left info">
+						<div class="row">
+							<div class="col-auto date">14 МАРТА 2018</div>
+							<div class="col registration-status">Регистрация открыта</div>
+						</div>
+						<h2>Презедентский марафон</h2>
+					</div>
+					<div class="col-4 meta">
+						<div class="row">
+							<div class="col-4"><div class="counter">202</div></div>
+							<div class="col live">LIVE</div>
+							<div class="w-100"></div>
+							<div class="col-4"><div class="type">Бег</div></div>
+							<div class="col difficult">Региональные</div>
+						</div>
+					</div>
+					<div class="col-auto no-gutter-right ml-auto">
+						<a class='button transparent' href='#'>Подробнее <img src="images/icos/read_more.svg" alt="" class="svg"></a>
+					</div>
+				</div>
+				<div class="events-list__item row">
+					<div class="col-5 no-gutter-left info">
+						<div class="row">
+							<div class="col-auto date">14 МАРТА 2018</div>
+							<div class="col registration-status">Регистрация открыта</div>
+						</div>
+						<h2>Презедентский марафон</h2>
+					</div>
+					<div class="col-4 meta">
+						<div class="row">
+							<div class="col-4"><div class="counter">202</div></div>
+							<div class="col live">LIVE</div>
+							<div class="w-100"></div>
+							<div class="col-4"><div class="type">Бег</div></div>
+							<div class="col difficult">Региональные</div>
+						</div>
+					</div>
+					<div class="col-auto no-gutter-right ml-auto">
+						<a class='button transparent' href='#'>Подробнее <img src="images/icos/read_more.svg" alt="" class="svg"></a>
+					</div>
+				</div>
+				<div class="events-list__item row">
+					<div class="col-5 no-gutter-left info">
+						<div class="row">
+							<div class="col-auto date">14 МАРТА 2018</div>
+							<div class="col registration-status">Регистрация открыта</div>
+						</div>
+						<h2>Презедентский марафон</h2>
+					</div>
+					<div class="col-4 meta">
+						<div class="row">
+							<div class="col-4"><div class="counter">202</div></div>
+							<div class="col live">LIVE</div>
+							<div class="w-100"></div>
+							<div class="col-4"><div class="type">Бег</div></div>
+							<div class="col difficult">Региональные</div>
+						</div>
+					</div>
+					<div class="col-auto no-gutter-right ml-auto">
+						<a class='button transparent' href='#'>Подробнее <img src="images/icos/read_more.svg" alt="" class="svg"></a>
+					</div>
+				</div>
+				<div class="events-list__item row">
+					<div class="col-5 no-gutter-left info">
+						<div class="row">
+							<div class="col-auto date">14 МАРТА 2018</div>
+							<div class="col registration-status">Регистрация открыта</div>
+						</div>
+						<h2>Презедентский марафон</h2>
+					</div>
+					<div class="col-4 meta">
+						<div class="row">
+							<div class="col-4"><div class="counter">202</div></div>
+							<div class="col live">LIVE</div>
+							<div class="w-100"></div>
+							<div class="col-4"><div class="type">Бег</div></div>
+							<div class="col difficult">Региональные</div>
+						</div>
+					</div>
+					<div class="col-auto no-gutter-right ml-auto">
+						<a class='button transparent' href='#'>Подробнее <img src="images/icos/read_more.svg" alt="" class="svg"></a>
+					</div>
+				</div>
+				<div class="events-list__item row">
+					<div class="col-5 no-gutter-left info">
+						<div class="row">
+							<div class="col-auto date">14 МАРТА 2018</div>
+							<div class="col registration-status">Регистрация открыта</div>
+						</div>
+						<h2>Презедентский марафон</h2>
+					</div>
+					<div class="col-4 meta">
+						<div class="row">
+							<div class="col-4"><div class="counter">202</div></div>
+							<div class="col live">LIVE</div>
+							<div class="w-100"></div>
+							<div class="col-4"><div class="type">Бег</div></div>
+							<div class="col difficult">Региональные</div>
+						</div>
+					</div>
+					<div class="col-auto no-gutter-right ml-auto">
+						<a class='button transparent' href='#'>Подробнее <img src="images/icos/read_more.svg" alt="" class="svg"></a>
+					</div>
+				</div>
+				<div class="events-list__item row">
+					<div class="col-5 no-gutter-left info">
+						<div class="row">
+							<div class="col-auto date">14 МАРТА 2018</div>
+							<div class="col registration-status">Регистрация открыта</div>
+						</div>
+						<h2>Презедентский марафон</h2>
+					</div>
+					<div class="col-4 meta">
+						<div class="row">
+							<div class="col-4"><div class="counter">202</div></div>
+							<div class="col live">LIVE</div>
+							<div class="w-100"></div>
+							<div class="col-4"><div class="type">Бег</div></div>
+							<div class="col difficult">Региональные</div>
+						</div>
+					</div>
+					<div class="col-auto no-gutter-right ml-auto">
+						<a class='button transparent' href='#'>Подробнее <img src="images/icos/read_more.svg" alt="" class="svg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="pagination">
+				<ul>
+					<li><span class="current">1</span></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><span class="more">...</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-2 footer__contacts">
+				<div class="footer__title">Сотрудничество:</div>
+				<a href="mailto:info@myrace.ru" class="email">info@myrace.ru</a>
+			</div>
+			<div class="col-3 offset-2 footer__subscribe">
+				<div class="footer__title">Подпишитесь на рассылку:</div>
+				<form action="#">
+					<input type="email" placeholder="Введите email">
+					<button class="submit"><img src="images/icos/read_more.svg" alt="" class="svg"></button>
+				</form>
+			</div>
+			<div class="col-auto ml-auto footer__social">
+				<div class="footer__title">Будь в курсе:</div>
+				<div class="links">
+					<a href="#" class="fb"><img src="images/icos/social_fb.svg" alt="" class="svg"></a>
+					<a href="#" class="tw"><img src="images/icos/social_tw.svg" alt="" class="svg"></a>
+					<a href="#" class="inst"><img src="images/icos/social_inst.svg" alt="" class="svg"></a>
+				</div>
+			</div>
+			<div class="col-12 footer__copyright">&copy; 2018 MyRace</div>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript" src="js/libs.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
