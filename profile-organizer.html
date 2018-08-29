@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="row justify-content-end">
+				<nav class="header__main-menu col">
+					<a href="#">Главная</a>
+					<a href="#">Карта</a>
+					<a href="#">О проекте</a>
+					<a href="#">Поддержка</a>
+					<a href="#" class="log-in">Войти</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+<div class="profile-page">
+	<div class="container">
+		<div class="row">
+			<div class="profile-meta col-3">
+				<div class="profile-meta__avatar">
+					<div class="photo" style="background-image: url(images/avatar.png);"></div>
+					<div class="ico"><img src="images/icos/up.svg" alt=""></div>
+				</div>
+				<div class="profile-meta__name">Сергей Русаков</div>
+				<div class="profile-meta__nav">
+					<nav>
+						<a href="#"><span class="ico"><img src="images/icos/prof_settings.svg" class="svg" alt=""></span> Настройки</a>
+						<a href="#"><span class="ico"><img src="images/icos/runner.svg" class="svg" alt=""></span> Соревнования</a>
+						<a href="#"><span class="ico"><img src="images/icos/prof_org.svg" class="svg" alt=""></span> Организация</a>
+						<a href="#"><span class="ico"><img src="images/icos/prof_results.svg" class="svg" alt=""></span> Результаты</a>
+						<a href="#" class="active"><span class="ico"><img src="images/icos/prof_notification.svg" class="svg" alt=""></span> Уведомления</a>
+					</nav>
+				</div>
+			</div>
+			<div class="events-list side-padding col-8 offset-1">
+				<div class="row">
+
+					<h1 class="page-title">Организация</h1>
+
+					<div class="profile-tabs-navigation col-10">
+						<span class="current">Все</span>
+						<a href="#">Создать событие</a>
+						<a href="#">Управление</a>
+					</div>
+				
+					<div class="col-10">
+						<div class="events-list__item column row">
+							<div class="col-12 no-gutter-left info">
+								<div class="row">
+									<div class="col-auto date">14 МАРТА 2018</div>
+									<div class="col registration-status">Регистрация открыта</div>
+								</div>
+								<h2>Презедентский марафон</h2>
+							</div>
+							<hr>
+							<div class="col-8 no-gutter meta">
+								<div class="row">
+									<div class="col-4"><div class="counter">202</div></div>
+									<div class="col live">LIVE</div>
+									<div class="w-100"></div>
+									<div class="col-4"><div class="type">Бег</div></div>
+									<div class="col difficult">Региональные</div>
+								</div>
+							</div>
+							<div class="col-auto no-gutter-right ml-auto">
+								<a class='button transparent' href='#'>Подробнее <img src="images/icos/read_more.svg" alt="" class="svg"></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-2 footer__contacts">
+				<div class="footer__title">Сотрудничество:</div>
+				<a href="mailto:info@myrace.ru" class="email">info@myrace.ru</a>
+			</div>
+			<div class="col-3 offset-2 footer__subscribe">
+				<div class="footer__title">Подпишитесь на рассылку:</div>
+				<form action="#">
+					<input type="email" placeholder="Введите email">
+					<button class="submit"><img src="images/icos/read_more.svg" alt="" class="svg"></button>
+				</form>
+			</div>
+			<div class="col-auto ml-auto footer__social">
+				<div class="footer__title">Будь в курсе:</div>
+				<div class="links">
+					<a href="#" class="fb"><img src="images/icos/social_fb.svg" alt="" class="svg"></a>
+					<a href="#" class="tw"><img src="images/icos/social_tw.svg" alt="" class="svg"></a>
+					<a href="#" class="inst"><img src="images/icos/social_inst.svg" alt="" class="svg"></a>
+				</div>
+			</div>
+			<div class="col-12 footer__copyright">&copy; 2018 MyRace</div>
+		</div>
+	</div>
+</footer>
+<script src='//code.jquery.com/jquery-1.12.4.min.js'></script>
+<script type="text/javascript" src="js/libs.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

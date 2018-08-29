@@ -1,11 +1,42 @@
 $(document).ready(function(){
 
+	////// сравнение паролей ////////
+	$('#new-pass, #confirm-pass').on('keyup', function () {
+	  if ($('#new-pass').val() != $('#confirm-pass').val()) {
+	    $('.errors .compare').addClass('active');
+	  } else {
+	    $('.errors .compare').removeClass('active');
+	  }
+	});
+
+	////// проверка длины паролей ////////
+	$('#new-pass, #confirm-pass').on('keyup', function () {
+	  if ($('#new-pass').val().length < 8 || $('#confirm-pass').val().length < 8) {
+	    $('.errors .length').addClass('active');
+	  } else {
+	    $('.errors .length').removeClass('active');
+	  }
+	});
+
+	////// клик по поиску на главной ////////
 	$('input.search').focus(function() {
 	    $(this).attr('placeholder', 'Поиск по событиям...')
 	}).blur(function() {
 	    $(this).attr('placeholder', 'Поиск')
-	})
+	});
 
+
+	////// клонирование инпутов по клику ///////////
+	$('.input-block .add-new').on('click', function(){
+		var block = $(this).closest('.input-block').find('.repeated-block').html();
+		$(this).before('<div class="repeated-block added">'+block+'<div class="remove">-</div></div>');
+	});
+
+	$('.input-block').on('click', '.remove', function(){
+		$(this).parent().remove();
+	});
+
+	////// конвертит img в svg ////////
 	jQuery('img.svg').each(function(){
 	    var $img = jQuery(this),
 	    	imgID = $img.attr('id'),
@@ -33,27 +64,21 @@ $(document).ready(function(){
 	    }, 'xml');
 	});
 
+	////// кастомный селект ///////
 	var x, i, j, selElmnt, a, b, c;
-	/*look for any elements with the class "custom-select":*/
 	x = document.getElementsByClassName("custom-select");
 	for (i = 0; i < x.length; i++) {
 	  selElmnt = x[i].getElementsByTagName("select")[0];
-	  /*for each element, create a new DIV that will act as the selected item:*/
 	  a = document.createElement("DIV");
 	  a.setAttribute("class", "select-selected");
 	  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
 	  x[i].appendChild(a);
-	  /*for each element, create a new DIV that will contain the option list:*/
 	  b = document.createElement("DIV");
 	  b.setAttribute("class", "select-items select-hide");
 	  for (j = 1; j < selElmnt.length; j++) {
-	    /*for each option in the original select element,
-	    create a new DIV that will act as an option item:*/
 	    c = document.createElement("DIV");
 	    c.innerHTML = selElmnt.options[j].innerHTML;
 	    c.addEventListener("click", function(e) {
-	        /*when an item is clicked, update the original select box,
-	        and the selected item:*/
 	        var y, i, k, s, h;
 	        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
 	        h = this.parentNode.previousSibling;
@@ -75,8 +100,6 @@ $(document).ready(function(){
 	  }
 	  x[i].appendChild(b);
 	  a.addEventListener("click", function(e) {
-	      /*when the select box is clicked, close any other select boxes,
-	      and open/close the current select box:*/
 	      e.stopPropagation();
 	      closeAllSelect(this);
 	      this.nextSibling.classList.toggle("select-hide");
@@ -84,8 +107,6 @@ $(document).ready(function(){
 	  });
 	}
 	function closeAllSelect(elmnt) {
-	  /*a function that will close all select boxes in the document,
-	  except the current select box:*/
 	  var x, y, i, arrNo = [];
 	  x = document.getElementsByClassName("select-items");
 	  y = document.getElementsByClassName("select-selected");
@@ -102,8 +123,6 @@ $(document).ready(function(){
 	    }
 	  }
 	}
-	/*if the user clicks anywhere outside the select box,
-	then close all select boxes:*/
 	document.addEventListener("click", closeAllSelect);
 
 });
