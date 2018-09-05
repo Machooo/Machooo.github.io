@@ -46,20 +46,64 @@
 			<div class="events-list side-padding col-8 offset-1">
 				<div class="row">
 
-					<h1 class="page-title">Результаты</h1>
+					<h1 class="page-title">Настройки</h1>
 
 					<div class="profile-tabs-navigation col-10">
-						<a href="#">Мои</a>
-						<a href="#">Предстоящие</a>
-						<a href="#" class="current">Прошедшие</a>
-						<a href="#">Допуск</a>
+						<a href="#">Основное</a>
+						<a href="#" class="current">Уведомления и подписка</a>
+						<a href="#">Пароль</a>
 					</div>
-					<div class="row">
-						<div class="col-12">
-							
-							<div class="not-found-text">Вы еще не участвовали<br> ни в одном соревновании ;(</div>
+				
+					<div class="profile-settings col-10 no-gutter-left no-gutter-right">
+						<form action="">
+							<div class="row">
+								<h2 class="col-12">УВЕДОМЛЕНИЯ</h2>
+								<div class="col-12">
+									<div class="input-block">
+										<input type="checkbox" name="notofication" id="not1">
+										<label for="not1">Уведомления о новых событиях</label>
+									</div>
+									
+									<div class="input-block">
+										<input type="checkbox" name="notofication" id="not2">
+										<label for="not2">Уведомления о ответах на сообщение</label>
+									</div>
 
-						</div>
+									<div class="input-block">
+										<input type="checkbox" name="notofication" id="not3">
+										<label for="not3">Уведомления о новых участниках</label>
+									</div>
+
+									<div class="input-block">
+										<input type="checkbox" name="notofication" id="not4">
+										<label for="not4">Уведомления о ответах на сообщение</label>
+									</div>
+
+									<div class="input-block">
+										<input type="checkbox" name="notofication" id="not5">
+										<label for="not5">Уведомления о новых участниках</label>
+									</div>
+								</div>
+								
+								<div class="w-100"><hr></div>
+
+								<h2 class="col-12">ПОДПИСКА</h2>
+
+								<div class="col-12">
+
+									<div class="input-block">
+										<input type="checkbox" name="notofication" id="sub">
+										<label for="sub">Подписка на ежедневную рассылку</label>
+									</div>
+
+								</div>
+
+								<div class="input-block btns col-6 flex">
+									<button>Сохранить</button>
+									<input type="reset" class="button transparent close" value="Отмена">
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>

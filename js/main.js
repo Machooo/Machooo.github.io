@@ -1,4 +1,140 @@
-$(document).ready(function(){
+(function(){
+	"use strict";
+
+	$(document).on('click', '.add-squad-man button', function(e){
+		e.preventDefault();
+		var name = $('.add-to-squad .name').val(),
+			lastname = $('.add-to-squad .lastname').val(),
+			errors = false
+
+		if(name.length === 0) {
+			errors = true;
+			$('.add-to-squad .name').addClass('error');
+		}
+
+		if(lastname.length === 0) {
+			errors = true;
+			$('.add-to-squad .lastname').addClass('error');
+		}
+
+		if(!errors) {
+			$('.add-to-squad .name, .add-to-squad .lastname').removeClass('error');
+			$('.squad-list .flex').append('<div class="item">'+ name +' '+ lastname +'</div>');
+			$('.add-to-squad input[type="text"]').val("");
+		}
+
+	});
+
+	$(document).on('click', '.squad-list .item', function(e){
+		$(this).remove();
+	});
+
+
+	$(document).on('click', '.add-users__list .line', function(e){
+		var name = $(this).find('.name').text(),
+		number = $(this).find('.number').text();
+
+		$(this).remove();
+
+		addUserInList(name, number);
+	});
+
+	$(document).on('click', '.teammates-list .item', function(e){
+		var name = $(this).text(),
+		number = $(this).attr('data-number');
+
+		$(this).remove();
+
+		removeUserFromList(name, number);
+	});
+
+	function addUserInList(name, number) {
+
+		var item = '<div class="item" data-number="'+ number +'">'+ name +'</div>';
+
+		if($('.teammates-list').length == 0) {
+			$('.add-users').after('<div class="teammates-list"><label for="">Члены команды:</label><div class="flex"></div></div>');
+		}
+
+		$('.teammates-list .flex').append(item);
+
+	}
+
+	function removeUserFromList(name, number) {
+
+		var item = '<div class="line"><div class="name">'+ name +'</div><div class="number">'+ number +'</div></div>';
+
+		console.log($('.teammates-list .item').length);
+
+		if($('.teammates-list .item').length == 0) {
+			$('.teammates-list').remove();
+		}
+
+		$('.add-users__list').append(item);
+
+	}
+
+
+	$('.registation-form__tabs a').on('click', function(e){
+		e.preventDefault();
+		var id = $(this).attr('data-tab');
+		$('.registation-form .tab-content, .registation-form__tabs a').removeClass('active');
+		$(this).addClass('active');
+		$('.registation-form .tab-content#' + id).addClass('active');
+	});
+	
+	////// INPUT FILE /////////
+	var wrapper = $( ".file_upload" ),
+        inp = wrapper.find( "input" ),
+        btn = wrapper.find( "button" ),
+        lbl = wrapper.find( "div" );
+
+    // Crutches for the :focus style:
+    inp.focus(function(){
+        wrapper.addClass( "focus" );
+    }).blur(function(){
+        wrapper.removeClass( "focus" );
+    });
+
+    btn.add( lbl ).click(function(){
+        inp.click();
+    });
+
+    var file_api = ( window.File && window.FileReader && window.FileList && window.Blob ) ? true : false;
+
+    inp.change(function(){
+        var file_name;
+        if( file_api && inp[ 0 ].files[ 0 ] )
+            file_name = inp[ 0 ].files[ 0 ].name;
+        else
+            file_name = inp.val().replace( "C:\\fakepath\\", '' );
+
+        if( ! file_name.length )
+            return;
+
+        if( lbl.is( ":visible" ) ){
+            lbl.text( file_name );
+            btn.text( "Выбрать файл" );
+        }else
+            btn.text( file_name );
+    }).change();
+
+
+	////// слайдер на странице авторизации/реги ///////
+	$('.sign-page .owl-carousel').owlCarousel({
+		items: 1,
+		dots: true,
+		loop: true
+	});
+
+	////// слайдер участников ///////
+	$('.event-peoples .owl-carousel').owlCarousel({
+		items: 6,
+		loop: true,
+		dots: false
+	});
+
+	
 
 	////// сравнение паролей ////////
 	$('#new-pass, #confirm-pass').on('keyup', function () {
@@ -125,4 +261,4 @@ $(document).ready(function(){
 	}
 	document.addEventListener("click", closeAllSelect);
 
-});
+})(jQuery);
