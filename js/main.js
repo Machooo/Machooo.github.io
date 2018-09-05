@@ -1,6 +1,19 @@
 (function(){
 	"use strict";
 
+	///// аккордеон в юзерах //////
+	$('.users-list__item .meta').on('click', function(){
+		var item = $(this).parent();
+		if(item.hasClass('active')) {
+			item.removeClass('active');
+			item.find('.hidden').slideUp('slow');
+		} else {
+			item.addClass('active');
+			item.find('.hidden').slideDown('slow');
+		}
+	});
+
+	/// добавление юзера сквад ///
 	$(document).on('click', '.add-squad-man button', function(e){
 		e.preventDefault();
 		var name = $('.add-to-squad .name').val(),
@@ -84,40 +97,53 @@
 	});
 	
 	////// INPUT FILE /////////
-	var wrapper = $( ".file_upload" ),
-        inp = wrapper.find( "input" ),
-        btn = wrapper.find( "button" ),
-        lbl = wrapper.find( "div" );
+	/*var wrapper = $( ".file_upload" ),
+        inp = $( ".file_upload input" ),
+        btn = $( ".file_upload button" ),
+        lbl = $( ".file_upload div" );
 
     // Crutches for the :focus style:
     inp.focus(function(){
         wrapper.addClass( "focus" );
     }).blur(function(){
         wrapper.removeClass( "focus" );
+    });*/
+
+    $(document).on('click', '.file_upload button', function(){
+    	$(this).parent().find('input').click();
+    	changeFile();
     });
 
-    btn.add( lbl ).click(function(){
-        inp.click();
-    });
+    function changeFile() {
 
-    var file_api = ( window.File && window.FileReader && window.FileList && window.Blob ) ? true : false;
+    	//console.log(button);
 
-    inp.change(function(){
-        var file_name;
-        if( file_api && inp[ 0 ].files[ 0 ] )
-            file_name = inp[ 0 ].files[ 0 ].name;
-        else
-            file_name = inp.val().replace( "C:\\fakepath\\", '' );
+    	var wrapper = $(this).parent(),
+	        inp = wrapper.find( "input" ),
+	        btn = wrapper.find( "button" ),
+	        lbl = wrapper.find( "div" );
 
-        if( ! file_name.length )
-            return;
+    	var file_api = ( window.File && window.FileReader && window.FileList && window.Blob ) ? true : false;
 
-        if( lbl.is( ":visible" ) ){
-            lbl.text( file_name );
-            btn.text( "Выбрать файл" );
-        }else
-            btn.text( file_name );
-    }).change();
+    	inp.change(function(){
+	        var file_name;
+	        if( file_api && inp[ 0 ].files[ 0 ] )
+	            file_name = inp[ 0 ].files[ 0 ].name;
+	        else
+	            file_name = inp.val().replace( "C:\\fakepath\\", '' );
+
+	        if( ! file_name.length )
+	            return;
+
+	        if( lbl.is( ":visible" ) ){
+	            lbl.text( file_name );
+	            btn.text( "Выбрать файл" );
+	        }else
+	            btn.text( file_name );
+	    }).change();
+    }
+
+    
 
 
 	////// слайдер на странице авторизации/реги ///////
@@ -166,6 +192,16 @@
 	$('.input-block .add-new').on('click', function(){
 		var block = $(this).closest('.input-block').find('.repeated-block').html();
 		$(this).before('<div class="repeated-block added">'+block+'<div class="remove">-</div></div>');
+	});
+
+	$('.input-block').on('click', '.remove', function(){
+		$(this).parent().remove();
+	});
+
+	////// клонирование справок по клику ///////////
+	$('.admission-files .add-new').on('click', function(){
+		var block = $('.admission-files__item').html();
+		$(this).before('<div class="admission-files__item added">'+block+'<div class="remove">-</div></div>');
 	});
 
 	$('.input-block').on('click', '.remove', function(){
