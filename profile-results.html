@@ -13,6 +13,9 @@
 	<header class="header">
 		<div class="container">
 			<div class="row justify-content-end">
+				<div class="burger">
+					<span></span>
+				</div>
 				<nav class="header__main-menu col">
 					<a href="#">Главная</a>
 					<a href="#">Карта</a>
@@ -27,28 +30,30 @@
 <div class="profile-page">
 	<div class="container">
 		<div class="row">
-			<div class="profile-meta col-3">
-				<div class="profile-meta__avatar">
-					<div class="photo" style="background-image: url(images/avatar.png);"></div>
-					<div class="ico"><img src="images/icos/up.svg" alt=""></div>
-				</div>
-				<div class="profile-meta__name">Сергей Русаков</div>
-				<div class="profile-meta__nav">
-					<nav>
-						<a href="#"><span class="ico"><img src="images/icos/prof_settings.svg" class="svg" alt=""></span> Настройки</a>
-						<a href="#"><span class="ico"><img src="images/icos/runner.svg" class="svg" alt=""></span> Соревнования</a>
-						<a href="#"><span class="ico"><img src="images/icos/prof_org.svg" class="svg" alt=""></span> Организация</a>
-						<a href="#"><span class="ico"><img src="images/icos/prof_results.svg" class="svg" alt=""></span> Результаты</a>
-						<a href="#" class="active"><span class="ico"><img src="images/icos/prof_notification.svg" class="svg" alt=""></span> Уведомления</a>
-					</nav>
-				</div>
-			</div>
-			<div class="events-list side-padding col-8 offset-1">
+			
+<div class="profile-meta col-md-12 col-lg-3">
+	<div class="profile-meta__avatar hidden-md-down">
+		<div class="photo" style="background-image: url(images/avatar.png);"></div>
+		<div class="ico"><img src="images/icos/up.svg" alt=""></div>
+	</div>
+	<div class="profile-meta__name">Сергей Русаков</div>
+	<div class="profile-meta__nav">
+		<nav>
+			<a href="#"><span class="ico"><img src="images/icos/prof_settings.svg" class="svg" alt=""></span> Настройки</a>
+			<a href="#"><span class="ico"><img src="images/icos/runner.svg" class="svg" alt=""></span> Соревнования</a>
+			<a href="#"><span class="ico"><img src="images/icos/prof_org.svg" class="svg" alt=""></span> Организация</a>
+			<a href="#"><span class="ico"><img src="images/icos/prof_results.svg" class="svg" alt=""></span> Результаты</a>
+			<a href="#" class="active"><span class="ico"><img src="images/icos/prof_notification.svg" class="svg" alt=""></span> Уведомления</a>
+		</nav>
+	</div>
+</div>
+
+			<div class="events-list side-padding col-md-8 col-12 offset-md-1 profile-content">
 				<div class="row">
 
 					<h1 class="page-title">Соревнования</h1>
 
-					<div class="profile-tabs-navigation col-10">
+					<div class="profile-tabs-navigation col-md-10 col-12">
 						<a href="#">Мои</a>
 						<a href="#">Предстоящие</a>
 						<a href="#" class="current">Прошедшие</a>
@@ -57,28 +62,28 @@
 				
 					<div class="col-12">
 						<div class="events-list__item results row">
-							<div class="col-6 no-gutter-left info">
+							<div class="col-md-6 col-12 no-gutter-left info">
 								<div class="row">
 									<div class="col-auto date">14 МАРТА 2018</div>
 									<div class="col"><div class="type">Бег</div></div>
 								</div>
 								<h2>Февральская гонка</h2>
 							</div>
-							<div class="col-6 stats">
+							<div class="col-md-6 col-12 stats">
 								<div class="row">
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">Позиция</div>
 										<div class="value">12</div>
 									</div>
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">№</div>
 										<div class="value">234</div>
 									</div>
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">Команда</div>
 										<div class="value">LightRun</div>
 									</div>
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">Финиш</div>
 										<div class="value">1:44:34</div>
 									</div>
@@ -87,118 +92,173 @@
 						</div>
 
 						<div class="events-list__item results row">
-							<div class="col-6 no-gutter-left info">
+							<div class="col-md-6 col-12 no-gutter-left info">
 								<div class="row">
 									<div class="col-auto date">14 МАРТА 2018</div>
 									<div class="col"><div class="type">Бег</div></div>
 								</div>
 								<h2>Февральская гонка</h2>
 							</div>
-							<div class="col-6 stats">
+							<div class="col-md-6 col-12 stats">
 								<div class="row">
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">Позиция</div>
 										<div class="value">12</div>
 									</div>
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">№</div>
 										<div class="value">234</div>
 									</div>
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">Команда</div>
 										<div class="value">LightRun</div>
 									</div>
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">Финиш</div>
 										<div class="value">1:44:34</div>
 									</div>
 								</div>
 							</div>
 						</div>
-
 						<div class="events-list__item results row">
-							<div class="col-6 no-gutter-left info">
+							<div class="col-md-6 col-12 no-gutter-left info">
 								<div class="row">
 									<div class="col-auto date">14 МАРТА 2018</div>
 									<div class="col"><div class="type">Бег</div></div>
 								</div>
 								<h2>Февральская гонка</h2>
 							</div>
-							<div class="col-6 stats">
+							<div class="col-md-6 col-12 stats">
 								<div class="row">
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">Позиция</div>
 										<div class="value">12</div>
 									</div>
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">№</div>
 										<div class="value">234</div>
 									</div>
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">Команда</div>
 										<div class="value">LightRun</div>
 									</div>
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">Финиш</div>
 										<div class="value">1:44:34</div>
 									</div>
 								</div>
 							</div>
 						</div>
-
 						<div class="events-list__item results row">
-							<div class="col-6 no-gutter-left info">
+							<div class="col-md-6 col-12 no-gutter-left info">
 								<div class="row">
 									<div class="col-auto date">14 МАРТА 2018</div>
 									<div class="col"><div class="type">Бег</div></div>
 								</div>
 								<h2>Февральская гонка</h2>
 							</div>
-							<div class="col-6 stats">
+							<div class="col-md-6 col-12 stats">
 								<div class="row">
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">Позиция</div>
 										<div class="value">12</div>
 									</div>
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">№</div>
 										<div class="value">234</div>
 									</div>
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">Команда</div>
 										<div class="value">LightRun</div>
 									</div>
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">Финиш</div>
 										<div class="value">1:44:34</div>
 									</div>
 								</div>
 							</div>
 						</div>
-
 						<div class="events-list__item results row">
-							<div class="col-6 no-gutter-left info">
+							<div class="col-md-6 col-12 no-gutter-left info">
 								<div class="row">
 									<div class="col-auto date">14 МАРТА 2018</div>
 									<div class="col"><div class="type">Бег</div></div>
 								</div>
 								<h2>Февральская гонка</h2>
 							</div>
-							<div class="col-6 stats">
+							<div class="col-md-6 col-12 stats">
 								<div class="row">
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">Позиция</div>
 										<div class="value">12</div>
 									</div>
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">№</div>
 										<div class="value">234</div>
 									</div>
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
 										<div class="name">Команда</div>
 										<div class="value">LightRun</div>
 									</div>
-									<div class="col-auto">
+									<div class="col-md-auto col-12">
+										<div class="name">Финиш</div>
+										<div class="value">1:44:34</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="events-list__item results row">
+							<div class="col-md-6 col-12 no-gutter-left info">
+								<div class="row">
+									<div class="col-auto date">14 МАРТА 2018</div>
+									<div class="col"><div class="type">Бег</div></div>
+								</div>
+								<h2>Февральская гонка</h2>
+							</div>
+							<div class="col-md-6 col-12 stats">
+								<div class="row">
+									<div class="col-md-auto col-12">
+										<div class="name">Позиция</div>
+										<div class="value">12</div>
+									</div>
+									<div class="col-md-auto col-12">
+										<div class="name">№</div>
+										<div class="value">234</div>
+									</div>
+									<div class="col-md-auto col-12">
+										<div class="name">Команда</div>
+										<div class="value">LightRun</div>
+									</div>
+									<div class="col-md-auto col-12">
+										<div class="name">Финиш</div>
+										<div class="value">1:44:34</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="events-list__item results row">
+							<div class="col-md-6 col-12 no-gutter-left info">
+								<div class="row">
+									<div class="col-auto date">14 МАРТА 2018</div>
+									<div class="col"><div class="type">Бег</div></div>
+								</div>
+								<h2>Февральская гонка</h2>
+							</div>
+							<div class="col-md-6 col-12 stats">
+								<div class="row">
+									<div class="col-md-auto col-12">
+										<div class="name">Позиция</div>
+										<div class="value">12</div>
+									</div>
+									<div class="col-md-auto col-12">
+										<div class="name">№</div>
+										<div class="value">234</div>
+									</div>
+									<div class="col-md-auto col-12">
+										<div class="name">Команда</div>
+										<div class="value">LightRun</div>
+									</div>
+									<div class="col-md-auto col-12">
 										<div class="name">Финиш</div>
 										<div class="value">1:44:34</div>
 									</div>
@@ -216,18 +276,18 @@
 <footer class="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-2 footer__contacts">
+			<div class="col-md-2 col-12 footer__contacts">
 				<div class="footer__title">Сотрудничество:</div>
 				<a href="mailto:info@myrace.ru" class="email">info@myrace.ru</a>
 			</div>
-			<div class="col-3 offset-2 footer__subscribe">
+			<div class="col-md-3 col-12 offset-md-2 footer__subscribe">
 				<div class="footer__title">Подпишитесь на рассылку:</div>
 				<form action="#">
 					<input type="email" placeholder="Введите email">
 					<button class="submit"><img src="images/icos/read_more.svg" alt="" class="svg"></button>
 				</form>
 			</div>
-			<div class="col-auto ml-auto footer__social">
+			<div class="col-md-auto col-12 ml-auto footer__social">
 				<div class="footer__title">Будь в курсе:</div>
 				<div class="links">
 					<a href="#" class="fb"><img src="images/icos/social_fb.svg" alt="" class="svg"></a>

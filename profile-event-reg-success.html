@@ -13,6 +13,9 @@
 	<header class="header">
 		<div class="container">
 			<div class="row justify-content-end">
+				<div class="burger">
+					<span></span>
+				</div>
 				<nav class="header__main-menu col">
 					<a href="#">Главная</a>
 					<a href="#">Карта</a>
@@ -26,20 +29,33 @@
 
 <div class="event-page registration">
 	<div class="container">
-		<div class="row">
-			<div class="col-12 col-md-8 no-gutter-right left-side">
-				<div class="event-meta">
-					<div class="top-line">
-						<div class="event-meta__date">14 МАРТА 2018</div>
-						<div class="event-meta__reg-before">Регистрация до 09.03</div>
-						<div class="event-meta__live">LIVE</div>
-					</div>
-					<div class="event-meta__name">Презедентский марафон<br> имени Ельцина. Б. А.</div>
-					<div class="event-meta__where">Хабаровский край, Камсомольск на Амуре,<br> стадион «Ромашка»</div>
+		<div class="event-top-info">
+			<div class="row">
+				<div class="col-12 col-md-8 no-gutter-right left-side">
+					<div class="event-meta">
+						<div class="top-line">
+							<div class="event-meta__date">14 МАРТА 2018</div>
+							<div class="event-meta__reg-before">Регистрация до 09.03</div>
+							<div class="event-meta__live">LIVE</div>
+						</div>
+						<div class="event-meta__name">Презедентский марафон<br> имени Ельцина. Б. А.</div>
+						<div class="event-meta__where">Хабаровский край, Камсомольск на Амуре,<br> стадион «Ромашка»</div>
+					</div>				
 				</div>
+				<div class="col-md-4 col-12 no-gutter-left right-side map-side">
+					<div class="row">
+						<div class="map col-12">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1693.9434235142871!2d64.05820450742522!3d67.49712041906153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1536129872305" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-8 no-gutter-right left-side event-about-wrapper">
 				<div class="registation-form">
 					<div class="row">
-						<div class="col-7">
+						<div class="col-md-7 col-12">
 							<a href="#" class="url-back"><img src="images/turn_back.png" alt=""> Назад</a>
 							<div class="profile-tabs-navigation">
 								<a href="#">Регистрация</a>
@@ -57,11 +73,8 @@
 					
 				</div>
 			</div>
-			<div class="col-md-4 col-12 no-gutter-left right-side">
-				<div class="row">
-					<div class="map col-12">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1693.9434235142871!2d64.05820450742522!3d67.49712041906153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1536129872305" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
+			<div class="col-md-4 col-12 no-gutter-left right-side event-details-wrapper">
+
 					<div class="event-details col-12">
 						<div class="event-details__title">Детали</div>
 						<div class="event-details__info">
@@ -90,7 +103,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+
 			</div>
 		</div>
 	</div>
@@ -99,18 +112,18 @@
 <footer class="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-2 footer__contacts">
+			<div class="col-md-2 col-12 footer__contacts">
 				<div class="footer__title">Сотрудничество:</div>
 				<a href="mailto:info@myrace.ru" class="email">info@myrace.ru</a>
 			</div>
-			<div class="col-3 offset-2 footer__subscribe">
+			<div class="col-md-3 col-12 offset-md-2 footer__subscribe">
 				<div class="footer__title">Подпишитесь на рассылку:</div>
 				<form action="#">
 					<input type="email" placeholder="Введите email">
 					<button class="submit"><img src="images/icos/read_more.svg" alt="" class="svg"></button>
 				</form>
 			</div>
-			<div class="col-auto ml-auto footer__social">
+			<div class="col-md-auto col-12 ml-auto footer__social">
 				<div class="footer__title">Будь в курсе:</div>
 				<div class="links">
 					<a href="#" class="fb"><img src="images/icos/social_fb.svg" alt="" class="svg"></a>

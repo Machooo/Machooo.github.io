@@ -1,6 +1,11 @@
 (function(){
 	"use strict";
 
+	$('.header .burger').on('click', function(){
+		$(this).toggleClass('active');
+		$('.header__main-menu').toggleClass('active');
+	});
+
 	///// аккордеон в юзерах //////
 	$('.users-list__item .meta').on('click', function(){
 		var item = $(this).parent();
@@ -38,6 +43,7 @@
 
 	});
 
+	/// удаление юзера сквад ///
 	$(document).on('click', '.squad-list .item', function(e){
 		$(this).remove();
 	});
@@ -88,6 +94,7 @@
 	}
 
 
+	////// табы в регистрации //////
 	$('.registation-form__tabs a').on('click', function(e){
 		e.preventDefault();
 		var id = $(this).attr('data-tab');
@@ -95,29 +102,11 @@
 		$(this).addClass('active');
 		$('.registation-form .tab-content#' + id).addClass('active');
 	});
-	
-	////// INPUT FILE /////////
-	/*var wrapper = $( ".file_upload" ),
-        inp = $( ".file_upload input" ),
-        btn = $( ".file_upload button" ),
-        lbl = $( ".file_upload div" );
 
-    // Crutches for the :focus style:
-    inp.focus(function(){
-        wrapper.addClass( "focus" );
-    }).blur(function(){
-        wrapper.removeClass( "focus" );
-    });*/
 
+	///// custom file upload //////
     $(document).on('click', '.file_upload button', function(){
     	$(this).parent().find('input').click();
-    	changeFile();
-    });
-
-    function changeFile() {
-
-    	//console.log(button);
-
     	var wrapper = $(this).parent(),
 	        inp = wrapper.find( "input" ),
 	        btn = wrapper.find( "button" ),
@@ -141,8 +130,7 @@
 	        }else
 	            btn.text( file_name );
 	    }).change();
-    }
-
+    });
     
 
 
@@ -155,9 +143,19 @@
 
 	////// слайдер участников ///////
 	$('.event-peoples .owl-carousel').owlCarousel({
-		items: 6,
 		loop: true,
-		dots: false
+		dots: false,
+		responsive : {
+		    0 : {
+		       items: 2
+		    },
+		    480 : {
+		       items: 4
+		    },
+		    768 : {
+		        items: 6
+		    }
+		}
 	});
 
 	
