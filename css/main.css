@@ -479,11 +479,25 @@ body.homepage .header__main-menu a.log-in:hover {
 
 .filters-screen {
   min-height: 632px;
+  padding-top: 270px;
+  padding-bottom: 50px;
+}
+
+.filters-screen:before {
+  content: "";
+  position: absolute;
   background: url(../images/bg_pic.jpg) center 0 no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
-  padding-top: 270px;
-  padding-bottom: 50px;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+}
+
+.filters-screen > * {
+  position: relative;
+  z-index: 1;
 }
 
 .filters-screen__inputs {
@@ -1788,7 +1802,7 @@ hr {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 140px;
+  margin-bottom: 80px;
 }
 
 .sign-page .form-side .navigation a {
