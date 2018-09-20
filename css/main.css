@@ -3186,6 +3186,12 @@ hr {
     padding-bottom: 180px;
     padding-left: 15px;
     padding-right: 15px;
+    background: url(../images/bg_pic.jpg) center 0 no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+  }
+  .filters-screen:before {
+    display: none;
   }
   .filters-screen__inputs .tabs-navigation {
     margin-bottom: 20px;
