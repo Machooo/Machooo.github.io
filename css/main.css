@@ -324,6 +324,7 @@ body.homepage .header {
   top: 0;
   right: 0;
   background: none;
+  z-index: 10;
 }
 
 .header__main-menu {
@@ -3172,6 +3173,10 @@ hr {
     visibility: hidden;
     opacity: 0;
     z-index: 99;
+    padding: 20px 0;
+  }
+  body.homepage .header__main-menu a {
+    color: #253142;
   }
   .header__main-menu.active {
     visibility: visible;
@@ -3180,6 +3185,10 @@ hr {
   }
   .header__main-menu a {
     margin: 0 auto 15px !important;
+  }
+  .header__main-menu a.log-in {
+    border-color: #253142 !important;
+    margin-bottom: 0 !important;
   }
   .filters-screen {
     padding-top: 100px;
