@@ -1803,7 +1803,7 @@ hr {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .sign-page .form-side .navigation a {
@@ -2058,6 +2058,12 @@ hr {
 
 .sign-page .slider-side .owl-dots .owl-dot.active, .sign-page .slider-side .owl-dots .owl-dot:hover {
   background-color: #00dc83;
+}
+
+@media (max-width: 1366px) {
+  .sign-page .form-side .navigation {
+    margin-bottom: 50px;
+  }
 }
 
 .url-back {
