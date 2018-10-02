@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="row justify-content-end">
+				<div class="burger">
+					<span></span>
+				</div>
+				<nav class="header__main-menu col">
+					<a href="#">Главная</a>
+					<a href="#">Карта</a>
+					<a href="#">О проекте</a>
+					<a href="#">Поддержка</a>
+					<a href="#" class="log-in">Войти</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+<div class="event-page registration">
+	<div class="container">
+		<div class="event-top-info">
+			<div class="row">
+				<div class="col-12 col-md-8 no-gutter-right left-side">
+					<div class="event-meta">
+						<div class="top-line">
+							<div class="event-meta__date">14 МАРТА 2018</div>
+							<div class="event-meta__reg-before">Регистрация до 09.03</div>
+							<div class="event-meta__live">LIVE</div>
+						</div>
+						<div class="event-meta__name">Презедентский марафон<br> имени Ельцина. Б. А.</div>
+						<div class="event-meta__where">Хабаровский край, Камсомольск на Амуре,<br> стадион «Ромашка»</div>
+					</div>				
+				</div>
+				<div class="col-md-4 col-12 no-gutter-left right-side map-side">
+					<div class="row">
+						<div class="map col-12">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1693.9434235142871!2d64.05820450742522!3d67.49712041906153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1536129872305" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-8 no-gutter-right left-side">
+				<div class="registation-form">
+					<div class="row">
+						<div class="col-md-7 col-12">
+							<a href="#" class="url-back"><img src="images/turn_back.png" alt=""> Назад</a>
+							<div class="profile-tabs-navigation">
+								<a href="#" class="current">Регистрация</a>
+								<a href="#">Оплата</a>
+								<a href="#">Готово</a>
+							</div>
+							<div class="registation-form__tabs">
+								<a href="#" class="active" data-tab='alone'>Один</a>
+								<a href="#" data-tab='team'>Команда</a>
+								<a href="#" data-tab='squad'>Сборная</a>
+							</div>
+						</div>
+					</div>
+					<div class="tab-content" id="squad">
+						<form action="#">
+							<div class="row">
+								<div class="col-md-7 col-12">
+									<div class="row">
+										<h2 class="col-12">ИНФОРМАЦИЯ О ТРЕНЕРЕ</h2>
+										<div class="input-block col-md-6 col-12">
+											<label for="">Имя</label>
+											<input type="text" placeholder="Семен">
+										</div>
+										<div class="input-block col-md-6 col-12">
+											<label for="">Фамилия</label>
+											<input type="text" placeholder="Семенов">
+										</div>
+										<div class="w-100"></div>
+										<div class="input-block col-md-6 col-12">
+											<label for="">Отчество</label>
+											<input type="text">
+										</div>
+										<div class="input-block col-md-6 col-12">
+											<label for="">Пол</label>
+											<div class="radio flex">
+												<input type="radio" checked name="gender" id="male">
+												<label for="male">Мужской</label>
+												<input type="radio" name="gender" id="female">
+												<label for="female">Женский</label>
+											</div>
+										</div>
+										<div class="w-100"></div>
+										<div class="input-block select col-12">
+											<label for="">Дата рождения</label>
+											<div class="row">
+												<div class="col-4 no-gutter-right">
+													<div class="custom-select">
+														<select name="type" id="">
+															<option value="value">День</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-4 no-gutter">
+													<div class="custom-select">
+														<select name="type" id="">
+															<option value="value">Месяц</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-4 no-gutter-left">
+													<div class="custom-select">
+														<select name="type" id="">
+															<option value="value">Год</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<hr>
+
+										<h2 class="col-12">Контакты ТРЕНЕРа</h2>
+
+										<div class="input-block col-md-6 col-12">
+											<label for="">Телефон</label>
+											<input type="text" placeholder="">
+										</div>
+										<div class="input-block col-md-6 col-12">
+											<label for="">E-mail</label>
+											<input type="text" placeholder="">
+										</div>
+										<div class="input-block col-md-6 col-12">
+											<label for="">Страна</label>
+											<input type="text">
+										</div>
+										<div class="input-block col-md-6 col-12">
+											<label for="">Город</label>
+											<input type="text">
+										</div>
+										<div class="input-block col-md-6 col-12">
+											<label for="">Страна</label>
+											<input type="text">
+										</div>
+
+										<div class="w-100"></div>
+
+										<hr>
+
+										<h2 class="col-12">ДОБАВИТЬ ЧЛЕНА СБОРНОЙ</h2>
+										<div class="add-to-squad col-12">
+											<div class="row">
+												<div class="input-block col-md-6 col-12">
+													<label for="">Имя</label>
+													<input type="text" class="name" placeholder="Семен">
+												</div>
+												<div class="input-block col-md-6 col-12">
+													<label for="">Фамилия</label>
+													<input type="text" class="lastname" placeholder="Семенов">
+												</div>
+												<div class="w-100"></div>
+												<div class="input-block col-md-6 col-12">
+													<label for="">Отчество</label>
+													<input type="text">
+												</div>
+												<div class="input-block col-md-6 col-12">
+													<label for="">Пол</label>
+													<div class="radio flex">
+														<input type="radio" checked name="gender" id="male">
+														<label for="male">Мужской</label>
+														<input type="radio" name="gender" id="female">
+														<label for="female">Женский</label>
+													</div>
+												</div>
+												<div class="col-md-6 col-12 input-block select-border">
+													<label for="">Разряд</label>
+													<div class="custom-select">
+														<select name="type" id="">
+															<option value="value">КМС</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+														</select>
+													</div>
+												</div>
+
+												<div class="col-md-6 col-12 input-block add-squad-man">
+													<label for=""></label>
+													<button class="transparent">Добавить</button>
+												</div>
+											</div>
+										</div>
+
+										<div class="squad-list col-12">
+											<label for="">Члены команды:</label>
+											<div class="flex">
+												<div class="item" data-number='№ 2331'>Александр Возняков</div>
+												<div class="item" data-number='№ 1'>Игорь Стуцман</div>
+												<div class="item" data-number='№ 1337'>Владислав Уморов</div>
+												<div class="item" data-number='№ 555'>Развал Сараев</div>
+											</div>
+										</div>
+
+										<hr>
+										<h2 class="col-12">СОРЕВНОВАНИЕ</h2>
+										<div class="event-select col-12">
+											<div class="event-select__header row">
+												<div class="inline col-4">Дистанция</div>
+												<div class="inline col-4">Мест осталось</div>
+												<div class="inline col-4">Стоимость</div>
+											</div>
+											<div class="event-select__item row">
+												<div class="inline col-4">
+													<input type="radio" name="item" checked id="item1">
+													<label for="item1">11 км.</label>
+												</div>
+												<div class="inline col-4">36</div>
+												<div class="inline col-4">500 руб.</div>
+											</div>
+											<div class="event-select__item row">
+												<div class="inline col-4">
+													<input type="radio" name="item" id="item2">
+													<label for="item2">22 км.</label>
+												</div>
+												<div class="inline col-4">122</div>
+												<div class="inline col-4">1 500 руб.</div>
+											</div>
+											<div class="event-select__item row">
+												<div class="inline col-4">
+													<input type="radio" name="item" id="item3">
+													<label for="item3">44 км.</label>
+												</div>
+												<div class="inline col-4">1</div>
+												<div class="inline col-4">2 500 руб.</div>
+											</div>
+										</div>
+										
+										<div class="col-12 agreement">
+
+											<input type="checkbox" id="agree">
+											<label for="agree">Я согласен на обработку моих персональных данных</label>
+
+											<div class="w-100"></div>
+
+											<input type="checkbox" id="agree_reg">
+											<label for="agree_reg">Я согласен с условиями регистрации</label>
+
+										</div>
+
+										<div class="col-md-5 col-12">
+											<button>Готово</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-content" id="team">
+						<form action="#">
+							<div class="row">
+								<div class="col-md-7 col-12">
+									<div class="row">
+
+										<div class="input-block col-md-6 col-12">
+											<label for="">Название команды</label>
+											<input type="text" placeholder="Семен">
+										</div>
+
+										<div class="w-100"></div>
+
+										<div class="col-12">
+											<label for="">Добавить участников</label>
+											<div class="add-users">
+												
+												<div class="add-users__form">
+													<input type="text" placeholder="Имя или номер">
+													<input type="submit" value="">
+												</div>
+												<div class="add-users__list">
+													<div class="line">
+														<div class="name">Александр Возняков</div>
+														<div class="number">№ 2354</div>
+													</div>
+													<div class="line">
+														<div class="name">Александр Возняков</div>
+														<div class="number">№ 2354</div>
+													</div>
+													<div class="line">
+														<div class="name">Александр Возняков</div>
+														<div class="number">№ 2354</div>
+													</div>
+													<div class="line">
+														<div class="name">Александр Возняков</div>
+														<div class="number">№ 2354</div>
+													</div>
+												</div>
+											</div>
+											<div class="teammates-list">
+												<label for="">Члены команды:</label>
+												<div class="flex">
+													<div class="item" data-number='№ 2331'>Александр Возняков</div>
+													<div class="item" data-number='№ 1'>Игорь Стуцман</div>
+													<div class="item" data-number='№ 1337'>Владислав Уморов</div>
+													<div class="item" data-number='№ 555'>Развал Сараев</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-5 col-12">
+											<button>Создать</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-content active" id="alone">
+						<form action="#">
+							<div class="row">
+								<div class="col-md-7 col-12">
+									<div class="row">
+										<h2 class="col-12">ИНФОРМАЦИЯ</h2>
+										<div class="input-block col-md-6 col-12">
+											<label for="">Имя</label>
+											<input type="text" placeholder="Семен">
+										</div>
+										<div class="input-block col-md-6 col-12">
+											<label for="">Фамилия</label>
+											<input type="text" placeholder="Семенов">
+										</div>
+										<div class="w-100"></div>
+										<div class="input-block col-md-6 col-12">
+											<label for="">Отчество</label>
+											<input type="text">
+										</div>
+										<div class="input-block col-md-6 col-12">
+											<label for="">Пол</label>
+											<div class="radio flex">
+												<input type="radio" checked name="gender" id="male">
+												<label for="male">Мужской</label>
+												<input type="radio" name="gender" id="female">
+												<label for="female">Женский</label>
+											</div>
+										</div>
+										<div class="w-100"></div>
+										<div class="input-block select col-12">
+											<label for="">Дата рождения</label>
+											<div class="row">
+												<div class="col-4 no-gutter-right">
+													<div class="custom-select">
+														<select name="type" id="">
+															<option value="value">День</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-4 no-gutter">
+													<div class="custom-select">
+														<select name="type" id="">
+															<option value="value">Месяц</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-4 no-gutter-left">
+													<div class="custom-select">
+														<select name="type" id="">
+															<option value="value">Год</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+															<option value="value">Тип 1</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<hr>
+										<h2 class="col-12">КОНТАКТЫ</h2>
+										<div class="input-block col-md-6 col-12">
+											<label for="">Телефон</label>
+											<input type="text" placeholder="">
+										</div>
+										<div class="input-block col-md-6 col-12">
+											<label for="">E-mail</label>
+											<input type="text" placeholder="">
+										</div>
+										<div class="input-block col-md-6 col-12">
+											<label for="">Страна</label>
+											<input type="text">
+										</div>
+										<div class="input-block col-md-6 col-12">
+											<label for="">Город</label>
+											<input type="text">
+										</div>
+										<div class="input-block col-md-6 col-12">
+											<label for="">Страна</label>
+											<input type="text">
+										</div>
+										<hr>
+										<h2 class="col-12">СОРЕВНОВАНИЕ</h2>
+										<div class="event-select col-12">
+											<div class="event-select__header row">
+												<div class="inline col-4">Дистанция</div>
+												<div class="inline col-4">Мест осталось</div>
+												<div class="inline col-4">Стоимость</div>
+											</div>
+											<div class="event-select__item row">
+												<div class="inline col-4">
+													<input type="radio" name="item" checked id="item1">
+													<label for="item1">11 км.</label>
+												</div>
+												<div class="inline col-4">36</div>
+												<div class="inline col-4">500 руб.</div>
+											</div>
+											<div class="event-select__item row">
+												<div class="inline col-4">
+													<input type="radio" name="item" id="item2">
+													<label for="item2">22 км.</label>
+												</div>
+												<div class="inline col-4">122</div>
+												<div class="inline col-4">1 500 руб.</div>
+											</div>
+											<div class="event-select__item row">
+												<div class="inline col-4">
+													<input type="radio" name="item" id="item3">
+													<label for="item3">44 км.</label>
+												</div>
+												<div class="inline col-4">1</div>
+												<div class="inline col-4">2 500 руб.</div>
+											</div>
+										</div>
+										
+										<div class="spravka col-12">
+											<label for="">Медецинская справка</label>
+											<div class="file_upload">
+										        <button type="button" class="transparent">Выбрать файл</button>
+										        <div>Файл не выбран</div>
+										        <input type="file" name="spravka">
+										    </div>
+										</div>
+
+										<hr>
+										
+										<div class="col-12 agreement">
+
+											<input type="checkbox" id="agree">
+											<label for="agree">Я согласен на обработку моих персональных данных</label>
+
+											<div class="w-100"></div>
+
+											<input type="checkbox" id="agree_reg">
+											<label for="agree_reg">Я согласен с условиями регистрации</label>
+
+										</div>
+
+										<div class="col-md-5 col-12">
+											<button>Готово</button>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-12 no-gutter-left right-side event-details-wrapper">
+				<div class="event-details col-12">
+					<div class="event-details__title">Детали</div>
+					<div class="event-details__info">
+						<div class="inline type">Бег</div>
+						<div class="inline counter">202</div>
+						<div class="inline difficult">Региональные</div>
+					</div>
+					<div class="block-text">
+						<label for="">Дистанции</label>
+						<p>42 км.&nbsp;&nbsp;42 км.&nbsp;&nbsp;42 км.</p>
+					</div>
+					<div class="block-text">
+						<label for="">Стоимость участия:</label>
+						<p>от 500р.</p>
+					</div>
+					<div class="block-text contacts">
+						<div class="event-details__title">Контакты</div>
+						<p>marathon11@gmail.com<br> +7 (999) 564-02-28<br> Игорь Слуцкий</p>
+					</div>
+					<div class="block-text share">
+						<div class="event-details__title">Поделиться</div>
+						<div class="social__links">
+							<a href="#" class="fb"><img src="images/icos/social_fb.svg" alt="" class="svg"></a>
+							<a href="#" class="tw"><img src="images/icos/social_tw.svg" alt="" class="svg"></a>
+							<a href="#" class="inst"><img src="images/icos/social_inst.svg" alt="" class="svg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 col-12 footer__contacts">
+				<div class="footer__title">Сотрудничество:</div>
+				<a href="mailto:info@myrace.ru" class="email">info@myrace.ru</a>
+			</div>
+			<div class="col-md-3 col-12 offset-md-2 footer__subscribe">
+				<div class="footer__title">Подпишитесь на рассылку:</div>
+				<form action="#">
+					<input type="email" placeholder="Введите email">
+					<button class="submit"><img src="images/icos/read_more.svg" alt="" class="svg"></button>
+				</form>
+			</div>
+			<div class="col-md-auto col-12 ml-auto footer__social">
+				<div class="footer__title">Будь в курсе:</div>
+				<div class="links">
+					<a href="#" class="fb"><img src="images/icos/social_fb.svg" alt="" class="svg"></a>
+					<a href="#" class="tw"><img src="images/icos/social_tw.svg" alt="" class="svg"></a>
+					<a href="#" class="inst"><img src="images/icos/social_inst.svg" alt="" class="svg"></a>
+				</div>
+			</div>
+			<div class="col-12 footer__copyright">&copy; 2018 MyRace</div>
+		</div>
+	</div>
+</footer>
+
+<script src='//code.jquery.com/jquery-1.12.4.min.js'></script>
+<script type="text/javascript" src="js/libs.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="row justify-content-end">
+				<div class="burger">
+					<span></span>
+				</div>
+				<nav class="header__main-menu col">
+					<a href="#">Главная</a>
+					<a href="#">Карта</a>
+					<a href="#">О проекте</a>
+					<a href="#">Поддержка</a>
+					<a href="#" class="log-in">Войти</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+<div class="profile-page">
+	<div class="container">
+		<div class="row">
+			
+<div class="profile-meta col-md-12 col-lg-3">
+	<div class="profile-meta__avatar hidden-md-down">
+		<div class="photo" style="background-image: url(images/avatar.png);"></div>
+		<div class="ico"><img src="images/icos/up.svg" alt=""></div>
+	</div>
+	<div class="profile-meta__name">Сергей Русаков</div>
+	<div class="profile-meta__nav">
+		<nav>
+			<a href="#"><span class="ico"><img src="images/icos/prof_settings.svg" class="svg" alt=""></span> Настройки</a>
+			<a href="#"><span class="ico"><img src="images/icos/runner.svg" class="svg" alt=""></span> Соревнования</a>
+			<a href="#"><span class="ico"><img src="images/icos/prof_org.svg" class="svg" alt=""></span> Организация</a>
+			<a href="#"><span class="ico"><img src="images/icos/prof_results.svg" class="svg" alt=""></span> Результаты</a>
+			<a href="#" class="active"><span class="ico"><img src="images/icos/prof_notification.svg" class="svg" alt=""></span> Уведомления</a>
+		</nav>
+	</div>
+</div>
+
+			<div class="events-list-upcoming side-padding col-md-8 col-12 offset-md-1 profile-content">
+				<div class="row">
+
+					<h1 class="page-title">Соревнования</h1>
+
+					<div class="profile-tabs-navigation col-md-10 col-12">
+						<a href="#">Все</a>
+						<a href="#">Создать событие</a>
+						<a href="#" class="current">Управление</a>
+					</div>
+				
+					<div class="col-md-10 col-12 no-gutter event-about-wrapper">
+						<div class="events-list__item column row">
+							<div class="col-12 no-gutter-left info borderbottom">
+								<div class="row">
+									<div class="col-auto date">14 МАРТА 2018</div>
+									<div class="col registration-status">Регистрация открыта</div>
+								</div>
+								<h2>Презедентский марафон</h2>
+							</div>
+							<hr>
+							<div class="col-md-8 col-12 no-gutter meta">
+								<div class="row">
+									<div class="col-4"><div class="counter">202</div></div>
+									<div class="col live">LIVE</div>
+									<div class="w-100"></div>
+									<div class="col-4"><div class="type">Бег</div></div>
+									<div class="col difficult">Региональные</div>
+								</div>
+							</div>
+						</div>
+
+						<p>&nbsp;</p>
+
+						<div class="profile-tabs-navigation col-12">
+							<a href="#">Редактировать</a>
+							<a href="#" class="current">Участники (87)</a>
+							<a href="#">Рассылка</a>
+						</div>
+
+						<div class="event-users-search">
+							<h2>Поиск по участникам</h2>
+							<div class="row">
+								<div class="col-md-8 col-12 selects">
+									<div class="row">
+										<div class="col-4 no-gutter-right">
+											<div class="custom-select">
+												<select name="type" id="">
+													<option value="value">Пол</option>
+													<option value="value">Тип 1</option>
+													<option value="value">Тип 1</option>
+													<option value="value">Тип 1</option>
+													<option value="value">Тип 1</option>
+													<option value="value">Тип 1</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-4 no-gutter-right no-gutter-left">
+											<div class="custom-select">
+												<select name="type" id="">
+													<option value="value">День</option>
+													<option value="value">Тип 1</option>
+													<option value="value">Тип 1</option>
+													<option value="value">Тип 1</option>
+													<option value="value">Тип 1</option>
+													<option value="value">Тип 1</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-4 no-gutter-left">
+											<div class="custom-select">
+												<select name="type" id="">
+													<option value="value">День</option>
+													<option value="value">Тип 1</option>
+													<option value="value">Тип 1</option>
+													<option value="value">Тип 1</option>
+													<option value="value">Тип 1</option>
+													<option value="value">Тип 1</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-12">
+									<input type="text" class="username" placeholder="Имя, клуб или номер">
+								</div>
+							</div>
+
+						<div class="users-list">
+						<div class="users-list__item">
+							<div class="meta">
+								<div class="avatar" style="background-image: url(images/avatar.png);"></div>
+								<div class="text">
+									<div class="name">Александр Возняков</div>
+									<div class="info">22 км.&nbsp;|&nbsp;№ 2354&nbsp;|&nbsp;LifeRun</div>
+								</div>
+							</div>
+							<div class="hidden">
+								<div class="line">
+									<div class="label">ФИО</div>
+									<div class="value">Возняков Александр Алексеевич</div>
+								</div>
+								<div class="line">
+									<div class="label">Дата рождения</div>
+									<div class="value">11.07.1986</div>
+								</div>
+								<div class="line">
+									<div class="label">Мед. справка</div>
+									<div class="value"><a href='#' download="">Скачать</a></div>
+								</div>
+								<hr>
+								<h2>КОНТАКТЫ</h2>
+								<div class="line">
+									<div class="label">Телефон</div>
+									<div class="value"></div>
+								</div>
+								<div class="line">
+									<div class="label">Email</div>
+									<div class="value"><a href='mailto:sanek11@mail.ru'>sanek11@mail.ru</a></div>
+								</div>
+								<div class="line">
+									<div class="label">Откуда</div>
+									<div class="value">Россия, г. Челябинск</div>
+								</div>
+							</div>
+						</div>
+						<div class="users-list__item">
+							<div class="meta">
+								<div class="avatar" style="background-image: url(images/avatar.png);"></div>
+								<div class="text">
+									<div class="name">Александр Возняков</div>
+									<div class="info">22 км.&nbsp;|&nbsp;№ 2354&nbsp;|&nbsp;LifeRun</div>
+								</div>
+							</div>
+							<div class="hidden">
+								<div class="line">
+									<div class="label">ФИО</div>
+									<div class="value">Возняков Александр Алексеевич</div>
+								</div>
+								<div class="line">
+									<div class="label">Дата рождения</div>
+									<div class="value">11.07.1986</div>
+								</div>
+								<div class="line">
+									<div class="label">Мед. справка</div>
+									<div class="value"><a href='#' download="">Скачать</a></div>
+								</div>
+								<hr>
+								<h2>КОНТАКТЫ</h2>
+								<div class="line">
+									<div class="label">Телефон</div>
+									<div class="value"></div>
+								</div>
+								<div class="line">
+									<div class="label">Email</div>
+									<div class="value"><a href='mailto:sanek11@mail.ru'>sanek11@mail.ru</a></div>
+								</div>
+								<div class="line">
+									<div class="label">Откуда</div>
+									<div class="value">Россия, г. Челябинск</div>
+								</div>
+							</div>
+						</div>
+						<div class="users-list__item">
+							<div class="meta">
+								<div class="avatar" style="background-image: url(images/avatar.png);"></div>
+								<div class="text">
+									<div class="name">Александр Возняков</div>
+									<div class="info">22 км.&nbsp;|&nbsp;№ 2354&nbsp;|&nbsp;LifeRun</div>
+								</div>
+							</div>
+							<div class="hidden">
+								<div class="line">
+									<div class="label">ФИО</div>
+									<div class="value">Возняков Александр Алексеевич</div>
+								</div>
+								<div class="line">
+									<div class="label">Дата рождения</div>
+									<div class="value">11.07.1986</div>
+								</div>
+								<div class="line">
+									<div class="label">Мед. справка</div>
+									<div class="value"><a href='#' download="">Скачать</a></div>
+								</div>
+								<hr>
+								<h2>КОНТАКТЫ</h2>
+								<div class="line">
+									<div class="label">Телефон</div>
+									<div class="value"></div>
+								</div>
+								<div class="line">
+									<div class="label">Email</div>
+									<div class="value"><a href='mailto:sanek11@mail.ru'>sanek11@mail.ru</a></div>
+								</div>
+								<div class="line">
+									<div class="label">Откуда</div>
+									<div class="value">Россия, г. Челябинск</div>
+								</div>
+							</div>
+						</div>
+						<div class="users-list__item">
+							<div class="meta">
+								<div class="avatar" style="background-image: url(images/avatar.png);"></div>
+								<div class="text">
+									<div class="name">Александр Возняков</div>
+									<div class="info">22 км.&nbsp;|&nbsp;№ 2354&nbsp;|&nbsp;LifeRun</div>
+								</div>
+							</div>
+							<div class="hidden">
+								<div class="line">
+									<div class="label">ФИО</div>
+									<div class="value">Возняков Александр Алексеевич</div>
+								</div>
+								<div class="line">
+									<div class="label">Дата рождения</div>
+									<div class="value">11.07.1986</div>
+								</div>
+								<div class="line">
+									<div class="label">Мед. справка</div>
+									<div class="value"><a href='#' download="">Скачать</a></div>
+								</div>
+								<hr>
+								<h2>КОНТАКТЫ</h2>
+								<div class="line">
+									<div class="label">Телефон</div>
+									<div class="value"></div>
+								</div>
+								<div class="line">
+									<div class="label">Email</div>
+									<div class="value"><a href='mailto:sanek11@mail.ru'>sanek11@mail.ru</a></div>
+								</div>
+								<div class="line">
+									<div class="label">Откуда</div>
+									<div class="value">Россия, г. Челябинск</div>
+								</div>
+							</div>
+						</div>
+						<div class="users-list__item">
+							<div class="meta">
+								<div class="avatar" style="background-image: url(images/avatar.png);"></div>
+								<div class="text">
+									<div class="name">Александр Возняков</div>
+									<div class="info">22 км.&nbsp;|&nbsp;№ 2354&nbsp;|&nbsp;LifeRun</div>
+								</div>
+							</div>
+							<div class="hidden">
+								<div class="line">
+									<div class="label">ФИО</div>
+									<div class="value">Возняков Александр Алексеевич</div>
+								</div>
+								<div class="line">
+									<div class="label">Дата рождения</div>
+									<div class="value">11.07.1986</div>
+								</div>
+								<div class="line">
+									<div class="label">Мед. справка</div>
+									<div class="value"><a href='#' download="">Скачать</a></div>
+								</div>
+								<hr>
+								<h2>КОНТАКТЫ</h2>
+								<div class="line">
+									<div class="label">Телефон</div>
+									<div class="value"></div>
+								</div>
+								<div class="line">
+									<div class="label">Email</div>
+									<div class="value"><a href='mailto:sanek11@mail.ru'>sanek11@mail.ru</a></div>
+								</div>
+								<div class="line">
+									<div class="label">Откуда</div>
+									<div class="value">Россия, г. Челябинск</div>
+								</div>
+							</div>
+						</div>
+						<div class="users-list__item">
+							<div class="meta">
+								<div class="avatar" style="background-image: url(images/avatar.png);"></div>
+								<div class="text">
+									<div class="name">Александр Возняков</div>
+									<div class="info">22 км.&nbsp;|&nbsp;№ 2354&nbsp;|&nbsp;LifeRun</div>
+								</div>
+							</div>
+							<div class="hidden">
+								<div class="line">
+									<div class="label">ФИО</div>
+									<div class="value">Возняков Александр Алексеевич</div>
+								</div>
+								<div class="line">
+									<div class="label">Дата рождения</div>
+									<div class="value">11.07.1986</div>
+								</div>
+								<div class="line">
+									<div class="label">Мед. справка</div>
+									<div class="value"><a href='#' download="">Скачать</a></div>
+								</div>
+								<hr>
+								<h2>КОНТАКТЫ</h2>
+								<div class="line">
+									<div class="label">Телефон</div>
+									<div class="value"></div>
+								</div>
+								<div class="line">
+									<div class="label">Email</div>
+									<div class="value"><a href='mailto:sanek11@mail.ru'>sanek11@mail.ru</a></div>
+								</div>
+								<div class="line">
+									<div class="label">Откуда</div>
+									<div class="value">Россия, г. Челябинск</div>
+								</div>
+							</div>
+						</div>
+						<div class="users-list__item">
+							<div class="meta">
+								<div class="avatar" style="background-image: url(images/avatar.png);"></div>
+								<div class="text">
+									<div class="name">Александр Возняков</div>
+									<div class="info">22 км.&nbsp;|&nbsp;№ 2354&nbsp;|&nbsp;LifeRun</div>
+								</div>
+							</div>
+							<div class="hidden">
+								<div class="line">
+									<div class="label">ФИО</div>
+									<div class="value">Возняков Александр Алексеевич</div>
+								</div>
+								<div class="line">
+									<div class="label">Дата рождения</div>
+									<div class="value">11.07.1986</div>
+								</div>
+								<div class="line">
+									<div class="label">Мед. справка</div>
+									<div class="value"><a href='#' download="">Скачать</a></div>
+								</div>
+								<hr>
+								<h2>КОНТАКТЫ</h2>
+								<div class="line">
+									<div class="label">Телефон</div>
+									<div class="value"></div>
+								</div>
+								<div class="line">
+									<div class="label">Email</div>
+									<div class="value"><a href='mailto:sanek11@mail.ru'>sanek11@mail.ru</a></div>
+								</div>
+								<div class="line">
+									<div class="label">Откуда</div>
+									<div class="value">Россия, г. Челябинск</div>
+								</div>
+							</div>
+						</div>
+						<div class="users-list__item">
+							<div class="meta">
+								<div class="avatar" style="background-image: url(images/avatar.png);"></div>
+								<div class="text">
+									<div class="name">Александр Возняков</div>
+									<div class="info">22 км.&nbsp;|&nbsp;№ 2354&nbsp;|&nbsp;LifeRun</div>
+								</div>
+							</div>
+							<div class="hidden">
+								<div class="line">
+									<div class="label">ФИО</div>
+									<div class="value">Возняков Александр Алексеевич</div>
+								</div>
+								<div class="line">
+									<div class="label">Дата рождения</div>
+									<div class="value">11.07.1986</div>
+								</div>
+								<div class="line">
+									<div class="label">Мед. справка</div>
+									<div class="value"><a href='#' download="">Скачать</a></div>
+								</div>
+								<hr>
+								<h2>КОНТАКТЫ</h2>
+								<div class="line">
+									<div class="label">Телефон</div>
+									<div class="value"></div>
+								</div>
+								<div class="line">
+									<div class="label">Email</div>
+									<div class="value"><a href='mailto:sanek11@mail.ru'>sanek11@mail.ru</a></div>
+								</div>
+								<div class="line">
+									<div class="label">Откуда</div>
+									<div class="value">Россия, г. Челябинск</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 col-12 footer__contacts">
+				<div class="footer__title">Сотрудничество:</div>
+				<a href="mailto:info@myrace.ru" class="email">info@myrace.ru</a>
+			</div>
+			<div class="col-md-3 col-12 offset-md-2 footer__subscribe">
+				<div class="footer__title">Подпишитесь на рассылку:</div>
+				<form action="#">
+					<input type="email" placeholder="Введите email">
+					<button class="submit"><img src="images/icos/read_more.svg" alt="" class="svg"></button>
+				</form>
+			</div>
+			<div class="col-md-auto col-12 ml-auto footer__social">
+				<div class="footer__title">Будь в курсе:</div>
+				<div class="links">
+					<a href="#" class="fb"><img src="images/icos/social_fb.svg" alt="" class="svg"></a>
+					<a href="#" class="tw"><img src="images/icos/social_tw.svg" alt="" class="svg"></a>
+					<a href="#" class="inst"><img src="images/icos/social_inst.svg" alt="" class="svg"></a>
+				</div>
+			</div>
+			<div class="col-12 footer__copyright">&copy; 2018 MyRace</div>
+		</div>
+	</div>
+</footer>
+
+<script src='//code.jquery.com/jquery-1.12.4.min.js'></script>
+<script type="text/javascript" src="js/libs.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
