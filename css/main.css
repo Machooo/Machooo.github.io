@@ -379,6 +379,13 @@ body {
   margin-right: 27px;
 }
 
+@media (max-width: 1023px) {
+  .offer-screen__image .shadow, .offer-screen__image .wallet {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
 @media (max-width: 1199px) {
   .offer-screen__title {
     font-size: 46px;
@@ -402,6 +409,9 @@ body {
   }
   .offer-screen__title {
     color: #000;
+  }
+  .offer-screen__button {
+    margin-bottom: 0;
   }
 }
 
