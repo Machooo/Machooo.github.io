@@ -1,21 +1,19 @@
 {
-  "name": "bitrix",
+  "name": "vc-test",
   "version": "1.0.0",
   "main": "index.js",
-  "dependencies": {
-    "gulp-include-html": "^1.0.14"
-  },
   "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.1",
     "browser-sync": "^2.24.4",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-cache": "^1.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^3.1.0",
     "gulp-cssnano": "^2.1.3",
-    "gulp-file-include": "^2.0.1",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-imagemin": "^4.1.0",
     "gulp-rename": "^1.2.3",
     "gulp-sass": "^4.0.1",
@@ -28,5 +26,5 @@
   },
   "author": "Tishkin Ivan",
   "license": "ISC",
-  "description": "gulp, sass, include html, concat and min js/css, autoprefixer"
+  "description": "gulp, sass, concat and min js/css"
 }

@@ -1,19 +1,18 @@
-  var gulp         = require('gulp'),
-    sass         = require('gulp-sass'),
-    browserSync  = require('browser-sync'),
-    concat       = require('gulp-concat'),
-    concatCss    = require('gulp-concat-css');
-    uglify       = require('gulp-uglifyjs'),
-    cssnano      = require('gulp-cssnano'),
-    rename       = require('gulp-rename'),
-    del          = require('del'),
-    imagemin     = require('gulp-imagemin'),
-    jpgmin       = require('imagemin-jpegoptim'),
-    pngmin       = require('imagemin-pngquant'),
-    cache        = require('gulp-cache'),
-    autoprefixer = require('gulp-autoprefixer'),
-    gih          = require("gulp-include-html"),
-    deploy       = require('gulp-gh-pages');
+const gulp         = require('gulp'),
+      babel        = require('gulp-babel'),
+      sass         = require('gulp-sass'),
+      browserSync  = require('browser-sync'),
+      concat       = require('gulp-concat'),
+      concatCss    = require('gulp-concat-css');
+      uglify       = require('gulp-uglifyjs'),
+      cssnano      = require('gulp-cssnano'),
+      rename       = require('gulp-rename'),
+      del          = require('del'),
+      imagemin     = require('gulp-imagemin'),
+      jpgmin       = require('imagemin-jpegoptim'),
+      pngmin       = require('imagemin-pngquant'),
+      cache        = require('gulp-cache'),
+      autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function(){
   return gulp.src('app/sass/**/*.scss')
@@ -32,37 +31,8 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('scripts', function() {
-    return gulp.src([
-      'app/libs/owl.carousel/dist/owl.carousel.min.js',
-      'app/libs/fancybox/dist/jquery.fancybox.min.js'
-    ])
-    .pipe(concat('libs.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('app/js'));
-});
-
-gulp.task('css-libs', function() {
-    return gulp.src([
-      'app/libs/owl.carousel/dist/assets/owl.carousel.min.css',
-      'app/libs/fancybox/dist/jquery.fancybox.min.css'
-    ])
-    .pipe(concatCss('libs.min.css'))
-    .pipe(cssnano())
-    .pipe(gulp.dest('app/css'));
-});
-
-gulp.task('build-html' , function(){
-  return gulp.src("app/html/pages/*.html")
-  .pipe(gih({
-    baseDir:'app/html/'
-  }))
-  .pipe(gulp.dest("app"));
-});
-
-gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', 'build-html'], function() {
+gulp.task('watch', ['browser-sync'], function() {
     gulp.watch('app/sass/**/*.scss', ['sass']);
-    gulp.watch('app/html/**/*.html', ['build-html']);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
 });
@@ -99,28 +69,24 @@ gulp.task('clear', function () {
 });
 
 
-gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*")
-    .pipe(deploy({
-      remoteUrl: "https://github.com/Machooo/Machooo.github.io.git",
-      branch: "master"
-    }));
-});
-
-
 // Huyak huyak and to production
-gulp.task('build', ['clean', 'clear', 'img', 'sass', 'scripts', 'css-libs'], function() {
+gulp.task('build', ['clean', 'clear', 'img', 'sass'], function() {
 
-    var buildCss = gulp.src('app/css/**/*')
+    let buildCss = gulp.src('app/css/**/*')
+    .pipe(cssnano())
     .pipe(gulp.dest('dist/css'))
 
-    var buildFonts = gulp.src('app/fonts/**/*')
+    let buildFonts = gulp.src('app/fonts/**/*')
     .pipe(gulp.dest('dist/fonts'))
 
-    var buildJs = gulp.src('app/js/**/*')
+    let buildJs = gulp.src('app/js/**/*')
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
+    .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
 
-    var buildHtml = gulp.src('app/*.html')
+    let buildHtml = gulp.src('app/*.html')
     .pipe(gulp.dest('dist'));
 
 });
