@@ -4,7 +4,7 @@ function loadStyles() { // создание style перед закрывающ�
 	let style = document.createElement('link');
 	style.rel  = 'stylesheet';
     style.type = 'text/css';
-	style.href = '../css/main.css';
+	style.href = '/app/css/main.css';
 
 	document.body.appendChild(style);
 }
