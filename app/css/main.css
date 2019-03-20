@@ -578,6 +578,7 @@ strong, b {
           animation-name: show;
   -webkit-animation-duration: 300ms;
           animation-duration: 300ms;
+  margin-bottom: 30px;
 }
 
 .test__counter {
