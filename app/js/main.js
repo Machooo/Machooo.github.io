@@ -1,5 +1,13 @@
 "use strict";
 
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
 function loadStyles() { // создание style перед закрывающимcя body
 	let style = document.createElement('link');
 	style.rel  = 'stylesheet';
@@ -7,20 +15,6 @@ function loadStyles() { // создание style перед закрывающ�
 	style.href = '/app/css/main.css';
 
 	document.body.appendChild(style);
-}
-
-function socialShare(social) {
-	let title = "Как хорошо вы разбираетесь в новостях бизнеса?",
-		desc = "По следам публикаций на vc.ru.",
-		img = "images/test.png",
-		url = "https%3A//machooo.github.io/";
-	if(social == "vk") {
-		return 'https://vk.com/share.php?url='+url+'&title='+title+'&description='+desc+'&image='+img;
-	} else if(social == "fb") {
-		return "https://www.facebook.com/sharer/sharer.php?u="+url;
-	} else {
-		return "https://twitter.com/home?status="+title+"%20"+url;
-	}
 }
 
 function initTest(element, type) {
@@ -258,9 +252,13 @@ function initTest(element, type) {
 			html += '<img class="test__result-bg'+(resultImgClass ? resultImgClass : "") +'" src="'+resultImg+'">';
 			html += '<div class="test__name">'+resultText+'</div>';
 			html += '<div class="test__social-share">';
-			html += '<a href="'+socialShare('fb')+'" rel="noopener noreferrer" target="_blank"><img src="images/fb.svg" /><span>Поделиться</span></a>';
-			html += '<a href="'+socialShare('vk')+'" rel="noopener noreferrer" target="_blank"><img src="images/vk.svg" /></a>';
-			html += '<a href="'+socialShare('tw')+'" rel="noopener noreferrer" target="_blank"><img src="images/tw.svg" /></a>';
+			let title = "Как хорошо вы разбираетесь в новостях бизнеса?",
+				desc = "По следам публикаций на vc.ru.",
+				img = "images/test.png",
+				url = "https%3A//machooo.github.io/";
+			html += '<a href="https://www.facebook.com/sharer/sharer.php?u='+url+'" rel="noopener noreferrer" target="_blank"><img src="images/fb.svg" /><span>Поделиться</span></a>';
+			html += '<a href="https://vk.com/share.php?url='+url+'&title='+title+'&description='+desc+'&image='+img+'" rel="noopener noreferrer" target="_blank"><img src="images/vk.svg" /></a>';
+			html += '<a href="https://twitter.com/home?status='+title+'%20'+url+'" rel="noopener noreferrer" target="_blank"><img src="images/tw.svg" /></a>';
 			html += '</div>';
 			html += '<div class="test__button test__button--again">Пройти еще раз</div>';
 			html += '</div>';
