@@ -416,11 +416,11 @@ strong, b {
 }
 
 @media (min-width: 960px) {
-  .test .test__wrapper--large .test__intro-bg {
+  .test__wrapper--large .test__intro-bg {
     position: absolute;
     max-width: 100%;
   }
-  .test .test__wrapper--large .test__intro-bg--1 {
+  .test__wrapper--large .test__intro-bg--1 {
     top: 50px;
     right: 315px;
     -webkit-animation-name: wiggle;
@@ -432,7 +432,7 @@ strong, b {
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
   }
-  .test .test__wrapper--large .test__intro-bg--2 {
+  .test__wrapper--large .test__intro-bg--2 {
     top: 260px;
     left: 380px;
     -webkit-animation-name: wiggle2;
@@ -444,7 +444,7 @@ strong, b {
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
   }
-  .test .test__wrapper--large .test__intro-bg--3 {
+  .test__wrapper--large .test__intro-bg--3 {
     right: 0;
     bottom: 0;
   }

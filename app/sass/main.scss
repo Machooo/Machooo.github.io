@@ -253,7 +253,7 @@ $trns: 300ms all linear;
 
   @media(min-width: 960px) {
 
-    .test__wrapper--large {
+    &__wrapper--large {
       .test {
         &__intro-bg {
           position: absolute;
