@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="47" viewBox="0 0 66 47"><defs><path id="2kz7a" d="M766.13 315.37v-34h65v34z"/><path id="2kz7b" d="M816.13 327.37v-46h15v46z"/><clipPath id="2kz7c"><use fill="#fff" xlink:href="#2kz7a"/></clipPath></defs><g><g transform="translate(-766 -281)"><use fill="#ba4961" xlink:href="#2kz7b"/></g><g transform="translate(-766 -281)"><use fill="#e25a76" xlink:href="#2kz7a"/><use fill="#fff" fill-opacity="0" stroke="#e25a76" stroke-miterlimit="50" stroke-width="2" clip-path="url(&quot;#2kz7c&quot;)" xlink:href="#2kz7a"/></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="47px" viewBox="0 0 66 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="editorial_article_enter" transform="translate(-766.000000, -281.000000)">
+            <g id="bg" transform="translate(273.000000, 211.500000)">
+                <g transform="translate(0.000000, 0.320312)" id="Group-5">
+                    <g transform="translate(49.000000, 69.179688)">
+                        <g id="Group-4" transform="translate(444.125000, 0.369141)">
+                            <polygon id="Rectangle" fill="#BA4961" points="50 12 65 0 65 34 50 46"></polygon>
+                            <rect id="Rectangle" stroke="#E25A76" fill="#E25A76" x="0.5" y="0.5" width="64" height="33"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

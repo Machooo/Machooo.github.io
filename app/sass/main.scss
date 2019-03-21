@@ -192,7 +192,7 @@ $trns: 300ms all linear;
           right: -20px;
           top: -40px;
           content: "Тест";
-          background: url("../images/test_mark.png") center 0 no-repeat;
+          background: url("../images/test_mark.svg") center 0 no-repeat;
           width: 66px;
           height: 47px;
           color: #fff;
@@ -347,6 +347,7 @@ $trns: 300ms all linear;
         margin-left: 13px;
         width: 26px;
         height: 21px;
+        top: -2px;
         transition: $trns;
         background: url("../images/next.svg");
       }
