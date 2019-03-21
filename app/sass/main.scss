@@ -225,6 +225,7 @@ $trns: 300ms all linear;
     &--1 {
       top: -25px;
       left: 170px;
+      right: auto;
       max-width: 93px;
       height: auto;
       animation-name: wiggle;
@@ -234,7 +235,6 @@ $trns: 300ms all linear;
     }
     &--2 {
       top: 260px;
-      left: 380px;
       left: 62px;
       top: 275px;
       max-width: 160px;
@@ -261,6 +261,7 @@ $trns: 300ms all linear;
           &--1 {
             top: 50px;
             right: 315px;
+            left: auto;
             animation-name: wiggle;
             animation-duration: 4000ms;
             animation-iteration-count: infinite;

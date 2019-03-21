@@ -380,6 +380,7 @@ strong, b {
 .test__intro-bg--1 {
   top: -25px;
   left: 170px;
+  right: auto;
   max-width: 93px;
   height: auto;
   -webkit-animation-name: wiggle;
@@ -394,7 +395,6 @@ strong, b {
 
 .test__intro-bg--2 {
   top: 260px;
-  left: 380px;
   left: 62px;
   top: 275px;
   max-width: 160px;
@@ -423,6 +423,7 @@ strong, b {
   .test__wrapper--large .test__intro-bg--1 {
     top: 50px;
     right: 315px;
+    left: auto;
     -webkit-animation-name: wiggle;
             animation-name: wiggle;
     -webkit-animation-duration: 4000ms;
