@@ -388,9 +388,9 @@ function initTest(element, type, content) {
 
 			if(content.questions[currentIndex].answers[index].isCorrect) {
 				correctAnswers++; 
-				answer.className += "test__answer-item--correct";
+				answer.className += " test__answer-item--correct";
 			} else {
-				answer.className += "test__answer-item--wrong";
+				answer.className += " test__answer-item--wrong";
 			}
 			answer.innerHTML = el.textContent;
 
