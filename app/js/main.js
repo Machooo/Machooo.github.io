@@ -399,7 +399,7 @@ function initTest(element, type, content) {
 				container.removeChild(container.firstChild);
 			}
 
-			let description = createStyledElement('div', 'test__answers');
+			let description = createStyledElement('div', 'test__description');
 			description.innerHTML = content.questions[currentIndex].answers[index].description;
 
 			container.appendChild(answer);
