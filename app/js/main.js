@@ -313,7 +313,7 @@ function initTest(element, type, content) {
 			let counter = createStyledElement( 'div' , 'test__counter' );
 			counter.innerHTML = correctAnswers+' из '+content.questions.length+' правильных ответов';
 
-			let image = createStyledElement( 'div' , 'test__result-bg'+(resultImgClass ? resultImgClass : "" ));
+			let image = createStyledElement( 'img' , 'test__result-bg'+(resultImgClass ? resultImgClass : "" ));
 			image.src = resultImg;
 
 			let name = createStyledElement( 'div' , 'test__name' );
@@ -404,7 +404,7 @@ function initTest(element, type, content) {
 
 			container.appendChild(answer);
 			container.appendChild(description);
-			container.appendChild(button);
+			container.insertAfter(button, description);
 
 		}
 
