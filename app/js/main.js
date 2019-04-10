@@ -404,7 +404,7 @@ function initTest(element, type, content) {
 
 			container.appendChild(answer);
 			container.appendChild(description);
-			container.insertAfter(button, description);
+			container.after(button);
 
 		}
 
