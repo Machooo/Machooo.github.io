@@ -1392,6 +1392,7 @@ section, footer {
   }
   .install-app .left .links a {
     margin: 0 auto 15px;
+    display: block;
   }
 }
 
