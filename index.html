@@ -12,6 +12,7 @@
 <header class="header">
   <div class="container">
     <a class="header__logo" href="/"><img src="images/logo.png" alt=""></a>
+    <div class="header__burger"><span></span></div>
     <nav class="header__nav">
       <a href="#home">В НАЧАЛО</a>
       <a href="#about">O NAZZAR</a>
@@ -31,7 +32,7 @@
 
 <section class="offer-screen" id="home">
   <div class="container">
-    <h1 class="offer-screen__title">ТЕХНОЛОГИИ<br>БУДУЩЕГО</h1>
+    <h1 class="offer-screen__title">ТЕХНОЛОГИИ<br> БУДУЩЕГО</h1>
     <div class="offer-screen__sub-title">УЖЕ СЕГОДНЯ</div>
     <p>Расширьте Ваши возможности с Nazzar.<br> Измените мир прямо сейчас.</p>
     <a href="#install">Загрузить</a>
@@ -93,9 +94,9 @@
             услуге с приложением NazzAR.<br>
             Наведите камеру смартфона<br>
             на изображение со знаком.</p>
-
-            <p>*Работает при подключении<br>
+          <p>*Работает при подключении<br>
               к сети Интернет</p>
+          <img src="images/step_arrow.png" alt="">
         </div>
         <div class="how-its-work__step">
           <p>Дождитесь загрузки<br>
@@ -169,7 +170,7 @@
             Франшиза «Smart Card» предлагает<br>
             успешные решения для бизнеса, помощь<br>
             при выходе на новый рынок,<br>
-            консалтинговую и маркетинговуюподдержку.</p>
+            консалтинговую и маркетинговую поддержку.</p>
           <a href="#" class="read-more">Узнать больше</a>
         </div>
       </div>
@@ -252,6 +253,11 @@
   <script type="text/javascript">
     (function($){
       "use strict";
+
+      $(".header__burger, .header__nav a").on('click', function () {
+        $(".header__nav, .header__burger").toggleClass('active');
+      });
+
       $(".header__nav > a, .offer-screen a").on("click", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
