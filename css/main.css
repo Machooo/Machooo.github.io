@@ -455,7 +455,8 @@ p {
 .header__nav>ul ul {
     position: absolute;
     left: 0;
-    top: 20px;
+    top: 18px;
+    padding-top: 5px
     display: none;
 }
 
