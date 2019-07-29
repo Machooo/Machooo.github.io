@@ -247,25 +247,23 @@
   </div>
 </footer>
 
-<!--script type="text/javascript" src="js/libs.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script type="text/javascript">
-    (function($){
-      "use strict";
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+  (function($){
+    "use strict";
 
-      $(".header__burger, .header__nav a").on('click', function () {
-        $(".header__nav, .header__burger").toggleClass('active');
-      });
+    $(".header__burger, .header__nav a").on('click', function () {
+      $(".header__nav, .header__burger").toggleClass('active');
+    });
 
-      $(".header__nav > a, .offer-screen a").on("click", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-          top = $(id).offset().top;
-        $('body, html').animate({scrollTop: top}, 1000);
-      });
-    })(jQuery);
-  </script>
+    $(".header__nav > a, .offer-screen a").on("click", function (event) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+      $('body, html').animate({scrollTop: top}, 1000);
+    });
+  })(jQuery);
+</script>
 </body>
 </html>
 
