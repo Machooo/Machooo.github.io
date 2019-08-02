@@ -28,49 +28,19 @@
 
 <section class="slider-screen">
   <div class="container">
-    <div class="slick-slider">
-      <div class="slider-screen__item">
-        <div class="content">
-          <div class="title">Наслаждайтесь фотографией
-            и делитесь яркими эмоциями</div>
-          <p>Удобный и быстрый способ оживления фотографий</p>
-          <ul>
-            <li>Для частных лиц</li>
-            <li>Для компаний</li>
-            <li>Для партнера</li>
-          </ul>
-          <a href="#" class="btn">Регистрация</a>
-        </div>
-        <div class="img"><img src="images/slider_img.png" alt=""></div>
+    <div class="slider-screen__item">
+      <div class="content">
+        <div class="title">Наслаждайтесь фотографией
+          и делитесь яркими эмоциями</div>
+        <p>Удобный и быстрый способ оживления фотографий</p>
+        <ul>
+          <li>Для частных лиц</li>
+          <li>Для компаний</li>
+          <li>Для партнера</li>
+        </ul>
+        <a href="#" class="btn">Регистрация</a>
       </div>
-      <div class="slider-screen__item">
-        <div class="content">
-          <div class="title">Наслаждайтесь фотографией
-            и делитесь яркими эмоциями</div>
-          <p>Удобный и быстрый способ оживления фотографий</p>
-          <ul>
-            <li>Для частных лиц</li>
-            <li>Для компаний</li>
-            <li>Для партнера</li>
-          </ul>
-          <a href="#" class="btn">Регистрация</a>
-        </div>
-        <div class="img"><img src="images/slider_img.png" alt=""></div>
-      </div>
-      <div class="slider-screen__item">
-        <div class="content">
-          <div class="title">Наслаждайтесь фотографией
-            и делитесь яркими эмоциями</div>
-          <p>Удобный и быстрый способ оживления фотографий</p>
-          <ul>
-            <li>Для частных лиц</li>
-            <li>Для компаний</li>
-            <li>Для партнера</li>
-          </ul>
-          <a href="#" class="btn">Регистрация</a>
-        </div>
-        <div class="img"><img src="images/slider_img.png" alt=""></div>
-      </div>
+      <div class="img"><img src="images/slider_img.png" alt=""></div>
     </div>
   </div>
 </section>
@@ -89,7 +59,7 @@
             их с помощью NazzAR</p>
         </div>
         <div class="btns">
-          <a href="#">Узнать больше</a>
+          <a href="#about" class="more">Узнать больше</a>
         </div>
         <div class="price">
           <b>5</b> USD
@@ -106,7 +76,7 @@
             а продажи лучше.</p>
         </div>
         <div class="btns">
-          <a href="#">Узнать больше</a>
+          <a href="business.html">Узнать больше</a>
         </div>
         <div class="price">
           <b>100</b> USD
@@ -123,7 +93,7 @@
         </div>
         <div class="btns">
           <a href="#">Регистрация</a>
-          <a href="#">Узнать больше</a>
+          <a href="https://www.youtube.com/embed/mllPZ0-Ie1A" data-fancybox="more">Узнать больше</a>
         </div>
         <div class="price">
           <b>Договорная</b>
@@ -133,7 +103,7 @@
   </div>
 </section>
 
-<section class="about-service">
+<section class="about-service" id="about">
   <div class="container">
     <div class="title">О сервисе NazzAR</div>
     <div class="flex">
@@ -236,24 +206,20 @@
   </div>
 </footer>
 
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script type="text/javascript">
   (function($){
     "use strict";
 
-    $('.slick-slider').slick({
-      autoplay: true,
-      autoplaySpeed: 5000,
-    });
 
     $(".header__burger, .header__nav a").on('click', function () {
       $(".header__nav, .header__burger").toggleClass('active');
     });
 
-    $(".offer-screen a").on("click", function (event) {
+    $(".offer-screen a, .tariffs__item a.more").on("click", function (event) {
       event.preventDefault();
       var id  = $(this).attr('href'),
         top = $(id).offset().top;

@@ -1870,6 +1870,7 @@ section, footer {
 }
 
 @media(max-width: 1040px) {
+  .slider-screen__item,
   .how-service-work__list,
   .tariffs__list {
     flex-direction: column;
