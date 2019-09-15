@@ -1,6 +1,10 @@
 (function($){
 	"use strict";
 
+	$('.video__preview').on('click', function () {
+		$(this).parent().addClass('active');
+	});
+
 	$('.faq__item').on('click', function () {
 		$('.faq__item.active').removeClass('active');
 		$(this).addClass('active');
