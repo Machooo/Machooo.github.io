@@ -56,58 +56,8 @@
 		cloneWars();
 	});
 
-
-	var imagesPreview = function(input, placeToInsertImagePreview) {
-		if (input.files) {
-			var filesAmount = input.files.length;
-			for (var i = 0; i < filesAmount; i++) {
-				var reader = new FileReader();
-				reader.onload = function(event) {
-					$(placeToInsertImagePreview).append(`<div class="preview" data-id="" style="background-image: url('${event.target.result}');"></div>`)
-				}
-				reader.readAsDataURL(input.files[i]);
-			}
-		}
-	};
-
 	$('#gallery-photo-add').on('change', function() {
 		imagesPreview(this, 'div.gallery');
-	});
-
-	$(".map svg path, .map .hover").hover(
-		function() {
-			$(".map .hover.active, .map svg path.active").removeClass('active');
-			var hover = $(this).attr('data-hover');
-			$(".map .hover[data-hover='"+hover+"'], .map svg path[data-hover='"+hover+"']").addClass('active');
-		},
-		function() {
-			$(".map .hover.active, .map svg path.active").removeClass('active');
-		}
-	);
-
-	$('.slick').slick({
-		infinite: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		nextArrow: $('.offer-screen__slider .next-proj'),
-		prevArrow: false,
-		asNavFor: '.slick-images'
-	});
-
-	$('.slick-images').slick({
-		infinite: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		nextArrow: false,
-		prevArrow: false,
-		asNavFor: '.slick'
-	});
-
-	var $status = $('.offer-screen__slider .number span');
-
-	$('.slick').on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
-		var i = (currentSlide ? currentSlide : 0) + 1;
-		$status.text(`0${i}`);
 	});
 
 	$('.photo-gallery__slider').slick({
@@ -120,29 +70,15 @@
 		dots: true
 	});
 
-	$('.portfolio__carousel').slick({
-		infinite: true,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		prevArrow: false,
-		asNavFor: '.portfolio__slider',
-		responsive: [
-			{
-				breakpoint: 1100,
-				settings: {
-					slidesToShow: 1
-				}
-			}
-		]
-	});
-	
-	$('.portfolio__item .img').on('click', function () {
-		$(this).closest('.portfolio__item').find('.img.active').removeClass('active');
-		$(this).addClass('active');
-		var img = $(this).attr('data-img');
-		$('.portfolio__item .main-img.active').removeClass('active');
-		$('.portfolio__item .main-img[data-img="'+img+'"]').addClass('active');
-	});
+  $('.reviews__slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    margin: 30,
+    nextArrow: $('.reviews__next'),
+    prevArrow: $('.reviews__prev'),
+    dots: true
+  });
 
 
 	$('.show-popup').on('click', function(e){
