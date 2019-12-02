@@ -1,0 +1,64 @@
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@each $infix in $grid-infixes {
+  @include grid-breakpoint($infix) {
+    $-infix: '-' + $infix;
+    $grid-column: map-get($grid-columns, $infix);
+
+    .container {
+      width: $grid-column * map-get($grid-column-width, $infix);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @if ($infix == $grid-mobile-infix) {
+      .container {
+        width: 85.7%;
+      }
+    }
+
+    // Базовые классы '.col-{bp}'
+    .col#{$-infix} {
+      position: relative;
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+      min-height: 1px; // Предотвращает крах пустых столбцов
+      width: 100%;
+    }
+    @for $i from 1 through $grid-column {
+      .col#{$-infix}-#{$i} {
+        position: relative;
+        flex: 0 0 map-get($grid-column-width, $infix) * $i;
+        max-width: map-get($grid-column-width, $infix) * $i; // Fix IE10+ и Firefox
+        min-height: 1px; // Предотвращает крах пустых столбцов
+        width: 100%;
+      }
+    }
+    @for $i from 0 through $grid-column {
+      .order#{$-infix}-#{$i} {
+        order: $i;
+      }
+    }
+    // '$columns - 1' потому что смещение по ширине всей строки невозможно
+    @for $i from 0 through ($grid-column - 1) {
+      .offset#{$-infix}-#{$i} {
+        margin-left: map-get($grid-column-width, $infix) * $i;
+      }
+    }
+
+    .wrap {
+      padding-top: map-get($grid-spacers-indent-10, $infix);
+      padding-bottom: map-get($grid-spacers-indent-14, $infix);
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import '../mixins/spacing';
+
+@each $infix in $grid-infixes {
+  $-infix: breakpoint-infix($infix);
+
+  @each $prop, $abbrev in (margin-bottom: mb, margin-top: mt, padding-bottom: pb, padding-top: pt) {
+    @include breakpoint($infix) {
+      .#{$abbrev}#{$-infix}-0 {
+        #{$prop}: 0;
+      }
+    }
+    .#{$abbrev}#{$-infix}-1 {
+      @include make-spacing($prop, $grid-spacers-indent-1, $infix);
+    }
+    .#{$abbrev}#{$-infix}-2 {
+      @include make-spacing($prop, $grid-spacers-indent-2, $infix);
+    }
+    .#{$abbrev}#{$-infix}-3 {
+      @include make-spacing($prop, $grid-spacers-indent-3, $infix);
+    }
+    .#{$abbrev}#{$-infix}-4 {
+      @include make-spacing($prop, $grid-spacers-indent-4, $infix);
+    }
+    .#{$abbrev}#{$-infix}-6 {
+      @include make-spacing($prop, $grid-spacers-indent-6, $infix);
+    }
+    .#{$abbrev}#{$-infix}-8 {
+      @include make-spacing($prop, $grid-spacers-indent-8, $infix);
+    }
+    .#{$abbrev}#{$-infix}-10 {
+      @include make-spacing($prop, $grid-spacers-indent-10, $infix);
+    }
+    .#{$abbrev}#{$-infix}-14 {
+      @include make-spacing($prop, $grid-spacers-indent-14, $infix);
+    }
+  }
+}

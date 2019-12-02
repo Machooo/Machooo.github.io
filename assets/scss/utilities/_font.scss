@@ -1,0 +1,42 @@
+@import '../mixins/fonts';
+
+@each $infix in $grid-infixes {
+  @include breakpoint($infix) {
+    // Базовые размеры шрифтов
+    .fs-xl {
+      @include make-font-size(map-get($grid-font-xl-size, $infix));
+      font-weight: 500;
+      margin-bottom: map-get($grid-spacers-indent-4, $infix);
+    }
+    .fs-l {
+      @include make-font-size(map-get($grid-font-l-size, $infix));
+      font-weight: 500;
+      margin-bottom: map-get($grid-spacers-indent-2, $infix);
+    }
+    .fs-m {
+      @include make-font-size(map-get($grid-font-m-size, $infix));
+      font-weight: normal;
+      margin-bottom: map-get($grid-spacers-indent-1, $infix);
+    }
+    .fs-s {
+      @include make-font-size(map-get($grid-font-s-size, $infix));
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+    .fs-xs {
+      @include make-font-size(map-get($grid-font-xs-size, $infix));
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.fw-bold {
+  font-weight: bold !important;
+}
+.fw-medium {
+  font-weight: 500 !important;
+}
+.fw-regular {
+  font-weight: normal !important;
+}

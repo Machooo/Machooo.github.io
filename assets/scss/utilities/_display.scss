@@ -1,0 +1,15 @@
+@each $infix in $grid-infixes {
+  @include breakpoint($infix) {
+    $-infix: breakpoint-infix($infix);
+
+    .d#{$-infix}-none {
+      display: none !important;
+    }
+    .d#{$-infix}-block {
+      display: block !important;
+    }
+    .d#{$-infix}-flex {
+      display: flex !important;
+    }
+  }
+}
