@@ -1,4 +1,0 @@
-@mixin make-font-size($size) {
-  font-size: $size;
-  line-height: map-get($grid-font-height, $size);
-}
