@@ -1,9 +1,536 @@
-<!doctype html>
-<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
-  <head>
-    <title>pwa</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1"><meta data-n-head="ssr" data-hid="description" name="description" content=">"><meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes"><meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="pwa"><meta data-n-head="ssr" data-hid="theme-color" name="theme-color" content="#fff"><meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website"><meta data-n-head="ssr" data-hid="og:title" name="og:title" property="og:title" content="pwa"><meta data-n-head="ssr" data-hid="og:site_name" name="og:site_name" property="og:site_name" content="pwa"><meta data-n-head="ssr" data-hid="og:description" name="og:description" property="og:description" content=">"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"><link data-n-head="ssr" rel="manifest" href="/_nuxt/manifest.136cb378.json"><link data-n-head="ssr" rel="shortcut icon" href="/_nuxt/icons/icon_64.5f6a36.png"><link data-n-head="ssr" rel="apple-touch-icon" href="/_nuxt/icons/icon_512.5f6a36.png" sizes="512x512"><link rel="preload" href="/_nuxt/4a8c849165ed9331a341.js" as="script"><link rel="preload" href="/_nuxt/cbd77a0c2dffa161dfae.js" as="script"><link rel="preload" href="/_nuxt/41236e074a7bfd2f564e.js" as="script"><link rel="preload" href="/_nuxt/6525f649d69a83ad149b.js" as="script"><link rel="preload" href="/_nuxt/a88350f1dd7a6adbd526.js" as="script"><style data-vue-ssr-id="3191d5ad:0 84455a9e:0 2e107364:0">.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;-webkit-transition:width .1s,opacity .4s;transition:width .1s,opacity .4s;background-color:#fff;z-index:999999}.nuxt-progress.nuxt-progress-notransition{-webkit-transition:none;transition:none}.nuxt-progress-failed{background-color:red}html{line-height:1.15;-webkit-text-size-adjust:100%}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,main,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}@font-face{font-family:AngleciaProTitle;font-display:swap;font-style:normal;font-weight:700;src:url(/theme/main/fonts/AngleciaProTitle/AngleciaProTitle-Bold.woff2) format("woff2"),url(/theme/main/fonts/AngleciaProTitle/AngleciaProTitle-Bold.woff) format("woff"),url(/theme/main/fonts/AngleciaProTitle/AngleciaProTitle-Bold.ttf) format("truetype"),url(/theme/main/fonts/AngleciaProTitle/AngleciaProTitle-Bold.svg#AngleciaProTitle) format("svg")}@font-face{font-family:TochkaSans;font-display:swap;font-style:normal;font-weight:400;src:url(/theme/main/fonts/TochkaSans/TochkaSans-Light.eot);src:url(/theme/main/fonts/TochkaSans/TochkaSans-Light.eot?#iefix) format("embedded-opentype"),url(/theme/main/fonts/TochkaSans/TochkaSans-Light.woff2) format("woff2"),url(/theme/main/fonts/TochkaSans/TochkaSans-Light.woff) format("woff"),url(/theme/main/fonts/TochkaSans/TochkaSans-Light.ttf) format("truetype"),url(/theme/main/fonts/TochkaSans/TochkaSans-Light.svg#Geometria) format("svg")}@font-face{font-family:TochkaSans;font-display:swap;font-style:normal;font-weight:500;src:url(/theme/main/fonts/TochkaSans/TochkaSans-Demi.eot);src:url(/theme/main/fonts/TochkaSans/TochkaSans-Demi.eot?#iefix) format("embedded-opentype"),url(/theme/main/fonts/TochkaSans/TochkaSans-Demi.woff2) format("woff2"),url(/theme/main/fonts/TochkaSans/TochkaSans-Demi.woff) format("woff"),url(/theme/main/fonts/TochkaSans/TochkaSans-Demi.ttf) format("truetype"),url(/theme/main/fonts/TochkaSans/TochkaSans-Demi.svg#Geometria) format("svg")}@font-face{font-family:TochkaSans;font-display:swap;font-style:normal;font-weight:700;src:url(/theme/main/fonts/TochkaSans/TochkaSans-Bold.eot);src:url(/theme/main/fonts/TochkaSans/TochkaSans-Bold.eot?#iefix) format("embedded-opentype"),url(/theme/main/fonts/TochkaSans/TochkaSans-Bold.woff2) format("woff2"),url(/theme/main/fonts/TochkaSans/TochkaSans-Bold.woff) format("woff"),url(/theme/main/fonts/TochkaSans/TochkaSans-Bold.ttf) format("truetype"),url(/theme/main/fonts/TochkaSans/TochkaSans-Bold.svg#Geometria) format("svg")}html{font-size:8px}body{font-family:TochkaSans,sans-serif;font-size:16px;line-height:24px}.h1,h1{font-size:72px;line-height:80px}.h1,.h2,h1,h2{font-family:AngleciaProTitle,serif;font-weight:700;margin-bottom:6rem}.h2,h2{font-size:56px;line-height:64px}.h3,h3{font-family:AngleciaProTitle,serif;font-weight:700;font-size:36px;line-height:48px;margin-bottom:4rem}@media (min-width:912px) and (max-height:760px){body{font-family:TochkaSans,sans-serif;font-size:14px;line-height:20px}.h1,h1{font-size:48px;line-height:56px}.h1,.h2,h1,h2{font-family:AngleciaProTitle,serif;font-weight:700;margin-bottom:4rem}.h2,h2{font-size:40px;line-height:48px}.h3,h3{font-family:AngleciaProTitle,serif;font-weight:700;font-size:28px;line-height:40px;margin-bottom:3rem}}@media (max-width:1199px){body{font-family:TochkaSans,sans-serif;font-size:14px;line-height:20px}.h1,h1{font-size:48px;line-height:56px}.h1,.h2,h1,h2{font-family:AngleciaProTitle,serif;font-weight:700;margin-bottom:4rem}.h2,h2{font-size:40px;line-height:48px}.h3,h3{font-family:AngleciaProTitle,serif;font-weight:700;font-size:28px;line-height:40px;margin-bottom:3rem}}@media (max-width:911px){body{font-family:TochkaSans,sans-serif;font-size:14px;line-height:20px}.h1,h1{font-size:48px;line-height:56px}.h1,.h2,h1,h2{font-family:AngleciaProTitle,serif;font-weight:700;margin-bottom:4rem}.h2,h2{font-size:40px;line-height:48px}.h3,h3{font-family:AngleciaProTitle,serif;font-weight:700;font-size:28px;line-height:40px;margin-bottom:3rem}}@media (max-width:768px){body{font-family:TochkaSans,sans-serif;font-size:14px;line-height:20px}.h1,h1{font-size:48px;line-height:56px}.h1,.h2,h1,h2{font-family:AngleciaProTitle,serif;font-weight:700;margin-bottom:4rem}.h2,h2{font-size:40px;line-height:48px}.h3,h3{font-family:AngleciaProTitle,serif;font-weight:700;font-size:28px;line-height:40px;margin-bottom:3rem}}@media (max-width:623px){body{font-family:TochkaSans,sans-serif;font-size:12px;line-height:16px}.h1,h1{font-size:32px;line-height:40px}.h1,.h2,h1,h2{font-family:AngleciaProTitle,serif;font-weight:700;margin-bottom:4rem}.h2,h2{font-size:24px;line-height:36px}.h3,h3{font-family:AngleciaProTitle,serif;font-weight:700;font-size:20px;line-height:28px;margin-bottom:3rem}}.col{flex-basis:0;-webkit-box-flex:1;flex-grow:1;width:100%}.row{display:-webkit-box;display:flex;flex-wrap:wrap}@media (min-width:1200px) and (min-height:761px){.container{width:1152px;margin-left:auto;margin-right:auto}.col-xl{position:relative;flex-basis:0;-webkit-box-flex:1;flex-grow:1;max-width:100%;min-height:1px;width:100%}.col-xl-1{flex:0 0 24px;max-width:24px}.col-xl-1,.col-xl-2{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-2{flex:0 0 48px;max-width:48px}.col-xl-3{flex:0 0 72px;max-width:72px}.col-xl-3,.col-xl-4{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-4{flex:0 0 96px;max-width:96px}.col-xl-5{flex:0 0 120px;max-width:120px}.col-xl-5,.col-xl-6{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-6{flex:0 0 144px;max-width:144px}.col-xl-7{flex:0 0 168px;max-width:168px}.col-xl-7,.col-xl-8{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-8{flex:0 0 192px;max-width:192px}.col-xl-9{flex:0 0 216px;max-width:216px}.col-xl-10,.col-xl-9{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-10{flex:0 0 240px;max-width:240px}.col-xl-11{flex:0 0 264px;max-width:264px}.col-xl-11,.col-xl-12{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-12{flex:0 0 288px;max-width:288px}.col-xl-13{flex:0 0 312px;max-width:312px}.col-xl-13,.col-xl-14{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-14{flex:0 0 336px;max-width:336px}.col-xl-15{flex:0 0 360px;max-width:360px}.col-xl-15,.col-xl-16{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-16{flex:0 0 384px;max-width:384px}.col-xl-17{flex:0 0 408px;max-width:408px}.col-xl-17,.col-xl-18{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-18{flex:0 0 432px;max-width:432px}.col-xl-19{flex:0 0 456px;max-width:456px}.col-xl-19,.col-xl-20{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-20{flex:0 0 480px;max-width:480px}.col-xl-21{flex:0 0 504px;max-width:504px}.col-xl-21,.col-xl-22{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-22{flex:0 0 528px;max-width:528px}.col-xl-23{flex:0 0 552px;max-width:552px}.col-xl-23,.col-xl-24{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-24{flex:0 0 576px;max-width:576px}.col-xl-25{flex:0 0 600px;max-width:600px}.col-xl-25,.col-xl-26{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-26{flex:0 0 624px;max-width:624px}.col-xl-27{flex:0 0 648px;max-width:648px}.col-xl-27,.col-xl-28{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-28{flex:0 0 672px;max-width:672px}.col-xl-29{flex:0 0 696px;max-width:696px}.col-xl-29,.col-xl-30{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-30{flex:0 0 720px;max-width:720px}.col-xl-31{flex:0 0 744px;max-width:744px}.col-xl-31,.col-xl-32{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-32{flex:0 0 768px;max-width:768px}.col-xl-33{flex:0 0 792px;max-width:792px}.col-xl-33,.col-xl-34{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-34{flex:0 0 816px;max-width:816px}.col-xl-35{flex:0 0 840px;max-width:840px}.col-xl-35,.col-xl-36{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-36{flex:0 0 864px;max-width:864px}.col-xl-37{flex:0 0 888px;max-width:888px}.col-xl-37,.col-xl-38{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-38{flex:0 0 912px;max-width:912px}.col-xl-39{flex:0 0 936px;max-width:936px}.col-xl-39,.col-xl-40{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-40{flex:0 0 960px;max-width:960px}.col-xl-41{flex:0 0 984px;max-width:984px}.col-xl-41,.col-xl-42{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-42{flex:0 0 1008px;max-width:1008px}.col-xl-43{flex:0 0 1032px;max-width:1032px}.col-xl-43,.col-xl-44{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-44{flex:0 0 1056px;max-width:1056px}.col-xl-45{flex:0 0 1080px;max-width:1080px}.col-xl-45,.col-xl-46{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-46{flex:0 0 1104px;max-width:1104px}.col-xl-47{flex:0 0 1128px;max-width:1128px}.col-xl-47,.col-xl-48{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xl-48{flex:0 0 1152px;max-width:1152px}.order-xl-0{-webkit-box-ordinal-group:1;order:0}.order-xl-1{-webkit-box-ordinal-group:2;order:1}.order-xl-2{-webkit-box-ordinal-group:3;order:2}.order-xl-3{-webkit-box-ordinal-group:4;order:3}.order-xl-4{-webkit-box-ordinal-group:5;order:4}.order-xl-5{-webkit-box-ordinal-group:6;order:5}.order-xl-6{-webkit-box-ordinal-group:7;order:6}.order-xl-7{-webkit-box-ordinal-group:8;order:7}.order-xl-8{-webkit-box-ordinal-group:9;order:8}.order-xl-9{-webkit-box-ordinal-group:10;order:9}.order-xl-10{-webkit-box-ordinal-group:11;order:10}.order-xl-11{-webkit-box-ordinal-group:12;order:11}.order-xl-12{-webkit-box-ordinal-group:13;order:12}.order-xl-13{-webkit-box-ordinal-group:14;order:13}.order-xl-14{-webkit-box-ordinal-group:15;order:14}.order-xl-15{-webkit-box-ordinal-group:16;order:15}.order-xl-16{-webkit-box-ordinal-group:17;order:16}.order-xl-17{-webkit-box-ordinal-group:18;order:17}.order-xl-18{-webkit-box-ordinal-group:19;order:18}.order-xl-19{-webkit-box-ordinal-group:20;order:19}.order-xl-20{-webkit-box-ordinal-group:21;order:20}.order-xl-21{-webkit-box-ordinal-group:22;order:21}.order-xl-22{-webkit-box-ordinal-group:23;order:22}.order-xl-23{-webkit-box-ordinal-group:24;order:23}.order-xl-24{-webkit-box-ordinal-group:25;order:24}.order-xl-25{-webkit-box-ordinal-group:26;order:25}.order-xl-26{-webkit-box-ordinal-group:27;order:26}.order-xl-27{-webkit-box-ordinal-group:28;order:27}.order-xl-28{-webkit-box-ordinal-group:29;order:28}.order-xl-29{-webkit-box-ordinal-group:30;order:29}.order-xl-30{-webkit-box-ordinal-group:31;order:30}.order-xl-31{-webkit-box-ordinal-group:32;order:31}.order-xl-32{-webkit-box-ordinal-group:33;order:32}.order-xl-33{-webkit-box-ordinal-group:34;order:33}.order-xl-34{-webkit-box-ordinal-group:35;order:34}.order-xl-35{-webkit-box-ordinal-group:36;order:35}.order-xl-36{-webkit-box-ordinal-group:37;order:36}.order-xl-37{-webkit-box-ordinal-group:38;order:37}.order-xl-38{-webkit-box-ordinal-group:39;order:38}.order-xl-39{-webkit-box-ordinal-group:40;order:39}.order-xl-40{-webkit-box-ordinal-group:41;order:40}.order-xl-41{-webkit-box-ordinal-group:42;order:41}.order-xl-42{-webkit-box-ordinal-group:43;order:42}.order-xl-43{-webkit-box-ordinal-group:44;order:43}.order-xl-44{-webkit-box-ordinal-group:45;order:44}.order-xl-45{-webkit-box-ordinal-group:46;order:45}.order-xl-46{-webkit-box-ordinal-group:47;order:46}.order-xl-47{-webkit-box-ordinal-group:48;order:47}.order-xl-48{-webkit-box-ordinal-group:49;order:48}.offset-xl-0{margin-left:0}.offset-xl-1{margin-left:24px}.offset-xl-2{margin-left:48px}.offset-xl-3{margin-left:72px}.offset-xl-4{margin-left:96px}.offset-xl-5{margin-left:120px}.offset-xl-6{margin-left:144px}.offset-xl-7{margin-left:168px}.offset-xl-8{margin-left:192px}.offset-xl-9{margin-left:216px}.offset-xl-10{margin-left:240px}.offset-xl-11{margin-left:264px}.offset-xl-12{margin-left:288px}.offset-xl-13{margin-left:312px}.offset-xl-14{margin-left:336px}.offset-xl-15{margin-left:360px}.offset-xl-16{margin-left:384px}.offset-xl-17{margin-left:408px}.offset-xl-18{margin-left:432px}.offset-xl-19{margin-left:456px}.offset-xl-20{margin-left:480px}.offset-xl-21{margin-left:504px}.offset-xl-22{margin-left:528px}.offset-xl-23{margin-left:552px}.offset-xl-24{margin-left:576px}.offset-xl-25{margin-left:600px}.offset-xl-26{margin-left:624px}.offset-xl-27{margin-left:648px}.offset-xl-28{margin-left:672px}.offset-xl-29{margin-left:696px}.offset-xl-30{margin-left:720px}.offset-xl-31{margin-left:744px}.offset-xl-32{margin-left:768px}.offset-xl-33{margin-left:792px}.offset-xl-34{margin-left:816px}.offset-xl-35{margin-left:840px}.offset-xl-36{margin-left:864px}.offset-xl-37{margin-left:888px}.offset-xl-38{margin-left:912px}.offset-xl-39{margin-left:936px}.offset-xl-40{margin-left:960px}.offset-xl-41{margin-left:984px}.offset-xl-42{margin-left:1008px}.offset-xl-43{margin-left:1032px}.offset-xl-44{margin-left:1056px}.offset-xl-45{margin-left:1080px}.offset-xl-46{margin-left:1104px}.offset-xl-47{margin-left:1128px}.wrap{padding-top:10rem;padding-bottom:14rem}}@media (min-width:912px) and (max-height:760px){.container{width:864px;margin-left:auto;margin-right:auto}.col-l{position:relative;flex-basis:0;-webkit-box-flex:1;flex-grow:1;max-width:100%;min-height:1px;width:100%}.col-l-1{flex:0 0 24px;max-width:24px}.col-l-1,.col-l-2{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-2{flex:0 0 48px;max-width:48px}.col-l-3{flex:0 0 72px;max-width:72px}.col-l-3,.col-l-4{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-4{flex:0 0 96px;max-width:96px}.col-l-5{flex:0 0 120px;max-width:120px}.col-l-5,.col-l-6{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-6{flex:0 0 144px;max-width:144px}.col-l-7{flex:0 0 168px;max-width:168px}.col-l-7,.col-l-8{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-8{flex:0 0 192px;max-width:192px}.col-l-9{flex:0 0 216px;max-width:216px}.col-l-10,.col-l-9{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-10{flex:0 0 240px;max-width:240px}.col-l-11{flex:0 0 264px;max-width:264px}.col-l-11,.col-l-12{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-12{flex:0 0 288px;max-width:288px}.col-l-13{flex:0 0 312px;max-width:312px}.col-l-13,.col-l-14{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-14{flex:0 0 336px;max-width:336px}.col-l-15{flex:0 0 360px;max-width:360px}.col-l-15,.col-l-16{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-16{flex:0 0 384px;max-width:384px}.col-l-17{flex:0 0 408px;max-width:408px}.col-l-17,.col-l-18{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-18{flex:0 0 432px;max-width:432px}.col-l-19{flex:0 0 456px;max-width:456px}.col-l-19,.col-l-20{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-20{flex:0 0 480px;max-width:480px}.col-l-21{flex:0 0 504px;max-width:504px}.col-l-21,.col-l-22{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-22{flex:0 0 528px;max-width:528px}.col-l-23{flex:0 0 552px;max-width:552px}.col-l-23,.col-l-24{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-24{flex:0 0 576px;max-width:576px}.col-l-25{flex:0 0 600px;max-width:600px}.col-l-25,.col-l-26{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-26{flex:0 0 624px;max-width:624px}.col-l-27{flex:0 0 648px;max-width:648px}.col-l-27,.col-l-28{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-28{flex:0 0 672px;max-width:672px}.col-l-29{flex:0 0 696px;max-width:696px}.col-l-29,.col-l-30{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-30{flex:0 0 720px;max-width:720px}.col-l-31{flex:0 0 744px;max-width:744px}.col-l-31,.col-l-32{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-32{flex:0 0 768px;max-width:768px}.col-l-33{flex:0 0 792px;max-width:792px}.col-l-33,.col-l-34{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-34{flex:0 0 816px;max-width:816px}.col-l-35{flex:0 0 840px;max-width:840px}.col-l-35,.col-l-36{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-36{flex:0 0 864px;max-width:864px}.order-l-0{-webkit-box-ordinal-group:1;order:0}.order-l-1{-webkit-box-ordinal-group:2;order:1}.order-l-2{-webkit-box-ordinal-group:3;order:2}.order-l-3{-webkit-box-ordinal-group:4;order:3}.order-l-4{-webkit-box-ordinal-group:5;order:4}.order-l-5{-webkit-box-ordinal-group:6;order:5}.order-l-6{-webkit-box-ordinal-group:7;order:6}.order-l-7{-webkit-box-ordinal-group:8;order:7}.order-l-8{-webkit-box-ordinal-group:9;order:8}.order-l-9{-webkit-box-ordinal-group:10;order:9}.order-l-10{-webkit-box-ordinal-group:11;order:10}.order-l-11{-webkit-box-ordinal-group:12;order:11}.order-l-12{-webkit-box-ordinal-group:13;order:12}.order-l-13{-webkit-box-ordinal-group:14;order:13}.order-l-14{-webkit-box-ordinal-group:15;order:14}.order-l-15{-webkit-box-ordinal-group:16;order:15}.order-l-16{-webkit-box-ordinal-group:17;order:16}.order-l-17{-webkit-box-ordinal-group:18;order:17}.order-l-18{-webkit-box-ordinal-group:19;order:18}.order-l-19{-webkit-box-ordinal-group:20;order:19}.order-l-20{-webkit-box-ordinal-group:21;order:20}.order-l-21{-webkit-box-ordinal-group:22;order:21}.order-l-22{-webkit-box-ordinal-group:23;order:22}.order-l-23{-webkit-box-ordinal-group:24;order:23}.order-l-24{-webkit-box-ordinal-group:25;order:24}.order-l-25{-webkit-box-ordinal-group:26;order:25}.order-l-26{-webkit-box-ordinal-group:27;order:26}.order-l-27{-webkit-box-ordinal-group:28;order:27}.order-l-28{-webkit-box-ordinal-group:29;order:28}.order-l-29{-webkit-box-ordinal-group:30;order:29}.order-l-30{-webkit-box-ordinal-group:31;order:30}.order-l-31{-webkit-box-ordinal-group:32;order:31}.order-l-32{-webkit-box-ordinal-group:33;order:32}.order-l-33{-webkit-box-ordinal-group:34;order:33}.order-l-34{-webkit-box-ordinal-group:35;order:34}.order-l-35{-webkit-box-ordinal-group:36;order:35}.order-l-36{-webkit-box-ordinal-group:37;order:36}.offset-l-0{margin-left:0}.offset-l-1{margin-left:24px}.offset-l-2{margin-left:48px}.offset-l-3{margin-left:72px}.offset-l-4{margin-left:96px}.offset-l-5{margin-left:120px}.offset-l-6{margin-left:144px}.offset-l-7{margin-left:168px}.offset-l-8{margin-left:192px}.offset-l-9{margin-left:216px}.offset-l-10{margin-left:240px}.offset-l-11{margin-left:264px}.offset-l-12{margin-left:288px}.offset-l-13{margin-left:312px}.offset-l-14{margin-left:336px}.offset-l-15{margin-left:360px}.offset-l-16{margin-left:384px}.offset-l-17{margin-left:408px}.offset-l-18{margin-left:432px}.offset-l-19{margin-left:456px}.offset-l-20{margin-left:480px}.offset-l-21{margin-left:504px}.offset-l-22{margin-left:528px}.offset-l-23{margin-left:552px}.offset-l-24{margin-left:576px}.offset-l-25{margin-left:600px}.offset-l-26{margin-left:624px}.offset-l-27{margin-left:648px}.offset-l-28{margin-left:672px}.offset-l-29{margin-left:696px}.offset-l-30{margin-left:720px}.offset-l-31{margin-left:744px}.offset-l-32{margin-left:768px}.offset-l-33{margin-left:792px}.offset-l-34{margin-left:816px}.offset-l-35{margin-left:840px}.wrap{padding-top:10rem;padding-bottom:14rem}}@media (min-width:912px) and (max-width:1199px){.container{width:864px;margin-left:auto;margin-right:auto}.col-l{position:relative;flex-basis:0;-webkit-box-flex:1;flex-grow:1;max-width:100%;min-height:1px;width:100%}.col-l-1{flex:0 0 24px;max-width:24px}.col-l-1,.col-l-2{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-2{flex:0 0 48px;max-width:48px}.col-l-3{flex:0 0 72px;max-width:72px}.col-l-3,.col-l-4{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-4{flex:0 0 96px;max-width:96px}.col-l-5{flex:0 0 120px;max-width:120px}.col-l-5,.col-l-6{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-6{flex:0 0 144px;max-width:144px}.col-l-7{flex:0 0 168px;max-width:168px}.col-l-7,.col-l-8{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-8{flex:0 0 192px;max-width:192px}.col-l-9{flex:0 0 216px;max-width:216px}.col-l-10,.col-l-9{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-10{flex:0 0 240px;max-width:240px}.col-l-11{flex:0 0 264px;max-width:264px}.col-l-11,.col-l-12{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-12{flex:0 0 288px;max-width:288px}.col-l-13{flex:0 0 312px;max-width:312px}.col-l-13,.col-l-14{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-14{flex:0 0 336px;max-width:336px}.col-l-15{flex:0 0 360px;max-width:360px}.col-l-15,.col-l-16{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-16{flex:0 0 384px;max-width:384px}.col-l-17{flex:0 0 408px;max-width:408px}.col-l-17,.col-l-18{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-18{flex:0 0 432px;max-width:432px}.col-l-19{flex:0 0 456px;max-width:456px}.col-l-19,.col-l-20{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-20{flex:0 0 480px;max-width:480px}.col-l-21{flex:0 0 504px;max-width:504px}.col-l-21,.col-l-22{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-22{flex:0 0 528px;max-width:528px}.col-l-23{flex:0 0 552px;max-width:552px}.col-l-23,.col-l-24{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-24{flex:0 0 576px;max-width:576px}.col-l-25{flex:0 0 600px;max-width:600px}.col-l-25,.col-l-26{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-26{flex:0 0 624px;max-width:624px}.col-l-27{flex:0 0 648px;max-width:648px}.col-l-27,.col-l-28{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-28{flex:0 0 672px;max-width:672px}.col-l-29{flex:0 0 696px;max-width:696px}.col-l-29,.col-l-30{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-30{flex:0 0 720px;max-width:720px}.col-l-31{flex:0 0 744px;max-width:744px}.col-l-31,.col-l-32{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-32{flex:0 0 768px;max-width:768px}.col-l-33{flex:0 0 792px;max-width:792px}.col-l-33,.col-l-34{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-34{flex:0 0 816px;max-width:816px}.col-l-35{flex:0 0 840px;max-width:840px}.col-l-35,.col-l-36{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-l-36{flex:0 0 864px;max-width:864px}.order-l-0{-webkit-box-ordinal-group:1;order:0}.order-l-1{-webkit-box-ordinal-group:2;order:1}.order-l-2{-webkit-box-ordinal-group:3;order:2}.order-l-3{-webkit-box-ordinal-group:4;order:3}.order-l-4{-webkit-box-ordinal-group:5;order:4}.order-l-5{-webkit-box-ordinal-group:6;order:5}.order-l-6{-webkit-box-ordinal-group:7;order:6}.order-l-7{-webkit-box-ordinal-group:8;order:7}.order-l-8{-webkit-box-ordinal-group:9;order:8}.order-l-9{-webkit-box-ordinal-group:10;order:9}.order-l-10{-webkit-box-ordinal-group:11;order:10}.order-l-11{-webkit-box-ordinal-group:12;order:11}.order-l-12{-webkit-box-ordinal-group:13;order:12}.order-l-13{-webkit-box-ordinal-group:14;order:13}.order-l-14{-webkit-box-ordinal-group:15;order:14}.order-l-15{-webkit-box-ordinal-group:16;order:15}.order-l-16{-webkit-box-ordinal-group:17;order:16}.order-l-17{-webkit-box-ordinal-group:18;order:17}.order-l-18{-webkit-box-ordinal-group:19;order:18}.order-l-19{-webkit-box-ordinal-group:20;order:19}.order-l-20{-webkit-box-ordinal-group:21;order:20}.order-l-21{-webkit-box-ordinal-group:22;order:21}.order-l-22{-webkit-box-ordinal-group:23;order:22}.order-l-23{-webkit-box-ordinal-group:24;order:23}.order-l-24{-webkit-box-ordinal-group:25;order:24}.order-l-25{-webkit-box-ordinal-group:26;order:25}.order-l-26{-webkit-box-ordinal-group:27;order:26}.order-l-27{-webkit-box-ordinal-group:28;order:27}.order-l-28{-webkit-box-ordinal-group:29;order:28}.order-l-29{-webkit-box-ordinal-group:30;order:29}.order-l-30{-webkit-box-ordinal-group:31;order:30}.order-l-31{-webkit-box-ordinal-group:32;order:31}.order-l-32{-webkit-box-ordinal-group:33;order:32}.order-l-33{-webkit-box-ordinal-group:34;order:33}.order-l-34{-webkit-box-ordinal-group:35;order:34}.order-l-35{-webkit-box-ordinal-group:36;order:35}.order-l-36{-webkit-box-ordinal-group:37;order:36}.offset-l-0{margin-left:0}.offset-l-1{margin-left:24px}.offset-l-2{margin-left:48px}.offset-l-3{margin-left:72px}.offset-l-4{margin-left:96px}.offset-l-5{margin-left:120px}.offset-l-6{margin-left:144px}.offset-l-7{margin-left:168px}.offset-l-8{margin-left:192px}.offset-l-9{margin-left:216px}.offset-l-10{margin-left:240px}.offset-l-11{margin-left:264px}.offset-l-12{margin-left:288px}.offset-l-13{margin-left:312px}.offset-l-14{margin-left:336px}.offset-l-15{margin-left:360px}.offset-l-16{margin-left:384px}.offset-l-17{margin-left:408px}.offset-l-18{margin-left:432px}.offset-l-19{margin-left:456px}.offset-l-20{margin-left:480px}.offset-l-21{margin-left:504px}.offset-l-22{margin-left:528px}.offset-l-23{margin-left:552px}.offset-l-24{margin-left:576px}.offset-l-25{margin-left:600px}.offset-l-26{margin-left:624px}.offset-l-27{margin-left:648px}.offset-l-28{margin-left:672px}.offset-l-29{margin-left:696px}.offset-l-30{margin-left:720px}.offset-l-31{margin-left:744px}.offset-l-32{margin-left:768px}.offset-l-33{margin-left:792px}.offset-l-34{margin-left:816px}.offset-l-35{margin-left:840px}.wrap{padding-top:10rem;padding-bottom:14rem}}@media (min-width:769px) and (max-width:911px){.container{width:720px;margin-left:auto;margin-right:auto}.col-m{position:relative;flex-basis:0;-webkit-box-flex:1;flex-grow:1;max-width:100%;min-height:1px;width:100%}.col-m-1{flex:0 0 30px;max-width:30px}.col-m-1,.col-m-2{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-m-2{flex:0 0 60px;max-width:60px}.col-m-3{flex:0 0 90px;max-width:90px}.col-m-3,.col-m-4{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-m-4{flex:0 0 120px;max-width:120px}.col-m-5{flex:0 0 150px;max-width:150px}.col-m-5,.col-m-6{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-m-6{flex:0 0 180px;max-width:180px}.col-m-7{flex:0 0 210px;max-width:210px}.col-m-7,.col-m-8{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-m-8{flex:0 0 240px;max-width:240px}.col-m-9{flex:0 0 270px;max-width:270px}.col-m-10,.col-m-9{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-m-10{flex:0 0 300px;max-width:300px}.col-m-11{flex:0 0 330px;max-width:330px}.col-m-11,.col-m-12{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-m-12{flex:0 0 360px;max-width:360px}.col-m-13{flex:0 0 390px;max-width:390px}.col-m-13,.col-m-14{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-m-14{flex:0 0 420px;max-width:420px}.col-m-15{flex:0 0 450px;max-width:450px}.col-m-15,.col-m-16{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-m-16{flex:0 0 480px;max-width:480px}.col-m-17{flex:0 0 510px;max-width:510px}.col-m-17,.col-m-18{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-m-18{flex:0 0 540px;max-width:540px}.col-m-19{flex:0 0 570px;max-width:570px}.col-m-19,.col-m-20{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-m-20{flex:0 0 600px;max-width:600px}.col-m-21{flex:0 0 630px;max-width:630px}.col-m-21,.col-m-22{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-m-22{flex:0 0 660px;max-width:660px}.col-m-23{flex:0 0 690px;max-width:690px}.col-m-23,.col-m-24{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-m-24{flex:0 0 720px;max-width:720px}.order-m-0{-webkit-box-ordinal-group:1;order:0}.order-m-1{-webkit-box-ordinal-group:2;order:1}.order-m-2{-webkit-box-ordinal-group:3;order:2}.order-m-3{-webkit-box-ordinal-group:4;order:3}.order-m-4{-webkit-box-ordinal-group:5;order:4}.order-m-5{-webkit-box-ordinal-group:6;order:5}.order-m-6{-webkit-box-ordinal-group:7;order:6}.order-m-7{-webkit-box-ordinal-group:8;order:7}.order-m-8{-webkit-box-ordinal-group:9;order:8}.order-m-9{-webkit-box-ordinal-group:10;order:9}.order-m-10{-webkit-box-ordinal-group:11;order:10}.order-m-11{-webkit-box-ordinal-group:12;order:11}.order-m-12{-webkit-box-ordinal-group:13;order:12}.order-m-13{-webkit-box-ordinal-group:14;order:13}.order-m-14{-webkit-box-ordinal-group:15;order:14}.order-m-15{-webkit-box-ordinal-group:16;order:15}.order-m-16{-webkit-box-ordinal-group:17;order:16}.order-m-17{-webkit-box-ordinal-group:18;order:17}.order-m-18{-webkit-box-ordinal-group:19;order:18}.order-m-19{-webkit-box-ordinal-group:20;order:19}.order-m-20{-webkit-box-ordinal-group:21;order:20}.order-m-21{-webkit-box-ordinal-group:22;order:21}.order-m-22{-webkit-box-ordinal-group:23;order:22}.order-m-23{-webkit-box-ordinal-group:24;order:23}.order-m-24{-webkit-box-ordinal-group:25;order:24}.offset-m-0{margin-left:0}.offset-m-1{margin-left:30px}.offset-m-2{margin-left:60px}.offset-m-3{margin-left:90px}.offset-m-4{margin-left:120px}.offset-m-5{margin-left:150px}.offset-m-6{margin-left:180px}.offset-m-7{margin-left:210px}.offset-m-8{margin-left:240px}.offset-m-9{margin-left:270px}.offset-m-10{margin-left:300px}.offset-m-11{margin-left:330px}.offset-m-12{margin-left:360px}.offset-m-13{margin-left:390px}.offset-m-14{margin-left:420px}.offset-m-15{margin-left:450px}.offset-m-16{margin-left:480px}.offset-m-17{margin-left:510px}.offset-m-18{margin-left:540px}.offset-m-19{margin-left:570px}.offset-m-20{margin-left:600px}.offset-m-21{margin-left:630px}.offset-m-22{margin-left:660px}.offset-m-23{margin-left:690px}.wrap{padding-top:10rem;padding-bottom:14rem}}@media (min-width:624px) and (max-width:768px){.container{width:576px;margin-left:auto;margin-right:auto}.col-s{position:relative;flex-basis:0;-webkit-box-flex:1;flex-grow:1;max-width:100%;min-height:1px;width:100%}.col-s-1{flex:0 0 24px;max-width:24px}.col-s-1,.col-s-2{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-s-2{flex:0 0 48px;max-width:48px}.col-s-3{flex:0 0 72px;max-width:72px}.col-s-3,.col-s-4{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-s-4{flex:0 0 96px;max-width:96px}.col-s-5{flex:0 0 120px;max-width:120px}.col-s-5,.col-s-6{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-s-6{flex:0 0 144px;max-width:144px}.col-s-7{flex:0 0 168px;max-width:168px}.col-s-7,.col-s-8{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-s-8{flex:0 0 192px;max-width:192px}.col-s-9{flex:0 0 216px;max-width:216px}.col-s-10,.col-s-9{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-s-10{flex:0 0 240px;max-width:240px}.col-s-11{flex:0 0 264px;max-width:264px}.col-s-11,.col-s-12{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-s-12{flex:0 0 288px;max-width:288px}.col-s-13{flex:0 0 312px;max-width:312px}.col-s-13,.col-s-14{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-s-14{flex:0 0 336px;max-width:336px}.col-s-15{flex:0 0 360px;max-width:360px}.col-s-15,.col-s-16{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-s-16{flex:0 0 384px;max-width:384px}.col-s-17{flex:0 0 408px;max-width:408px}.col-s-17,.col-s-18{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-s-18{flex:0 0 432px;max-width:432px}.col-s-19{flex:0 0 456px;max-width:456px}.col-s-19,.col-s-20{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-s-20{flex:0 0 480px;max-width:480px}.col-s-21{flex:0 0 504px;max-width:504px}.col-s-21,.col-s-22{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-s-22{flex:0 0 528px;max-width:528px}.col-s-23{flex:0 0 552px;max-width:552px}.col-s-23,.col-s-24{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-s-24{flex:0 0 576px;max-width:576px}.order-s-0{-webkit-box-ordinal-group:1;order:0}.order-s-1{-webkit-box-ordinal-group:2;order:1}.order-s-2{-webkit-box-ordinal-group:3;order:2}.order-s-3{-webkit-box-ordinal-group:4;order:3}.order-s-4{-webkit-box-ordinal-group:5;order:4}.order-s-5{-webkit-box-ordinal-group:6;order:5}.order-s-6{-webkit-box-ordinal-group:7;order:6}.order-s-7{-webkit-box-ordinal-group:8;order:7}.order-s-8{-webkit-box-ordinal-group:9;order:8}.order-s-9{-webkit-box-ordinal-group:10;order:9}.order-s-10{-webkit-box-ordinal-group:11;order:10}.order-s-11{-webkit-box-ordinal-group:12;order:11}.order-s-12{-webkit-box-ordinal-group:13;order:12}.order-s-13{-webkit-box-ordinal-group:14;order:13}.order-s-14{-webkit-box-ordinal-group:15;order:14}.order-s-15{-webkit-box-ordinal-group:16;order:15}.order-s-16{-webkit-box-ordinal-group:17;order:16}.order-s-17{-webkit-box-ordinal-group:18;order:17}.order-s-18{-webkit-box-ordinal-group:19;order:18}.order-s-19{-webkit-box-ordinal-group:20;order:19}.order-s-20{-webkit-box-ordinal-group:21;order:20}.order-s-21{-webkit-box-ordinal-group:22;order:21}.order-s-22{-webkit-box-ordinal-group:23;order:22}.order-s-23{-webkit-box-ordinal-group:24;order:23}.order-s-24{-webkit-box-ordinal-group:25;order:24}.offset-s-0{margin-left:0}.offset-s-1{margin-left:24px}.offset-s-2{margin-left:48px}.offset-s-3{margin-left:72px}.offset-s-4{margin-left:96px}.offset-s-5{margin-left:120px}.offset-s-6{margin-left:144px}.offset-s-7{margin-left:168px}.offset-s-8{margin-left:192px}.offset-s-9{margin-left:216px}.offset-s-10{margin-left:240px}.offset-s-11{margin-left:264px}.offset-s-12{margin-left:288px}.offset-s-13{margin-left:312px}.offset-s-14{margin-left:336px}.offset-s-15{margin-left:360px}.offset-s-16{margin-left:384px}.offset-s-17{margin-left:408px}.offset-s-18{margin-left:432px}.offset-s-19{margin-left:456px}.offset-s-20{margin-left:480px}.offset-s-21{margin-left:504px}.offset-s-22{margin-left:528px}.offset-s-23{margin-left:552px}.wrap{padding-top:10rem;padding-bottom:14rem}}@media (max-width:623px){.container{width:100%;margin-left:auto;margin-right:auto;width:85.7%}.col-xs{flex-basis:0;-webkit-box-flex:1;flex-grow:1;max-width:100%}.col-xs,.col-xs-1{position:relative;min-height:1px;width:100%}.col-xs-1{-webkit-box-flex:0;flex:0 0 8.33333%;max-width:8.33333%}.col-xs-2{flex:0 0 16.66667%;max-width:16.66667%}.col-xs-2,.col-xs-3{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xs-3{flex:0 0 25%;max-width:25%}.col-xs-4{flex:0 0 33.33333%;max-width:33.33333%}.col-xs-4,.col-xs-5{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xs-5{flex:0 0 41.66667%;max-width:41.66667%}.col-xs-6{flex:0 0 50%;max-width:50%}.col-xs-6,.col-xs-7{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xs-7{flex:0 0 58.33333%;max-width:58.33333%}.col-xs-8{flex:0 0 66.66667%;max-width:66.66667%}.col-xs-8,.col-xs-9{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xs-9{flex:0 0 75%;max-width:75%}.col-xs-10{flex:0 0 83.33333%;max-width:83.33333%}.col-xs-10,.col-xs-11{position:relative;-webkit-box-flex:0;min-height:1px;width:100%}.col-xs-11{flex:0 0 91.66667%;max-width:91.66667%}.col-xs-12{position:relative;-webkit-box-flex:0;flex:0 0 100%;max-width:100%;min-height:1px;width:100%}.order-xs-0{-webkit-box-ordinal-group:1;order:0}.order-xs-1{-webkit-box-ordinal-group:2;order:1}.order-xs-2{-webkit-box-ordinal-group:3;order:2}.order-xs-3{-webkit-box-ordinal-group:4;order:3}.order-xs-4{-webkit-box-ordinal-group:5;order:4}.order-xs-5{-webkit-box-ordinal-group:6;order:5}.order-xs-6{-webkit-box-ordinal-group:7;order:6}.order-xs-7{-webkit-box-ordinal-group:8;order:7}.order-xs-8{-webkit-box-ordinal-group:9;order:8}.order-xs-9{-webkit-box-ordinal-group:10;order:9}.order-xs-10{-webkit-box-ordinal-group:11;order:10}.order-xs-11{-webkit-box-ordinal-group:12;order:11}.order-xs-12{-webkit-box-ordinal-group:13;order:12}.offset-xs-0{margin-left:0}.offset-xs-1{margin-left:8.33333%}.offset-xs-2{margin-left:16.66667%}.offset-xs-3{margin-left:25%}.offset-xs-4{margin-left:33.33333%}.offset-xs-5{margin-left:41.66667%}.offset-xs-6{margin-left:50%}.offset-xs-7{margin-left:58.33333%}.offset-xs-8{margin-left:66.66667%}.offset-xs-9{margin-left:75%}.offset-xs-10{margin-left:83.33333%}.offset-xs-11{margin-left:91.66667%}.wrap{padding-top:6rem;padding-bottom:8rem}}html{box-sizing:border-box;-ms-overflow-style:scrollbar}*,:after,:before{box-sizing:inherit}a{color:#222}a,a.purple{text-decoration:none}a.purple{color:#5a58a7;cursor:pointer;-webkit-transition:all .3s linear;transition:all .3s linear}a.purple:hover{color:#d97bae}ul.bullet-gray{padding-left:24px}ul.bullet-gray li{color:#999;list-style:disc}ul.bullet-gray li p{color:#231f20}.br-xl{display:inline!important}.br-xl:after{content:" "!important}@media (min-width:1200px) and (min-height:761px){.br-xl{display:inline!important}.br-xl:after{white-space:pre!important;content:"\A"!important}}.br-l{display:inline!important}.br-l:after{content:" "!important}@media (min-width:912px) and (max-height:760px){.br-l{display:inline!important}.br-l:after{white-space:pre!important;content:"\A"!important}}@media (min-width:912px) and (max-width:1199px){.br-l{display:inline!important}.br-l:after{white-space:pre!important;content:"\A"!important}}.br-m{display:inline!important}.br-m:after{content:" "!important}@media (min-width:769px) and (max-width:911px){.br-m{display:inline!important}.br-m:after{white-space:pre!important;content:"\A"!important}}.br-s{display:inline!important}.br-s:after{content:" "!important}@media (min-width:624px) and (max-width:768px){.br-s{display:inline!important}.br-s:after{white-space:pre!important;content:"\A"!important}}.br-xs{display:inline!important}.br-xs:after{content:" "!important}@media (max-width:623px){.br-xs{display:inline!important}.br-xs:after{white-space:pre!important;content:"\A"!important}}.c-black{color:#000!important}.c-brilliant-purple-blue{color:#5a58a7!important}.c-fir-tree{color:#417505!important}.c-pigeon-blue{color:#5c6b7e!important}.c-red{color:#e50012!important}.c-very-pale-blue{color:#dddfe0!important}.c-violet-blue{color:#30435c!important}.c-white-lite{color:#fafafa!important}.c-white{color:#fff!important}.c-smoke{color:#f7f3f3!important}.c-grey{color:#bfbfbf!important}.bc-black{background-color:#000!important}.bc-brilliant-purple-blue{background-color:#5a58a7!important}.bc-fir-tree{background-color:#417505!important}.bc-pigeon-blue{background-color:#5c6b7e!important}.bc-red{background-color:#e50012!important}.bc-very-pale-blue{background-color:#dddfe0!important}.bc-violet-blue{background-color:#30435c!important}.bc-white-lite{background-color:#fafafa!important}.bc-white{background-color:#fff!important}.bc-smoke{background-color:#f7f3f3!important}.bc-grey{background-color:#bfbfbf!important}.crs-pointer{cursor:pointer}.d-none{display:none!important}.d-block{display:block!important}.d-flex{display:-webkit-box!important;display:flex!important}@media (min-width:912px) and (max-height:760px){.d-l-none{display:none!important}.d-l-block{display:block!important}.d-l-flex{display:-webkit-box!important;display:flex!important}}@media (max-width:1199px){.d-l-none{display:none!important}.d-l-block{display:block!important}.d-l-flex{display:-webkit-box!important;display:flex!important}}@media (max-width:911px){.d-m-none{display:none!important}.d-m-block{display:block!important}.d-m-flex{display:-webkit-box!important;display:flex!important}}@media (max-width:768px){.d-s-none{display:none!important}.d-s-block{display:block!important}.d-s-flex{display:-webkit-box!important;display:flex!important}}@media (max-width:623px){.d-xs-none{display:none!important}.d-xs-block{display:block!important}.d-xs-flex{display:-webkit-box!important;display:flex!important}}.fx-left{justify-self:flex-start!important;-webkit-box-pack:start!important;justify-content:flex-start!important}.fx-center{justify-self:center!important;-webkit-box-pack:center!important;justify-content:center!important}.fx-right{justify-self:flex-end!important;-webkit-box-pack:end!important;justify-content:flex-end!important}.fx-top{align-self:flex-start!important;-webkit-box-align:start!important;align-items:flex-start!important}.fx-middle{align-self:center!important;-webkit-box-align:center!important;align-items:center!important}.fx-bottom{align-self:flex-end!important;-webkit-box-align:end!important;align-items:flex-end!important}.fx-auto{justify-self:auto!important;align-self:auto!important;-webkit-box-pack:initial!important;justify-content:normal!important;-webkit-box-align:initial!important;align-items:normal!important}.fx-col{-webkit-box-orient:vertical!important;flex-direction:column!important}.fx-col,.fx-row{-webkit-box-direction:normal!important}.fx-row{-webkit-box-orient:horizontal!important;flex-direction:row!important}.fx-wrap{flex-wrap:wrap!important}.fx-nowrap{flex-wrap:nowrap!important}@media (min-width:912px) and (max-height:760px){.fx-l-left{justify-self:flex-start!important;-webkit-box-pack:start!important;justify-content:flex-start!important}.fx-l-center{justify-self:center!important;-webkit-box-pack:center!important;justify-content:center!important}.fx-l-right{justify-self:flex-end!important;-webkit-box-pack:end!important;justify-content:flex-end!important}.fx-l-top{align-self:flex-start!important;-webkit-box-align:start!important;align-items:flex-start!important}.fx-l-middle{align-self:center!important;-webkit-box-align:center!important;align-items:center!important}.fx-l-bottom{align-self:flex-end!important;-webkit-box-align:end!important;align-items:flex-end!important}.fx-l-auto{justify-self:auto!important;align-self:auto!important;-webkit-box-pack:initial!important;justify-content:normal!important;-webkit-box-align:initial!important;align-items:normal!important}.fx-l-col{-webkit-box-orient:vertical!important;flex-direction:column!important}.fx-l-col,.fx-l-row{-webkit-box-direction:normal!important}.fx-l-row{-webkit-box-orient:horizontal!important;flex-direction:row!important}.fx-l-wrap{flex-wrap:wrap!important}.fx-l-nowrap{flex-wrap:nowrap!important}}@media (max-width:1199px){.fx-l-left{justify-self:flex-start!important;-webkit-box-pack:start!important;justify-content:flex-start!important}.fx-l-center{justify-self:center!important;-webkit-box-pack:center!important;justify-content:center!important}.fx-l-right{justify-self:flex-end!important;-webkit-box-pack:end!important;justify-content:flex-end!important}.fx-l-top{align-self:flex-start!important;-webkit-box-align:start!important;align-items:flex-start!important}.fx-l-middle{align-self:center!important;-webkit-box-align:center!important;align-items:center!important}.fx-l-bottom{align-self:flex-end!important;-webkit-box-align:end!important;align-items:flex-end!important}.fx-l-auto{justify-self:auto!important;align-self:auto!important;-webkit-box-pack:initial!important;justify-content:normal!important;-webkit-box-align:initial!important;align-items:normal!important}.fx-l-col{-webkit-box-orient:vertical!important;flex-direction:column!important}.fx-l-col,.fx-l-row{-webkit-box-direction:normal!important}.fx-l-row{-webkit-box-orient:horizontal!important;flex-direction:row!important}.fx-l-wrap{flex-wrap:wrap!important}.fx-l-nowrap{flex-wrap:nowrap!important}}@media (max-width:911px){.fx-m-left{justify-self:flex-start!important;-webkit-box-pack:start!important;justify-content:flex-start!important}.fx-m-center{justify-self:center!important;-webkit-box-pack:center!important;justify-content:center!important}.fx-m-right{justify-self:flex-end!important;-webkit-box-pack:end!important;justify-content:flex-end!important}.fx-m-top{align-self:flex-start!important;-webkit-box-align:start!important;align-items:flex-start!important}.fx-m-middle{align-self:center!important;-webkit-box-align:center!important;align-items:center!important}.fx-m-bottom{align-self:flex-end!important;-webkit-box-align:end!important;align-items:flex-end!important}.fx-m-auto{justify-self:auto!important;align-self:auto!important;-webkit-box-pack:initial!important;justify-content:normal!important;-webkit-box-align:initial!important;align-items:normal!important}.fx-m-col{-webkit-box-orient:vertical!important;flex-direction:column!important}.fx-m-col,.fx-m-row{-webkit-box-direction:normal!important}.fx-m-row{-webkit-box-orient:horizontal!important;flex-direction:row!important}.fx-m-wrap{flex-wrap:wrap!important}.fx-m-nowrap{flex-wrap:nowrap!important}}@media (max-width:768px){.fx-s-left{justify-self:flex-start!important;-webkit-box-pack:start!important;justify-content:flex-start!important}.fx-s-center{justify-self:center!important;-webkit-box-pack:center!important;justify-content:center!important}.fx-s-right{justify-self:flex-end!important;-webkit-box-pack:end!important;justify-content:flex-end!important}.fx-s-top{align-self:flex-start!important;-webkit-box-align:start!important;align-items:flex-start!important}.fx-s-middle{align-self:center!important;-webkit-box-align:center!important;align-items:center!important}.fx-s-bottom{align-self:flex-end!important;-webkit-box-align:end!important;align-items:flex-end!important}.fx-s-auto{justify-self:auto!important;align-self:auto!important;-webkit-box-pack:initial!important;justify-content:normal!important;-webkit-box-align:initial!important;align-items:normal!important}.fx-s-col{-webkit-box-orient:vertical!important;flex-direction:column!important}.fx-s-col,.fx-s-row{-webkit-box-direction:normal!important}.fx-s-row{-webkit-box-orient:horizontal!important;flex-direction:row!important}.fx-s-wrap{flex-wrap:wrap!important}.fx-s-nowrap{flex-wrap:nowrap!important}}@media (max-width:623px){.fx-xs-left{justify-self:flex-start!important;-webkit-box-pack:start!important;justify-content:flex-start!important}.fx-xs-center{justify-self:center!important;-webkit-box-pack:center!important;justify-content:center!important}.fx-xs-right{justify-self:flex-end!important;-webkit-box-pack:end!important;justify-content:flex-end!important}.fx-xs-top{align-self:flex-start!important;-webkit-box-align:start!important;align-items:flex-start!important}.fx-xs-middle{align-self:center!important;-webkit-box-align:center!important;align-items:center!important}.fx-xs-bottom{align-self:flex-end!important;-webkit-box-align:end!important;align-items:flex-end!important}.fx-xs-auto{justify-self:auto!important;align-self:auto!important;-webkit-box-pack:initial!important;justify-content:normal!important;-webkit-box-align:initial!important;align-items:normal!important}.fx-xs-col{-webkit-box-orient:vertical!important;flex-direction:column!important}.fx-xs-col,.fx-xs-row{-webkit-box-direction:normal!important}.fx-xs-row{-webkit-box-orient:horizontal!important;flex-direction:row!important}.fx-xs-wrap{flex-wrap:wrap!important}.fx-xs-nowrap{flex-wrap:nowrap!important}}.fs-xl{font-size:24px;line-height:36px;margin-bottom:4rem}.fs-l,.fs-xl{font-weight:500}.fs-l{font-size:18px;line-height:28px;margin-bottom:2rem}.fs-m{font-size:16px;line-height:24px;font-weight:400;margin-bottom:1rem}.fs-s{font-size:14px;line-height:20px}.fs-s,.fs-xs{font-weight:400;margin-bottom:0}.fs-xs{font-size:12px;line-height:16px}@media (min-width:912px) and (max-height:760px){.fs-xl{font-size:18px;line-height:28px;margin-bottom:3rem}.fs-l,.fs-xl{font-weight:500}.fs-l{font-size:16px;line-height:24px;margin-bottom:2rem}.fs-m{margin-bottom:1rem}.fs-m,.fs-s{font-size:14px;line-height:20px;font-weight:400}.fs-s,.fs-xs{margin-bottom:0}.fs-xs{font-size:12px;line-height:16px;font-weight:400}}@media (max-width:1199px){.fs-xl{font-size:18px;line-height:28px;margin-bottom:3rem}.fs-l,.fs-xl{font-weight:500}.fs-l{font-size:16px;line-height:24px;margin-bottom:2rem}.fs-m{margin-bottom:1rem}.fs-m,.fs-s{font-size:14px;line-height:20px;font-weight:400}.fs-s,.fs-xs{margin-bottom:0}.fs-xs{font-size:12px;line-height:16px;font-weight:400}}@media (max-width:911px){.fs-xl{font-size:18px;line-height:28px;margin-bottom:3rem}.fs-l,.fs-xl{font-weight:500}.fs-l{font-size:16px;line-height:24px;margin-bottom:2rem}.fs-m{margin-bottom:1rem}.fs-m,.fs-s{font-size:14px;line-height:20px;font-weight:400}.fs-s,.fs-xs{margin-bottom:0}.fs-xs{font-size:12px;line-height:16px;font-weight:400}}@media (max-width:768px){.fs-xl{font-size:18px;line-height:28px;margin-bottom:3rem}.fs-l,.fs-xl{font-weight:500}.fs-l{font-size:16px;line-height:24px;margin-bottom:2rem}.fs-m{margin-bottom:1rem}.fs-m,.fs-s{font-size:14px;line-height:20px;font-weight:400}.fs-s,.fs-xs{margin-bottom:0}.fs-xs{font-size:12px;line-height:16px;font-weight:400}}@media (max-width:623px){.fs-xl{font-size:16px;line-height:24px;margin-bottom:3rem}.fs-l,.fs-xl{font-weight:500}.fs-l{font-size:14px;line-height:20px;margin-bottom:2rem}.fs-m{font-size:12px;line-height:16px;font-weight:400;margin-bottom:1rem}.fs-s,.fs-xs{font-size:12px;line-height:16px;font-weight:400;margin-bottom:0}}.fw-bold{font-weight:700!important}.fw-medium{font-weight:500!important}.fw-regular{font-weight:400!important}.icon-close{display:block;position:relative;height:24px;width:24px;border:none;cursor:pointer}.icon-close:after,.icon-close:before{content:"";position:absolute;width:2px;height:24px;left:12px;top:0;border:none;background-color:#000}.icon-close:before{-webkit-transform:rotate(45deg);transform:rotate(45deg)}.icon-close:after{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.icon-small-up{display:inline-block;position:relative;height:10px;width:10px;padding-left:5px;cursor:pointer}.icon-small-up:before{content:"";position:absolute;display:inline-block;box-sizing:border-box;width:8px;height:8px;top:-5px;border-right:1px solid #000;border-bottom:1px solid #000;-webkit-transform-origin:100% 100%;transform-origin:100% 100%;-webkit-transform:rotate(225deg);transform:rotate(225deg)}.icon-small-down{display:inline-block;position:relative;height:10px;width:10px;padding-left:5px;cursor:pointer}.icon-small-down:before{content:"";position:absolute;display:inline-block;box-sizing:border-box;width:8px;height:8px;top:1px;border-right:1px solid #000;border-bottom:1px solid #000;-webkit-transform-origin:100% 100%;transform-origin:100% 100%;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.mb-0{margin-bottom:0}.mb-1{margin-bottom:1rem}.mb-2{margin-bottom:2rem}.mb-3{margin-bottom:3rem}@media (max-width:623px){.mb-3{margin-bottom:2rem}}.mb-4{margin-bottom:4rem}@media (min-width:912px) and (max-height:760px){.mb-4{margin-bottom:3rem}}@media (max-width:1199px){.mb-4{margin-bottom:3rem}}.mb-6{margin-bottom:6rem}@media (min-width:912px) and (max-height:760px){.mb-6{margin-bottom:4rem}}@media (max-width:1199px){.mb-6{margin-bottom:4rem}}.mb-8{margin-bottom:8rem}@media (min-width:912px) and (max-height:760px){.mb-8{margin-bottom:6rem}}@media (max-width:1199px){.mb-8{margin-bottom:6rem}}.mb-10{margin-bottom:10rem}@media (max-width:623px){.mb-10{margin-bottom:6rem}}.mb-14{margin-bottom:14rem}@media (max-width:623px){.mb-14{margin-bottom:8rem}}.mt-0{margin-top:0}.mt-1{margin-top:1rem}.mt-2{margin-top:2rem}.mt-3{margin-top:3rem}@media (max-width:623px){.mt-3{margin-top:2rem}}.mt-4{margin-top:4rem}@media (min-width:912px) and (max-height:760px){.mt-4{margin-top:3rem}}@media (max-width:1199px){.mt-4{margin-top:3rem}}.mt-6{margin-top:6rem}@media (min-width:912px) and (max-height:760px){.mt-6{margin-top:4rem}}@media (max-width:1199px){.mt-6{margin-top:4rem}}.mt-8{margin-top:8rem}@media (min-width:912px) and (max-height:760px){.mt-8{margin-top:6rem}}@media (max-width:1199px){.mt-8{margin-top:6rem}}.mt-10{margin-top:10rem}@media (max-width:623px){.mt-10{margin-top:6rem}}.mt-14{margin-top:14rem}@media (max-width:623px){.mt-14{margin-top:8rem}}.pb-0{padding-bottom:0}.pb-1{padding-bottom:1rem}.pb-2{padding-bottom:2rem}.pb-3{padding-bottom:3rem}@media (max-width:623px){.pb-3{padding-bottom:2rem}}.pb-4{padding-bottom:4rem}@media (min-width:912px) and (max-height:760px){.pb-4{padding-bottom:3rem}}@media (max-width:1199px){.pb-4{padding-bottom:3rem}}.pb-6{padding-bottom:6rem}@media (min-width:912px) and (max-height:760px){.pb-6{padding-bottom:4rem}}@media (max-width:1199px){.pb-6{padding-bottom:4rem}}.pb-8{padding-bottom:8rem}@media (min-width:912px) and (max-height:760px){.pb-8{padding-bottom:6rem}}@media (max-width:1199px){.pb-8{padding-bottom:6rem}}.pb-10{padding-bottom:10rem}@media (max-width:623px){.pb-10{padding-bottom:6rem}}.pb-14{padding-bottom:14rem}@media (max-width:623px){.pb-14{padding-bottom:8rem}}.pt-0{padding-top:0}.pt-1{padding-top:1rem}.pt-2{padding-top:2rem}.pt-3{padding-top:3rem}@media (max-width:623px){.pt-3{padding-top:2rem}}.pt-4{padding-top:4rem}@media (min-width:912px) and (max-height:760px){.pt-4{padding-top:3rem}}@media (max-width:1199px){.pt-4{padding-top:3rem}}.pt-6{padding-top:6rem}@media (min-width:912px) and (max-height:760px){.pt-6{padding-top:4rem}}@media (max-width:1199px){.pt-6{padding-top:4rem}}.pt-8{padding-top:8rem}@media (min-width:912px) and (max-height:760px){.pt-8{padding-top:6rem}}@media (max-width:1199px){.pt-8{padding-top:6rem}}.pt-10{padding-top:10rem}@media (max-width:623px){.pt-10{padding-top:6rem}}.pt-14{padding-top:14rem}@media (max-width:623px){.pt-14{padding-top:8rem}}@media (min-width:912px) and (max-height:760px){.mb-l-0{margin-bottom:0}}@media (max-width:1199px){.mb-l-0{margin-bottom:0}}@media (min-width:912px) and (max-height:760px){.mb-l-1{margin-bottom:1rem}}@media (max-width:1199px){.mb-l-1{margin-bottom:1rem}}@media (min-width:912px) and (max-height:760px){.mb-l-2{margin-bottom:2rem}}@media (max-width:1199px){.mb-l-2{margin-bottom:2rem}}@media (min-width:912px) and (max-height:760px){.mb-l-3{margin-bottom:3rem}}@media (max-width:1199px){.mb-l-3{margin-bottom:3rem}}@media (max-width:623px){.mb-l-3{margin-bottom:2rem}}@media (min-width:912px) and (max-height:760px){.mb-l-4{margin-bottom:3rem}}@media (max-width:1199px){.mb-l-4{margin-bottom:3rem}}@media (min-width:912px) and (max-height:760px){.mb-l-6{margin-bottom:4rem}}@media (max-width:1199px){.mb-l-6{margin-bottom:4rem}}@media (min-width:912px) and (max-height:760px){.mb-l-8{margin-bottom:6rem}}@media (max-width:1199px){.mb-l-8{margin-bottom:6rem}}@media (min-width:912px) and (max-height:760px){.mb-l-10{margin-bottom:10rem}}@media (max-width:1199px){.mb-l-10{margin-bottom:10rem}}@media (max-width:623px){.mb-l-10{margin-bottom:6rem}}@media (min-width:912px) and (max-height:760px){.mb-l-14{margin-bottom:14rem}}@media (max-width:1199px){.mb-l-14{margin-bottom:14rem}}@media (max-width:623px){.mb-l-14{margin-bottom:8rem}}@media (min-width:912px) and (max-height:760px){.mt-l-0{margin-top:0}}@media (max-width:1199px){.mt-l-0{margin-top:0}}@media (min-width:912px) and (max-height:760px){.mt-l-1{margin-top:1rem}}@media (max-width:1199px){.mt-l-1{margin-top:1rem}}@media (min-width:912px) and (max-height:760px){.mt-l-2{margin-top:2rem}}@media (max-width:1199px){.mt-l-2{margin-top:2rem}}@media (min-width:912px) and (max-height:760px){.mt-l-3{margin-top:3rem}}@media (max-width:1199px){.mt-l-3{margin-top:3rem}}@media (max-width:623px){.mt-l-3{margin-top:2rem}}@media (min-width:912px) and (max-height:760px){.mt-l-4{margin-top:3rem}}@media (max-width:1199px){.mt-l-4{margin-top:3rem}}@media (min-width:912px) and (max-height:760px){.mt-l-6{margin-top:4rem}}@media (max-width:1199px){.mt-l-6{margin-top:4rem}}@media (min-width:912px) and (max-height:760px){.mt-l-8{margin-top:6rem}}@media (max-width:1199px){.mt-l-8{margin-top:6rem}}@media (min-width:912px) and (max-height:760px){.mt-l-10{margin-top:10rem}}@media (max-width:1199px){.mt-l-10{margin-top:10rem}}@media (max-width:623px){.mt-l-10{margin-top:6rem}}@media (min-width:912px) and (max-height:760px){.mt-l-14{margin-top:14rem}}@media (max-width:1199px){.mt-l-14{margin-top:14rem}}@media (max-width:623px){.mt-l-14{margin-top:8rem}}@media (min-width:912px) and (max-height:760px){.pb-l-0{padding-bottom:0}}@media (max-width:1199px){.pb-l-0{padding-bottom:0}}@media (min-width:912px) and (max-height:760px){.pb-l-1{padding-bottom:1rem}}@media (max-width:1199px){.pb-l-1{padding-bottom:1rem}}@media (min-width:912px) and (max-height:760px){.pb-l-2{padding-bottom:2rem}}@media (max-width:1199px){.pb-l-2{padding-bottom:2rem}}@media (min-width:912px) and (max-height:760px){.pb-l-3{padding-bottom:3rem}}@media (max-width:1199px){.pb-l-3{padding-bottom:3rem}}@media (max-width:623px){.pb-l-3{padding-bottom:2rem}}@media (min-width:912px) and (max-height:760px){.pb-l-4{padding-bottom:3rem}}@media (max-width:1199px){.pb-l-4{padding-bottom:3rem}}@media (min-width:912px) and (max-height:760px){.pb-l-6{padding-bottom:4rem}}@media (max-width:1199px){.pb-l-6{padding-bottom:4rem}}@media (min-width:912px) and (max-height:760px){.pb-l-8{padding-bottom:6rem}}@media (max-width:1199px){.pb-l-8{padding-bottom:6rem}}@media (min-width:912px) and (max-height:760px){.pb-l-10{padding-bottom:10rem}}@media (max-width:1199px){.pb-l-10{padding-bottom:10rem}}@media (max-width:623px){.pb-l-10{padding-bottom:6rem}}@media (min-width:912px) and (max-height:760px){.pb-l-14{padding-bottom:14rem}}@media (max-width:1199px){.pb-l-14{padding-bottom:14rem}}@media (max-width:623px){.pb-l-14{padding-bottom:8rem}}@media (min-width:912px) and (max-height:760px){.pt-l-0{padding-top:0}}@media (max-width:1199px){.pt-l-0{padding-top:0}}@media (min-width:912px) and (max-height:760px){.pt-l-1{padding-top:1rem}}@media (max-width:1199px){.pt-l-1{padding-top:1rem}}@media (min-width:912px) and (max-height:760px){.pt-l-2{padding-top:2rem}}@media (max-width:1199px){.pt-l-2{padding-top:2rem}}@media (min-width:912px) and (max-height:760px){.pt-l-3{padding-top:3rem}}@media (max-width:1199px){.pt-l-3{padding-top:3rem}}@media (max-width:623px){.pt-l-3{padding-top:2rem}}@media (min-width:912px) and (max-height:760px){.pt-l-4{padding-top:3rem}}@media (max-width:1199px){.pt-l-4{padding-top:3rem}}@media (min-width:912px) and (max-height:760px){.pt-l-6{padding-top:4rem}}@media (max-width:1199px){.pt-l-6{padding-top:4rem}}@media (min-width:912px) and (max-height:760px){.pt-l-8{padding-top:6rem}}@media (max-width:1199px){.pt-l-8{padding-top:6rem}}@media (min-width:912px) and (max-height:760px){.pt-l-10{padding-top:10rem}}@media (max-width:1199px){.pt-l-10{padding-top:10rem}}@media (max-width:623px){.pt-l-10{padding-top:6rem}}@media (min-width:912px) and (max-height:760px){.pt-l-14{padding-top:14rem}}@media (max-width:1199px){.pt-l-14{padding-top:14rem}}@media (max-width:623px){.pt-l-14{padding-top:8rem}}@media (max-width:911px){.mb-m-0{margin-bottom:0}}@media (max-width:911px){.mb-m-1{margin-bottom:1rem}}@media (max-width:911px){.mb-m-2{margin-bottom:2rem}}@media (max-width:911px){.mb-m-3{margin-bottom:3rem}}@media (max-width:623px){.mb-m-3{margin-bottom:2rem}}@media (max-width:911px){.mb-m-4{margin-bottom:3rem}}@media (max-width:911px){.mb-m-6{margin-bottom:4rem}}@media (max-width:911px){.mb-m-8{margin-bottom:6rem}}@media (max-width:911px){.mb-m-10{margin-bottom:10rem}}@media (max-width:623px){.mb-m-10{margin-bottom:6rem}}@media (max-width:911px){.mb-m-14{margin-bottom:14rem}}@media (max-width:623px){.mb-m-14{margin-bottom:8rem}}@media (max-width:911px){.mt-m-0{margin-top:0}}@media (max-width:911px){.mt-m-1{margin-top:1rem}}@media (max-width:911px){.mt-m-2{margin-top:2rem}}@media (max-width:911px){.mt-m-3{margin-top:3rem}}@media (max-width:623px){.mt-m-3{margin-top:2rem}}@media (max-width:911px){.mt-m-4{margin-top:3rem}}@media (max-width:911px){.mt-m-6{margin-top:4rem}}@media (max-width:911px){.mt-m-8{margin-top:6rem}}@media (max-width:911px){.mt-m-10{margin-top:10rem}}@media (max-width:623px){.mt-m-10{margin-top:6rem}}@media (max-width:911px){.mt-m-14{margin-top:14rem}}@media (max-width:623px){.mt-m-14{margin-top:8rem}}@media (max-width:911px){.pb-m-0{padding-bottom:0}}@media (max-width:911px){.pb-m-1{padding-bottom:1rem}}@media (max-width:911px){.pb-m-2{padding-bottom:2rem}}@media (max-width:911px){.pb-m-3{padding-bottom:3rem}}@media (max-width:623px){.pb-m-3{padding-bottom:2rem}}@media (max-width:911px){.pb-m-4{padding-bottom:3rem}}@media (max-width:911px){.pb-m-6{padding-bottom:4rem}}@media (max-width:911px){.pb-m-8{padding-bottom:6rem}}@media (max-width:911px){.pb-m-10{padding-bottom:10rem}}@media (max-width:623px){.pb-m-10{padding-bottom:6rem}}@media (max-width:911px){.pb-m-14{padding-bottom:14rem}}@media (max-width:623px){.pb-m-14{padding-bottom:8rem}}@media (max-width:911px){.pt-m-0{padding-top:0}}@media (max-width:911px){.pt-m-1{padding-top:1rem}}@media (max-width:911px){.pt-m-2{padding-top:2rem}}@media (max-width:911px){.pt-m-3{padding-top:3rem}}@media (max-width:623px){.pt-m-3{padding-top:2rem}}@media (max-width:911px){.pt-m-4{padding-top:3rem}}@media (max-width:911px){.pt-m-6{padding-top:4rem}}@media (max-width:911px){.pt-m-8{padding-top:6rem}}@media (max-width:911px){.pt-m-10{padding-top:10rem}}@media (max-width:623px){.pt-m-10{padding-top:6rem}}@media (max-width:911px){.pt-m-14{padding-top:14rem}}@media (max-width:623px){.pt-m-14{padding-top:8rem}}@media (max-width:768px){.mb-s-0{margin-bottom:0}}@media (max-width:768px){.mb-s-1{margin-bottom:1rem}}@media (max-width:768px){.mb-s-2{margin-bottom:2rem}}@media (max-width:768px){.mb-s-3{margin-bottom:3rem}}@media (max-width:623px){.mb-s-3{margin-bottom:2rem}}@media (max-width:768px){.mb-s-4{margin-bottom:3rem}}@media (max-width:768px){.mb-s-6{margin-bottom:4rem}}@media (max-width:768px){.mb-s-8{margin-bottom:6rem}}@media (max-width:768px){.mb-s-10{margin-bottom:10rem}}@media (max-width:623px){.mb-s-10{margin-bottom:6rem}}@media (max-width:768px){.mb-s-14{margin-bottom:14rem}}@media (max-width:623px){.mb-s-14{margin-bottom:8rem}}@media (max-width:768px){.mt-s-0{margin-top:0}}@media (max-width:768px){.mt-s-1{margin-top:1rem}}@media (max-width:768px){.mt-s-2{margin-top:2rem}}@media (max-width:768px){.mt-s-3{margin-top:3rem}}@media (max-width:623px){.mt-s-3{margin-top:2rem}}@media (max-width:768px){.mt-s-4{margin-top:3rem}}@media (max-width:768px){.mt-s-6{margin-top:4rem}}@media (max-width:768px){.mt-s-8{margin-top:6rem}}@media (max-width:768px){.mt-s-10{margin-top:10rem}}@media (max-width:623px){.mt-s-10{margin-top:6rem}}@media (max-width:768px){.mt-s-14{margin-top:14rem}}@media (max-width:623px){.mt-s-14{margin-top:8rem}}@media (max-width:768px){.pb-s-0{padding-bottom:0}}@media (max-width:768px){.pb-s-1{padding-bottom:1rem}}@media (max-width:768px){.pb-s-2{padding-bottom:2rem}}@media (max-width:768px){.pb-s-3{padding-bottom:3rem}}@media (max-width:623px){.pb-s-3{padding-bottom:2rem}}@media (max-width:768px){.pb-s-4{padding-bottom:3rem}}@media (max-width:768px){.pb-s-6{padding-bottom:4rem}}@media (max-width:768px){.pb-s-8{padding-bottom:6rem}}@media (max-width:768px){.pb-s-10{padding-bottom:10rem}}@media (max-width:623px){.pb-s-10{padding-bottom:6rem}}@media (max-width:768px){.pb-s-14{padding-bottom:14rem}}@media (max-width:623px){.pb-s-14{padding-bottom:8rem}}@media (max-width:768px){.pt-s-0{padding-top:0}}@media (max-width:768px){.pt-s-1{padding-top:1rem}}@media (max-width:768px){.pt-s-2{padding-top:2rem}}@media (max-width:768px){.pt-s-3{padding-top:3rem}}@media (max-width:623px){.pt-s-3{padding-top:2rem}}@media (max-width:768px){.pt-s-4{padding-top:3rem}}@media (max-width:768px){.pt-s-6{padding-top:4rem}}@media (max-width:768px){.pt-s-8{padding-top:6rem}}@media (max-width:768px){.pt-s-10{padding-top:10rem}}@media (max-width:623px){.pt-s-10{padding-top:6rem}}@media (max-width:768px){.pt-s-14{padding-top:14rem}}@media (max-width:623px){.pt-s-14{padding-top:8rem}}@media (max-width:623px){.mb-xs-0{margin-bottom:0}}@media (max-width:623px){.mb-xs-1{margin-bottom:1rem}}@media (max-width:623px){.mb-xs-2,.mb-xs-3{margin-bottom:2rem}}@media (max-width:623px){.mb-xs-4{margin-bottom:3rem}}@media (max-width:623px){.mb-xs-6{margin-bottom:4rem}}@media (max-width:623px){.mb-xs-10,.mb-xs-8{margin-bottom:6rem}}@media (max-width:623px){.mb-xs-14{margin-bottom:8rem}}@media (max-width:623px){.mt-xs-0{margin-top:0}}@media (max-width:623px){.mt-xs-1{margin-top:1rem}}@media (max-width:623px){.mt-xs-2,.mt-xs-3{margin-top:2rem}}@media (max-width:623px){.mt-xs-4{margin-top:3rem}}@media (max-width:623px){.mt-xs-6{margin-top:4rem}}@media (max-width:623px){.mt-xs-10,.mt-xs-8{margin-top:6rem}}@media (max-width:623px){.mt-xs-14{margin-top:8rem}}@media (max-width:623px){.pb-xs-0{padding-bottom:0}}@media (max-width:623px){.pb-xs-1{padding-bottom:1rem}}@media (max-width:623px){.pb-xs-2,.pb-xs-3{padding-bottom:2rem}}@media (max-width:623px){.pb-xs-4{padding-bottom:3rem}}@media (max-width:623px){.pb-xs-6{padding-bottom:4rem}}@media (max-width:623px){.pb-xs-10,.pb-xs-8{padding-bottom:6rem}}@media (max-width:623px){.pb-xs-14{padding-bottom:8rem}}@media (max-width:623px){.pt-xs-0{padding-top:0}}@media (max-width:623px){.pt-xs-1{padding-top:1rem}}@media (max-width:623px){.pt-xs-2,.pt-xs-3{padding-top:2rem}}@media (max-width:623px){.pt-xs-4{padding-top:3rem}}@media (max-width:623px){.pt-xs-6{padding-top:4rem}}@media (max-width:623px){.pt-xs-10,.pt-xs-8{padding-top:6rem}}@media (max-width:623px){.pt-xs-14{padding-top:8rem}}.logo{align-self:center;-webkit-box-align:center;align-items:center}.logo .common-img img{position:absolute;right:0;left:0;margin:0 auto}.logo .common-img{height:72rem}.logo .common-img img{height:100%;width:auto}@media (min-width:912px) and (max-height:760px){.logo{align-self:center;-webkit-box-align:center;align-items:center}.logo .common-img{height:54rem}.logo .common-img img{height:100%;width:auto}}@media (max-width:1199px){.logo{align-self:center;-webkit-box-align:center;align-items:center}.logo .common-img{height:54rem}.logo .common-img img{height:100%;width:auto}}@media (max-width:911px){.logo{align-self:center;-webkit-box-align:center;align-items:center}.logo .common-img{height:45rem}.logo .common-img img{height:100%;width:auto}}@media (max-width:768px){.logo{align-self:center;-webkit-box-align:center;align-items:center}.logo .common-img{height:36rem}.logo .common-img img{height:100%;width:auto}}</style>
-  </head>
-  <body>
-    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div><section class="container wrap row"><div class="logo col col-xl-24 col-l-18 col-m-12 col-s-12 col-xs-12"><a href="/" target="" class="nuxt-link-exact-active nuxt-link-active">Test</a> <div class="common-img"><!----></div></div></section></div></div></div><script>window.__NUXT__={layout:"default",data:[{}],error:null,state:{webp:{_promise:void 0}},serverRendered:!0}</script><script src="/_nuxt/4a8c849165ed9331a341.js" defer></script><script src="/_nuxt/a88350f1dd7a6adbd526.js" defer></script><script src="/_nuxt/cbd77a0c2dffa161dfae.js" defer></script><script src="/_nuxt/41236e074a7bfd2f564e.js" defer></script><script src="/_nuxt/6525f649d69a83ad149b.js" defer></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yanone+Kaffeesatz:wght@300;400;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>МультиМир Пласт</title>
+</head>
+
+<body class="homepage">
+	<div class="site-wrapper">
+		<header id="header" class="header">
+			<div class="container">
+				<div class="header__top">
+					<a class="header__logo" href="/">
+						<img src="images/logo.svg" alt="">
+					</a>
+
+					<div class="header__block header__block--address">
+						249191, Россия,<br> г. Жуков, ул. Советская, д. 82Б
+					</div>
+					<div class="header__block header__block--phones">
+						<a href="tel:+7 (48432) 5-49-95">+7 (48432) 5-49-95</a>
+						<a href="tel:+7 (980) 512-18-66">+7 (980) 512-18-66</a>
+					</div>
+					<div class="header__button">
+						<a href="#">Каталог продукции</a>
+					</div>
+				</div>
+
+				<div class="header__nav">
+					<ul>
+						<li><a href="#">О заводе</a></li>
+						<li><a href="#">продукция</a></li>
+						<li><a href="#">представители</a></li>
+						<li><a href="#">новости</a></li>
+						<li><a href="#">каталог</a></li>
+						<li><a href="#">Документация</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#" class="search"><img src="images/search.svg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+<section class="offer-screen">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offer-screen__text">
+        <div class="offer-screen__pre-title ff-yan">Наши цены радуют!</div>
+
+        <h1 class="offer-screen__title">
+          Российский производитель труб и&nbsp;фитингов из&nbsp;полипропилена
+        </h1>
+
+        <div class="offer-screen__btns">
+          <a href="#" class="btn ff-yan">
+            <span>Внутренняя и наружная канализация</span>
+            <img src="images/btn_ico1.svg" alt="" />
+          </a>
+          <a href="#" class="btn ff-yan">
+            <span>Напорное водоснабжение и отопление</span>
+            <img src="images/btn_ico2.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6 offer-screen__bg">
+        <img src="images/bg.png" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-us">
+  <div class="container">
+    <div class="about-us__text-wrap row">
+      <div class="col-lg-5">
+        <div class="about-us__photo">
+          <img src="images/photo_bg.jpg" class="bg" alt="" />
+          <div class="photo" style="background-image: url('images/boss.png');"></div>
+        </div>
+        <div class="about-us__name">
+          <span class="ff-yan name">Хью Лори</span>
+          <span class="who">Директор по рекламе и маркетингу</span>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="about-us__text">
+          <div class="section-title">Здравствуйте</div>
+          <p>
+            Приветственное слово от&nbsp;директора или лица ответственного
+            за&nbsp;связи с&nbsp;партнерами. Это повысит доверие и&nbsp;покажет
+            что за&nbsp;проектом стоят реальные люди.
+          </p>
+          <p>
+            Или тут можно рассказать о&nbsp;компании Производственный корпус был
+            построен и&nbsp;введен в&nbsp;эксплуатацию в&nbsp;2009г.
+          </p>
+          <p>
+            Постоянно трудимся над улучшением качества нашей продукции,
+            модернизацией средств и&nbsp;технологий производства. Сотрудничаем
+            с&nbsp;рядом переработчиков в&nbsp;нашей сфере деятельности.
+          </p>
+          <p>Имеем обширную сеть региональных диллеров.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-us__numbers row justify-content-between">
+      <div class="col-lg-3">
+        <span>Наша продукция<br />
+          продается в</span>
+        <div class="num">123</div>
+        <span>городах России и СНГ</span>
+      </div>
+      <div class="col-lg-3">
+        <span>Реализация<br />
+          осуществляется через</span>
+        <div class="num">243</div>
+        <span>дилера</span>
+      </div>
+      <div class="col-lg-3">
+        <span>За все время мы<br />
+          произвели более</span>
+        <div class="num">300</div>
+        <span>тысяч км. труб</span>
+      </div>
+    </div>
+
+    <div class="benefits">
+      <div class="section-title ff-yan">Наши преимущества</div>
+      <div class="benefits__list row">
+        <div class="benefits__item col-lg-3 col-md-6">
+          <div class="benefits__ico"><img src="images/ben1.svg" alt="" /></div>
+          <div class="benefits__name ff-yan">Собственное производство</div>
+          <div class="benefits__text">
+            <p>
+              Мы&nbsp;имеем собственные произвосдственные мощности.<br />
+              Это позволяет не&nbsp;только контролировать качесвто продукта,
+              а&nbsp;такде плавно вариьировать относительно ценовой политики.
+            </p>
+          </div>
+          <a href="#">Фото производства</a>
+        </div>
+
+        <div class="benefits__item col-lg-3 col-md-6">
+          <div class="benefits__ico"><img src="images/ben2.svg" alt="" /></div>
+          <div class="benefits__name ff-yan">Своя лаборатория</div>
+          <div class="benefits__text">
+            <p>
+              Постоянно трудимся над улучшением качества нашей продукции,
+              модернизацией средств и&nbsp;технологий производства.
+            </p>
+          </div>
+          <a href="#">О&nbsp;контроле качества</a>
+        </div>
+
+        <div class="benefits__item col-lg-3 col-md-6">
+          <div class="benefits__ico"><img src="images/ben3.svg" alt="" /></div>
+          <div class="benefits__name ff-yan">С&nbsp;нами выгодно</div>
+          <div class="benefits__text">
+            <p>
+              Мы&nbsp;имеем собственные произвосдственные мощности. Это позволяет
+              не&nbsp;только контролировать качесвто продукта, а&nbsp;такде плавно
+              вариьировать относительно ценовой политики.
+            </p>
+          </div>
+          <a href="#">Условия для регионов</a>
+        </div>
+
+        <div class="benefits__item col-lg-3 col-md-6">
+          <div class="benefits__ico"><img src="images/ben4.svg" alt="" /></div>
+          <div class="benefits__name ff-yan">225 дилеров</div>
+          <div class="benefits__text">
+            <p>
+              Мы&nbsp;имеем собственные произвосдственные мощности. Это позволяет
+              не&nbsp;только контролировать качесвто продукта, а&nbsp;такде плавно
+              вариьировать относительно ценовой политики.
+            </p>
+          </div>
+          <a href="#">Показать на&nbsp;карте</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="progress">
+      <div class="progress__slider">
+        <div class="progress__item">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="progress__image" style="background-image: url(images/slide.jpg);"></div>
+            </div>
+            <div class="col-lg-5">
+              <div class="progress__text">
+                <h3>Прогресс во всем</h3>
+                <p>
+                  Постоянно трудимся над улучшением качества нашей продукции,
+                  модернизацией средств и технологий производства. Сотрудничаем с
+                  рядом переработчиков в нашей сфере деятельности.
+                </p>
+                <p>Имеем обширную сеть региональных диллеров.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="progress__item">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="progress__image" style="background-image: url(images/slide.jpg);"></div>
+            </div>
+            <div class="col-lg-5">
+              <div class="progress__text">
+                <h3>Прогресс во всем</h3>
+                <p>
+                  Постоянно трудимся над улучшением качества нашей продукции,
+                  модернизацией средств и технологий производства. Сотрудничаем с
+                  рядом переработчиков в нашей сфере деятельности.
+                </p>
+                <p>Имеем обширную сеть региональных диллеров.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="progress__item">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="progress__image" style="background-image: url(images/slide.jpg);"></div>
+            </div>
+            <div class="col-lg-5">
+              <div class="progress__text">
+                <h3>Прогресс во всем</h3>
+                <p>
+                  Постоянно трудимся над улучшением качества нашей продукции,
+                  модернизацией средств и технологий производства. Сотрудничаем с
+                  рядом переработчиков в нашей сфере деятельности.
+                </p>
+                <p>Имеем обширную сеть региональных диллеров.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="progress__item">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="progress__image" style="background-image: url(images/slide.jpg);"></div>
+            </div>
+            <div class="col-lg-5">
+              <div class="progress__text">
+                <h3>Прогресс во всем</h3>
+                <p>
+                  Постоянно трудимся над улучшением качества нашей продукции,
+                  модернизацией средств и технологий производства. Сотрудничаем с
+                  рядом переработчиков в нашей сфере деятельности.
+                </p>
+                <p>Имеем обширную сеть региональных диллеров.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="catalog">
+  <div class="container">
+    <div class="section-title section-title--white section-title--link ff-yan">Каталог продукции <a href="#">перейти к
+        полному каталогу</a>
+    </div>
+
+    <div class="catalog__list row">
+      <div class="col-lg-3">
+        <a href="#" class="catalog__item">
+          <div class="catalog__img" style="background-image: url('images/cat1.png');"></div>
+          <div class="catalog__text">
+            <h3 class="catalog__name">Труба ПП канализационная</h3>
+            <p>Трубы для канализации внутренние регламентируются ТУ 6-19-307-86.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-3">
+        <a href="#" class="catalog__item">
+          <div class="catalog__img" style="background-image: url('images/cat1.png');"></div>
+          <div class="catalog__text">
+            <h3 class="catalog__name">Труба ПП канализационная</h3>
+            <p>Трубы для канализации внутренние регламентируются ТУ 6-19-307-86.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-3">
+        <a href="#" class="catalog__item">
+          <div class="catalog__img" style="background-image: url('images/cat1.png');"></div>
+          <div class="catalog__text">
+            <h3 class="catalog__name">Труба ПП канализационная</h3>
+            <p>Трубы для канализации внутренние регламентируются ТУ 6-19-307-86.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-3">
+        <a href="#" class="catalog__item">
+          <div class="catalog__img" style="background-image: url('images/cat1.png');"></div>
+          <div class="catalog__text">
+            <h3 class="catalog__name">Труба ПП канализационная</h3>
+            <p>Трубы для канализации внутренние регламентируются ТУ 6-19-307-86.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="sertificates row">
+      <div class="col-lg-4">
+        <a href="images/sert1.png" style="background-image: url('images/sert1.png');" data-fancybox="sertificates"></a>
+      </div>
+      <div class="col-lg-4">
+        <a href="images/sert1.png" style="background-image: url('images/sert1.png');" data-fancybox="sertificates"></a>
+      </div>
+      <div class="col-lg-4">
+        <a href="images/sert1.png" style="background-image: url('images/sert1.png');" data-fancybox="sertificates"></a>
+      </div>
+    </div>
+
+    <div class="projects">
+      <div class="section-title section-title--link ff-yan">Интересные проекты <a href="#">посмотреть все проекты</a>
+      </div>
+
+      <div class="projects__list row">
+        <div class="col-lg-3">
+          <a href="#" class="projects__item">
+            <div class="projects__name ff-yan">Поставляли 20 000 труб в Архангельск</div>
+            <div class="projects__text">
+              <p>Краткое описание кейса, нацеленное на то что бы заинтересовать и снять</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3">
+          <a href="#" class="projects__item">
+            <div class="projects__name ff-yan">Поставляли 20 000 труб в Архангельск</div>
+            <div class="projects__text">
+              <p>Краткое описание кейса, нацеленное на то что бы заинтересовать и снять</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3">
+          <a href="#" class="projects__item">
+            <div class="projects__name ff-yan">Поставляли 20 000 труб в Архангельск</div>
+            <div class="projects__text">
+              <p>Краткое описание кейса, нацеленное на то что бы заинтересовать и снять</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3">
+          <a href="#" class="projects__item">
+            <div class="projects__name ff-yan">Поставляли 20 000 труб в Архангельск</div>
+            <div class="projects__text">
+              <p>Краткое описание кейса, нацеленное на то что бы заинтересовать и снять</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews">
+      <div class="section-title ff-yan">Отзывы</div>
+
+      <div class="reviews__list row">
+        <div class="col-lg-2 col-md-6">
+          <a href="images/sert1.png" data-fancybox="reviews" class="reviews__item"
+            style="background-image: url('images/sert1.png');"></a>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <a href="images/sert1.png" data-fancybox="reviews" class="reviews__item"
+            style="background-image: url('images/sert1.png');"></a>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <a href="images/sert1.png" data-fancybox="reviews" class="reviews__item"
+            style="background-image: url('images/sert1.png');"></a>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <a href="images/sert1.png" data-fancybox="reviews" class="reviews__item"
+            style="background-image: url('images/sert1.png');"></a>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <a href="images/sert1.png" data-fancybox="reviews" class="reviews__item"
+            style="background-image: url('images/sert1.png');"></a>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <a href="images/sert1.png" data-fancybox="reviews" class="reviews__item"
+            style="background-image: url('images/sert1.png');"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog">
+      <div class="section-title section-title--link ff-yan">Наш блог <a href="#">узнать больше</a></div>
+
+      <div class="blog__list row">
+        <div class="col-lg-4">
+          <a href="#" class="blog__item">
+            <div class="blog__img" style="background-image: url(images/sert1.png);"></div>
+
+            <div class="blog__text">
+              <div class="blog__date">21.11.2019</div>
+              <h3 class="blog__name">Выставка Aquatherm Moscow 2019 Aquatherm выставка</h3>
+              <p>Приглашаем на&nbsp;наш стенд на&nbsp;выставке Aquatherm Moscow 2019!
+
+                Даты проведения: 12&nbsp;&mdash; 15&nbsp;февраля 2019 года
+
+                Место проведения: Москва, МВЦ &laquo;Крокус Экспо&raquo;, станция метро &laquo;Мякинино&raquo;
+                Наш стенд &#8470; С677, Павильон&nbsp;3, Зал&nbsp;15.</p>
+
+              <p>Промокодом для бесплатного билета на&nbsp;выставку atm19mLMQA</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-4">
+          <a href="#" class="blog__item">
+            <div class="blog__img" style="background-image: url(images/sert1.png);"></div>
+
+            <div class="blog__text">
+              <div class="blog__date">21.11.2019</div>
+              <h3 class="blog__name">Выставка Aquatherm Moscow 2019 Aquatherm выставка</h3>
+              <p>Приглашаем на&nbsp;наш стенд на&nbsp;выставке Aquatherm Moscow 2019!
+
+                Даты проведения: 12&nbsp;&mdash; 15&nbsp;февраля 2019 года
+
+                Место проведения: Москва, МВЦ &laquo;Крокус Экспо&raquo;, станция метро &laquo;Мякинино&raquo;
+                Наш стенд &#8470; С677, Павильон&nbsp;3, Зал&nbsp;15.</p>
+
+              <p>Промокодом для бесплатного билета на&nbsp;выставку atm19mLMQA</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-4">
+          <a href="#" class="blog__item">
+            <div class="blog__img" style="background-image: url(images/sert1.png);"></div>
+
+            <div class="blog__text">
+              <div class="blog__date">21.11.2019</div>
+              <h3 class="blog__name">Выставка Aquatherm Moscow 2019 Aquatherm выставка</h3>
+              <p>Приглашаем на&nbsp;наш стенд на&nbsp;выставке Aquatherm Moscow 2019!
+
+                Даты проведения: 12&nbsp;&mdash; 15&nbsp;февраля 2019 года
+
+                Место проведения: Москва, МВЦ &laquo;Крокус Экспо&raquo;, станция метро &laquo;Мякинино&raquo;
+                Наш стенд &#8470; С677, Павильон&nbsp;3, Зал&nbsp;15.</p>
+
+              <p>Промокодом для бесплатного билета на&nbsp;выставку atm19mLMQA</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__nav">
+				<ul>
+					<li><a href="#">Продукция</a></li>
+					<li><a href="#">Прайс-листы</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Фотогалерея</a></li>
+					<li><a href="#">Пресс-формы б\у</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#"><img src="images/search_white.svg" alt=""></a></li>
+				</ul>
+			</div>
+
+			<div class="footer__line">
+				<a class="footer__logo" href="/">
+					<img src="images/logo_white.svg" alt="">
+				</a>
+
+				<div class="footer__block footer__block--address">
+					249191, Россия,<br> г. Жуков, ул. Советская, д. 82Б
+				</div>
+				<div class="footer__block footer__block--phones">
+					<a href="tel:+7 (48432) 5-49-95">+7 (48432) 5-49-95</a>
+					<a href="tel:+7 (980) 512-18-66">+7 (980) 512-18-66</a>
+				</div>
+				<div class="footer__button">
+					<a href="#">Каталог продукции</a>
+				</div>
+			</div>
+
+			<a href="#" class="footer__politic">Политика обработки персональных данных</a>
+		</div>
+	</footer>
+	</div>
+
+	<!--div class="popup">
+	<div class="popup__content popup__content--callback">
+		<div class="popup__close"></div>
+		<div class="popup__title bebas">Заказать звонок</div>
+		<p class="popup__sub-title">Менеджер перезвонит вам в течение 15 минут.</p>
+		<div class="popup__form">
+			<form action="#">
+				<input type="tel" class="phone" placeholder="Введите ваш номер телефона">
+				<button type="submit" class="button button--call">Пусть мне перезвонят</button>
+			</form>
+		</div>
+	</div>
+</div-->
+
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
+
+	<script src='//code.jquery.com/jquery-1.12.4.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+	<script type="text/javascript" src="js/libs.min.js"></script>
+	<script type="text/javascript" src="js/jquery.paroller.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+	</html>
