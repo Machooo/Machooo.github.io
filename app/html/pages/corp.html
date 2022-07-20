@@ -19,12 +19,12 @@
 
                 <div class="single-service-page__usp-buttons">
                     <div class="button-wrapper">
-                        <div class="button">Заказать</div>
+                        <div class="button js-show-popup" data-popup="form">Заказать</div>
                         <div class="button-label">Если ТЗ пока нет</div>
                     </div>
 
                     <div class="button-wrapper">
-                        <div class="button button--secondary">Отправить готовое ТЗ</div>
+                        <div class="button button--secondary js-show-popup" data-popup="form-short">Отправить готовое ТЗ</div>
                         <div class="button-label">Если есть готовое ТЗ, в том числе<br /> на участие в тендере</div>
                     </div>
                 </div>
@@ -462,7 +462,7 @@
 
 @@include('../parts/components/reviews.html')
 
-@@include('../parts/components/list.html')
+@@include('../parts/components/pages/services/list.html')
 
 @@include('../parts/components/form.html')
 
