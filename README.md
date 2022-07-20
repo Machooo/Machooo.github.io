@@ -1,12 +1,7 @@
-# gulp-starter-pack
+# Netclip
 gulp, sass, include html, concat and min js/css, autoprefixer
 
-To start new project:
-
-1) Clone this repo
-2) init new npm project in folder:
-$ cd /d *your-path-here*
-$ npm init
-$ npm install
-$ gulp
-3) Use "$ gulp build" for creating production version for your frontend template
+1) Clone
+2) $ npm install
+3) $ npm run dev
+4) $ npm run build
