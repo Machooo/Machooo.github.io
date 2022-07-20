@@ -1,0 +1,39 @@
+@@include('../parts/header.html')
+
+<section class="hero-screen">
+    <div class="container">
+        <h1 class="title ta-c animate-title text--enter" data-splitting="items">
+            <span class="item">Агентство мультимедийного концептуального контента<br /></span>
+            <span class="item">и прямых трансляций для бизнеса</span>
+        </h1>
+    </div>
+
+    <div class="hero-screen__video">
+        <video class="lozad" autoplay loop="" muted="" playsinline="">
+            <source data-src="images/video.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<section class="home-services">
+    <div class="container">
+        <h2 class="title text--enter animate-title" data-splitting="words">Услуги</h2>
+
+        <div class="home-services__list">
+            <!-- change data-category to category slug -->
+            @@include('../parts/components/pages/homepage/categories.html')
+        </div>
+    </div>
+</section>
+
+@@include('../parts/components/pages/homepage/keys.html')
+
+@@include('../parts/components/pages/homepage/clients.html')
+
+@@include('../parts/components/pages/homepage/reviews.html')
+
+@@include('../parts/components/global/form.html')
+
+@@include('../parts/components/pages/homepage/blog.html')
+
+@@include('../parts/footer.html')

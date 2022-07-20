@@ -1,0 +1,5 @@
+// Fonts
+@include font-face(euclid, '../fonts/euclidcirculara-regular-webfont', 400, regular, woff woff2);
+@include font-face(euclid, '../fonts/euclidcirculara-medium-webfont', 500, regular, woff woff2);
+@include font-face(euclid, '../fonts/euclidcirculara-semibold-webfont', 600, regular, woff woff2);
+@include font-face(euclid, '../fonts/euclidcirculara-bold-webfont', 700, regular, woff woff2);
