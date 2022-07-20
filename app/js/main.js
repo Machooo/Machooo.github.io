@@ -45,7 +45,7 @@ ScrollOut({
 });
 
 // Custom cursor
-var cursor = {
+const cursor = {
     delay: 8,
     _x: 0,
     _y: 0,
@@ -59,7 +59,7 @@ var cursor = {
         this.animateDotOutline();
     },
     setupEventListeners: function() {
-        var self = this;
+        const self = this;
 
         document.querySelector('.site-wrapper').addEventListener('mouseover', (e) => {
            if (e.target.classList.contains('custom-cursor-hover')) {
@@ -91,14 +91,14 @@ var cursor = {
     },
 
     animateDotOutline: function() {
-        var self = this;
+        const self = this;
         self._x += (self.endX - self._x) / self.delay;
         self._y += (self.endY - self._y) / self.delay;
         requestAnimationFrame(this.animateDotOutline.bind(self));
     },
 
     toggleCursorSize: function() {
-        var self = this;
+        const self = this;
 
         if (self.cursorEnlarged) {
             self.$dot.style.transform = 'translate(-50%, -50%) scale(1.5)';
@@ -110,7 +110,7 @@ var cursor = {
     },
 
     toggleCursorVisibility: function() {
-        var self = this;
+        const self = this;
         self.$dot.style.opacity = self.cursorVisible ? 1 : 0;
     }
 }
@@ -299,7 +299,7 @@ document.querySelector('.cookies-accept .button').addEventListener('click', (e) 
         },
         setDescriptionInputsWidth: function () {
             $('.section-form__radio-wrapper').each(function () {
-                var w = $(this).find('.section-form__radio').outerWidth();
+                const w = $(this).find('.section-form__radio').outerWidth();
                 $(this).find('.section-form__radio-description').css({
                     maxWidth: w
                 });
@@ -421,8 +421,8 @@ document.querySelector('.cookies-accept .button').addEventListener('click', (e) 
     $('input[type="tel"]').inputmask('+7 (999) 999-99-99');
 
     $('.home-services__title, .category-page__name').each(function () {
-        var brExp = /<br\s*\/?>/i;
-        var content = $(this).html().split(brExp);
+        const brExp = /<br\s*\/?>/i;
+        const content = $(this).html().split(brExp);
         $(this).html('');
         content.forEach((item, index) => {
             $(this).append(`<span class="item" style="--item-index: ${index}">${item}</span>`)
@@ -430,7 +430,7 @@ document.querySelector('.cookies-accept .button').addEventListener('click', (e) 
     });
 
     $(window).on('scroll', function () {
-        var pos;
+        let pos;
         $('.line').each(function () {
             pos = $(this)[0].getBoundingClientRect().top;
 
@@ -480,4 +480,30 @@ document.querySelector('.cookies-accept .button').addEventListener('click', (e) 
        $(this).find('h1, h2, h3').addClass(['animate-title', 'text--enter']);
     });
 
+    $(`.popup, .popup__close`).on('click', function () {
+        $('.popup, .popup__content').removeClass('active');
+        $('body').removeClass('no-scroll');
+    });
+
+    $('.popup__content').on('click', function (e) {
+        e.stopPropagation();
+    });
+
+    $('.js-show-popup').on('click', function (e) {
+        e.preventDefault();
+
+        const popup = $(this).attr('data-popup');
+
+        $('body').addClass('no-scroll');
+        $(`.popup, .popup__content[data-popup="${popup}"]`).addClass('active');
+    });
+
+    $('input[type="file"]').on('change', function() {
+        if ($(this).val() !== '') {
+            $(this).closest('label')
+                .addClass('uploaded')
+                .find('span')
+                .text($(this)[0].files[0].name);
+        }
+    });
 })(jQuery);

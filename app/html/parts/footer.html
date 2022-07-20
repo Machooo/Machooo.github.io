@@ -78,6 +78,57 @@
     </div>
 </div>
 
+<div class="popup">
+    <div class="popup__content form" data-popup="form">
+        <div class="popup__close"><img src="images/close.svg" alt=""></div>
+        @@include('../parts/components/form.html')
+    </div>
+    <div class="popup__content form-short" data-popup="form-short">
+        <div class="popup__close"><img src="images/close.svg" alt=""></div>
+        <h3>Отлично!<br /> У вас уже есть ТЗ<br /> или свой бриф</h3>
+
+        <form action="#">
+            <div class="section-form__input section-form__input--required" data-error="Вы не представились">
+                <label>
+                    <input type="text" placeholder="Имя" name="name">
+                </label>
+            </div>
+            <div class="section-form__input section-form__input--required" data-error="Вы не представились">
+                <label>
+                    <input type="tel" placeholder="Телефон" name="phone">
+                </label>
+            </div>
+            <div class="section-form__input section-form__input--required" data-error="Вы не представились">
+                <label>
+                    <input type="email" placeholder="E-mail" name="email">
+                </label>
+            </div>
+            
+            <div class="form-short__meta">
+                <div class="file-upload">
+                    <label>
+                        <input type="file" id="upload_tz">
+                        <span>Прикрепить свое ТЗ/бриф</span>
+                    </label>
+                </div>
+
+                <button class="button" type="submit">Отправить</button>
+            </div>
+
+            <div class="section-form__description">Если сегодня рабочий день и&nbsp;еще нет 15-00, то&nbsp;уже до&nbsp;вечера вы&nbsp;получите предложение или до&nbsp;14-00 следующего рабочего дня.</div>
+
+            <div class="section-form__checkbox">
+                <input type="checkbox" checked id="subscribe-checkbox1">
+                <label for="subscribe-checkbox1">Я согласен получать рассылку профессиональных новостей от агентства</label>
+            </div>
+
+            <div class="section-form__disclaimer">
+                Нажимая кнопку, вы&nbsp;подтверждаете свое ознакомление и&nbsp;согласие с&nbsp;<a href="#">политикой конфиденциальности</a> этого сайта.<br /> Вы&nbsp;передали согласие ИП&nbsp;Недзвецкая (студия фото и&nbsp;видеопродакшена Netclip) на&nbsp;обработку персональных данных.
+            </div>
+        </form>
+    </div>
+</div>
+
 <script defer src="https://unpkg.com/@lottiefiles/lottie-player@1/dist/lottie-player.js"></script>
 <script defer src="//unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
