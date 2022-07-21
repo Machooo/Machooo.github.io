@@ -9,18 +9,23 @@ function generateLottie(element, container) {
         container: container,
         actions: [
             {
-                visibility: [0, 1],
+                visibility: [0, 0.2],
+                type: 'stop',
+                frames: [0],
+            },
+            {
+                visibility: [0.2, 1],
                 type: 'seek',
-                speed: 2,
                 frames: [0, 181],
             },
         ],
     });
 }
 
-generateLottie('#firstLottie', '.single-service-page__robot-1');
-generateLottie('#firstLottie2', '.single-service-page__robot-2');
-generateLottie('#firstLottie3', '.single-service-page__robot-3');
+generateLottie('#firstLottie', '.robot--1');
+generateLottie('#firstLottie2', '.robot--2');
+generateLottie('#firstLottie3', '.robot--3');
+generateLottie('#lottieBlog', '.blog-single__robot');
 
 // Lazy Loading
 const observer = lozad();
@@ -269,7 +274,7 @@ document.querySelector('.cookies-accept .button').addEventListener('click', (e) 
                 item.addClass('active');
             }
         },
-        repetearClick: function (target) {
+        repeaterClick: function (target) {
             const inputs = target.closest('.section-form__block').find('.section-form__inputs').first();
             let clone = inputs.clone();
 
@@ -394,7 +399,7 @@ document.querySelector('.cookies-accept .button').addEventListener('click', (e) 
             });
 
             this.formTarget.on('click', '.section-form__inputs-repeater', function () {
-                formObject.repetearClick($(this));
+                formObject.repeaterClick($(this));
             });
 
             this.formTarget.on('click', '.delete-clone', function () {
