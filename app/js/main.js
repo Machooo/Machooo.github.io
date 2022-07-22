@@ -9,11 +9,6 @@ function generateLottie(element, container) {
         container: container,
         actions: [
             {
-                visibility: [0, 0.2],
-                type: 'stop',
-                frames: [0],
-            },
-            {
                 visibility: [0.2, 1],
                 type: 'seek',
                 frames: [0, 181],
@@ -26,6 +21,44 @@ generateLottie('#firstLottie', '.robot--1');
 generateLottie('#firstLottie2', '.robot--2');
 generateLottie('#firstLottie3', '.robot--3');
 generateLottie('#lottieBlog', '.blog-single__robot');
+generateLottie('#lottieAbout', '.about-us-block--1');
+
+function showLightLottie() {
+    if (document.querySelector('.about-us-dark') === null) return;
+
+    LottieInteractivity.create({
+        mode: 'scroll',
+        player: '#lightRobot',
+        container: '.about-us-dark__robot',
+        actions: [
+            {
+                visibility: [0, 1],
+                type: 'seek',
+                frames: [0, 181],
+            },
+        ],
+    });
+
+    LottieInteractivity.create({
+        mode: 'scroll',
+        player: '#light',
+        container: '.about-us-dark__light',
+        actions: [
+            {
+                visibility: [0, 0.53],
+                type: 'stop',
+                frames: [0],
+            },
+            {
+                visibility: [0.53, 1],
+                type: 'seek',
+                frames: [0, 181],
+            },
+        ],
+    });
+}
+
+showLightLottie();
 
 // Lazy Loading
 const observer = lozad();
@@ -509,6 +542,23 @@ document.querySelector('.cookies-accept .button').addEventListener('click', (e) 
                 .addClass('uploaded')
                 .find('span')
                 .text($(this)[0].files[0].name);
+        }
+    });
+
+    $('.js-show-review').on('click', function() {
+        let review = $(this).closest('.about-us-block__review');
+        if (review.hasClass('active')) {
+            review
+                .removeClass('active')
+                .find('.about-us-block__review-full')
+                .slideUp('slow');
+            $(this).text('Показать весь отзыв');
+        } else {
+            review
+                .addClass('active')
+                .find('.about-us-block__review-full')
+                .slideDown('slow');
+            $(this).text('Скрыть отзыв');
         }
     });
 })(jQuery);
