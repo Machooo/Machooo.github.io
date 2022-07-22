@@ -1313,6 +1313,36 @@ ul.animate-title li {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.footer__breadcrumbs {
+  position: absolute;
+  left: 15px;
+  top: -30px;
+  font-size: 17.4px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #686767;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__breadcrumbs a {
+  color: #686767;
+  text-decoration: none;
+}
+.footer__breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.footer__breadcrumbs .separator {
+  position: relative;
+  width: 9px;
+  height: 9px;
+  background: url("../images/bread_separator.png") center no-repeat;
+  margin: 0 10px;
+  top: 1px;
+}
 .footer__text {
   font-size: 25px;
   line-height: 40px;
