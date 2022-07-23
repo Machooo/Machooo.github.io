@@ -3392,12 +3392,28 @@ a.video-preview .video::before {
 .contacts-page__image {
   margin-right: 180px;
 }
+.contacts-page__block {
+  margin-bottom: 48px;
+}
+.contacts-page__block:last-child {
+  margin-bottom: 0;
+}
 .contacts-page__text {
   width: 533px;
   margin-left: 180px;
 }
 .contacts-page__text strong {
   font-weight: 500;
+}
+.contacts-page__text a {
+  color: var(--color-primary);
+  text-decoration: none;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+}
+.contacts-page__text a:hover {
+  color: var(--color-green);
 }
 .contacts-page #map {
   width: 100%;
