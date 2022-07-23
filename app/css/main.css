@@ -3358,3 +3358,53 @@ a.video-preview .video::before {
 .about-us-boss__links a:last-child {
   margin-right: 0;
 }
+
+.contacts-page {
+  position: relative;
+}
+.contacts-page h1 {
+  margin-right: auto;
+  margin-bottom: 200px;
+}
+.contacts-page .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contacts-page .line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 1px;
+  max-height: 423px;
+  background: var(--color-primary);
+}
+.contacts-page__image {
+  margin-right: 180px;
+}
+.contacts-page__text {
+  width: 533px;
+  margin-left: 180px;
+}
+.contacts-page__text strong {
+  font-weight: 500;
+}
+.contacts-page #map {
+  width: 100%;
+  height: 895px;
+  margin-top: 200px;
+}
+.contacts-page [class*=ymaps-2][class*=-ground-pane] {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
