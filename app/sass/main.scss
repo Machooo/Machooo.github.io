@@ -2661,11 +2661,27 @@ a.video-preview {
     margin-right: 180px;
   }
 
+  &__block {
+    margin-bottom: 48px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   &__text {
     width: 533px;
     margin-left: 180px;
     strong {
       font-weight: 500;
+    }
+
+    a {
+      color: var(--color-primary);
+      text-decoration: none;
+      transition: var(--transition);
+      &:hover {
+        color: var(--color-green);
+      }
     }
   }
 
