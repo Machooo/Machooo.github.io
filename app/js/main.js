@@ -553,19 +553,44 @@ document.querySelector('.cookies-accept .button').addEventListener('click', (e) 
     });
 
     $('.js-show-review').on('click', function() {
-        let review = $(this).closest('.about-us-block__review');
+        let review = $(this).closest('.block-review');
         if (review.hasClass('active')) {
             review
                 .removeClass('active')
-                .find('.about-us-block__review-full')
+                .find('.review-full')
                 .slideUp('slow');
             $(this).text('Показать весь отзыв');
         } else {
             review
                 .addClass('active')
-                .find('.about-us-block__review-full')
+                .find('.review-full')
                 .slideDown('slow');
             $(this).text('Скрыть отзыв');
         }
     });
+
+    function showMoreReviewText() {
+        $('.reviews-list__item-done').each(function () {
+            if (!$(this).hasClass('active')) {
+                let list = $(this).find('.list a').length;
+                $(this).find('.show-more').html(`Показать больше <span>(+${list - 2})</span>`);
+            } else {
+                $(this).find('.show-more').html(`Показать меньше`);
+            }
+        });
+    }
+
+    showMoreReviewText();
+
+    $('.reviews-list__item-done .show-more').on('click', function () {
+        let item = $(this).closest('.reviews-list__item-done');
+
+        item
+            .toggleClass('active')
+            .find('.hidden')
+            .slideToggle('slow');
+
+        showMoreReviewText();
+    });
+
 })(jQuery);

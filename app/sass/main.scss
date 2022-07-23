@@ -2620,8 +2620,16 @@ a.video-preview {
       line-height: 0;
       margin-right: 32px;
       transition: var(--transition);
+      svg {
+        width: 90px;
+        .st0 {
+          transition: var(--transition);
+        }
+      }
       &:hover {
-        opacity: .7;
+        svg .st0 {
+          fill: var(--color-green);
+        }
       }
       &:last-child {
         margin-right: 0;
@@ -2697,5 +2705,182 @@ a.video-preview {
   }
 }
 
+.reviews-hero {
+  p {
+    text-align: center;
+  }
+  &__block {
+    margin-top: 61px;
+    height: 1184px;
+    background-image: linear-gradient(91.0deg, #8d2444 10%, #8d2444 20%, #cb638a 90%, #cb638a 99%);
+    display: flex;
+    overflow: hidden;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &::after {
+        content: "";
+        position: absolute;
+        right: -15px;
+        top: 0;
+        bottom: 0;
+        background: url("../images/reviews_main.png") center no-repeat;
+        width: 1197px;
+      }
+    }
+
+    .title {
+      color: #fff;
+      font-size: 100px;
+      line-height: 100px;
+      margin-bottom: 56px;
+    }
+
+    p {
+      color: #fff;
+      text-align: left;
+    }
+  }
+}
+
+.reviews-list {
+  margin-top: 138px;
+  &__item {
+    padding: 80px 0;
+    border-top: 29px solid var(--color-green);
+
+    &:first-child {
+      padding-top: 0;
+      border-top: none;
+    }
+
+    &:last-child {
+      border-bottom: 29px solid var(--color-green);
+    }
+
+    .container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    &-photo {
+      width: 98px;
+      height: 98px;
+      border-radius: 50%;
+      background-position: center;
+      background-size: cover;
+    }
+
+    &-info {
+      position: relative;
+      width: 556px;
+      margin-left: 73px;
+      padding-left: 72px;
+    }
+
+    &-number {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    &-name {
+      margin-bottom: 8px;
+    }
+
+    &-done {
+      margin-top: 80px;
+      .title {
+        margin-bottom: 16px;
+      }
+
+      .list {
+        display: flex;
+        flex-direction: column;
+        .hidden {
+          display: none;
+        }
+        a {
+          font-size: 25px;
+          line-height: 32px;
+          margin-bottom: 16px;
+          color: var(--color-primary);
+          text-decoration: none;
+        }
+      }
+
+      .show-more {
+        display: inline-block;
+        margin-top: 32px;
+        font-size: 20px;
+        line-height: 35px;
+        text-decoration: underline;
+        color: var(--color-primary);
+        cursor: pointer;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &-text {
+      width: 841px;
+      margin-left: auto;
+      position: relative;
+      padding-left: 41px;
+      padding-top: 35px;
+      background: url("../images/quote.png") 0 0 no-repeat;
+      p {
+        margin-bottom: 24px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .show-review {
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 32px;
+        font-size: 20px;
+        line-height: 35px;
+        text-decoration: underline;
+        color: var(--color-primary);
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &-full {
+      display: none;
+      padding-top: 48px;
+    }
+  }
+
+  &__more {
+    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    p {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.text-page {
+  h2 {
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+  p {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 
 @import "media";
