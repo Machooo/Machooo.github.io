@@ -1,0 +1,65 @@
+@@include('../parts/header.html', {
+'bodyClass': 'body-contacts'
+})
+
+
+
+<div class="contacts-page">
+    <div class="container">
+        <h1>Контакты</h1>
+    </div>
+
+    <div class="container">
+        <div class="contacts-page__image">
+            <img src="images/contacts.png" alt="">
+        </div>
+
+        <div class="line"></div>
+
+        <div class="contacts-page__text">
+            <div class="contacts-page__block">
+                <p><strong>Контакты</strong></p>
+                <p>
+                    <a href="mailto:Hey@Netclip.ru">Hey@Netclip.ru</a> | <a href="tel:+7 495 131 77 10">+7 495 131 77
+                    10</a>
+                </p>
+            </div>
+
+            <div class="contacts-page__block">
+                <p><strong>Адрес</strong></p>
+                <p>129226, Москва, Пр. Мира 131 стр. 1</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+</div>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=08a7441f-6ea7-4984-ace7-9e96355337f8&scroll=false"
+        type="text/javascript"></script>
+<script>
+    ymaps.ready(function () {
+        var myMap = new ymaps.Map('map', {
+                center: [55.831585, 37.650981], // 129226, Москва, Пр. Мира 131 стр. 1
+                zoom: 17
+            }, {
+                searchControlProvider: 'yandex#search',
+            }),
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                hintContent: 'Netclip',
+                balloonContent: 'Текст метки если надо'
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: 'images/pin.png',
+                iconImageSize: [297, 137],
+                iconImageOffset: [-148, -137]
+            });
+
+        myMap.behaviors.disable("scrollZoom");
+        myMap.geoObjects.add(myPlacemark);
+    });
+</script>
+
+@@include('../parts/components/form.html')
+
+@@include('../parts/footer.html')
