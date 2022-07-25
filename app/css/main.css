@@ -1999,7 +1999,7 @@ ul.animate-title li {
   padding-top: 112px;
   padding-bottom: 100px;
 }
-.home-blog::before {
+.home-blog:not(.no-border)::before {
   content: "";
   position: absolute;
   left: 0;
@@ -2008,6 +2008,9 @@ ul.animate-title li {
   height: 29px;
   background: #d8d8d8;
 }
+.home-blog .title {
+  margin-bottom: 24px;
+}
 .home-blog__title {
   margin-bottom: 24px;
 }
@@ -2015,7 +2018,7 @@ ul.animate-title li {
   margin-bottom: 32px;
 }
 .home-blog__button {
-  margin-bottom: 56px;
+  margin-bottom: 100px;
 }
 .home-blog__list {
   display: -webkit-box;
@@ -3060,7 +3063,12 @@ a.video-preview .video::before {
   background: url("../images/about_us_bg.png") center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
-  padding-top: 198px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .about-us-hero::before {
   content: "";

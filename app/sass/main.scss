@@ -1362,7 +1362,7 @@ ul.animate-title {
   position: relative;
   padding-top: 112px;
   padding-bottom: 100px;
-  &::before {
+  &:not(.no-border)::before {
     content: "";
     position: absolute;
     left: 0;
@@ -1370,6 +1370,10 @@ ul.animate-title {
     top: 0;
     height: 29px;
     background: #d8d8d8;
+  }
+
+  .title {
+    margin-bottom: 24px;
   }
 
   &__title {
@@ -1381,7 +1385,7 @@ ul.animate-title {
   }
 
   &__button {
-    margin-bottom: 56px;
+    margin-bottom: 100px;
   }
 
   &__list {
@@ -2357,7 +2361,8 @@ a.video-preview {
   min-height: 1261px;
   background: url("../images/about_us_bg.png") center no-repeat;
   background-size: cover;
-  padding-top: 198px;
+  display: flex;
+  align-items: center;
   &::before {
     content: "";
     position: absolute;
