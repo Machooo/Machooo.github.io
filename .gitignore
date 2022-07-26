@@ -6,3 +6,9 @@ package-lock.json
 /node_modules/*
 #
 dist/
+#
+app/css/
+#
+app/*.html
+!app/html/*.html
+!app/libs/*.html
