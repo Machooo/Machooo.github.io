@@ -16,24 +16,28 @@
                 <img src="images/logo.svg" alt="">
             </div>
             <div class="header__menu">
-                <a href="#">Расписание</a>
-                <a href="#">Ведущий</a>
-                <a href="#">Про AVDO</a>
-                <a href="#">Стоимость</a>
+                <a href="#schedule" class="js-anchor">Расписание</a>
+                <a href="#author" class="js-anchor">Ведущий</a>
+                <a href="#avdo" class="js-anchor">Про AVDO</a>
+                <a href="#price" class="js-anchor">Стоимость</a>
+            </div>
+
+            <div class="header__burger">
+                <span></span>
             </div>
         </div>
     </header>
 
 <section class="hero-screen c-white">
     <div class="container">
-        <h1 class="title tt-u">Эффективные изменения и структура организации</h1>
-        <h2>Как обеспечить эффективный рост организации в условиях новой экономической реальности</h2>
+        <h1 class="title tt-u">Эффективные изменения и&nbsp;структура организации</h1>
+        <h2>Как обеспечить эффективный рост организации в&nbsp;условиях новой экономической реальности</h2>
         <div class="hero-screen__date">Австрия, 16-21 октября 2022 года</div>
-        <div class="button">Записаться на курс</div>
+        <a class="button js-anchor" href="#registration">Записаться на курс</a>
     </div>
 </section>
 
-<div class="schedule c-black"><div class="schedule-screen">
+<div id="schedule" class="schedule c-black"><div class="schedule-screen">
     <div class="container">
         <div class="schedule__meta">
             <div class="title tt-u">День 1</div>
@@ -204,7 +208,7 @@
     </div>
 </div>
 
-<div class="author c-black">
+<div id="author" class="author c-black">
     <div class="container">
         <div class="author__photo"><img src="images/author.jpeg" alt=""></div>
         <div class="author__text">
@@ -223,7 +227,7 @@
     </div>
 </div>
 
-<div class="about-avdo c-black">
+<div id="avdo" class="about-avdo c-black">
     <div class="container">
         <p>Успешно реализовав более 500 проектов в&nbsp;различных отраслях, мы&nbsp;помогаем клиентам стать
             более эффективной, сплочённой командой, улучшить качество оказываемых услуг, найти новые рынки
@@ -231,7 +235,7 @@
     </div>
 </div>
 
-<div class="price c-black">
+<div id="price" class="price c-black">
     <div class="container">
         <div class="title">Стоимость</div>
         <div class="price__list">
@@ -268,7 +272,7 @@
     </div>
 </div>
 
-<div class="registration c-black">
+<div id="registration" class="registration c-black">
     <div class="container">
         <div class="title">Регистрация</div>
         <div class="registration__wrapper">
@@ -289,7 +293,7 @@
 
             <div class="registration__form">
                 <form action="#">
-                    <div class="input-box">
+                    <div class="input-box required" data-error="Введите ваше имя">
                         <input type="text" name="your-name" placeholder="Имя">
                     </div>
                     <div class="input-box">
@@ -298,10 +302,10 @@
                     <div class="input-box">
                         <input type="text" name="your-name" placeholder="Должность">
                     </div>
-                    <div class="input-box">
+                    <div class="input-box required" data-error="Введите вашу электронную почту">
                         <input type="text" name="your-name" placeholder="Электронная почта">
                     </div>
-                    <div class="input-box">
+                    <div class="input-box required" data-error="Введите ваш номер телефона">
                         <input type="text" name="your-name" placeholder="Телефон">
                     </div>
                     <div class="input-box">
@@ -365,10 +369,10 @@
             </a>
         </div>
         <div class="footer__menu">
-            <a href="#">Расписание</a>
-            <a href="#">Ведущий</a>
-            <a href="#">Про AVDO</a>
-            <a href="#">Стоимость</a>
+            <a href="#schedule" class="js-anchor">Расписание</a>
+            <a href="#author" class="js-anchor">Ведущий</a>
+            <a href="#avdo" class="js-anchor">Про AVDO</a>
+            <a href="#price" class="js-anchor">Стоимость</a>
         </div>
     </div>
 </footer>

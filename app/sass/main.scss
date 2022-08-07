@@ -34,6 +34,23 @@ body, input, textarea, button {
 
 .input-box {
   margin-bottom: 20px;
+
+  &.error {
+    input {
+      border: 1px solid #FFB6B6;
+      &::placeholder {
+        color: rgba(255,0,0,0.5);
+      }
+    }
+  }
+}
+
+.error-text {
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 300;
+  padding-left: 12px;
+  color: rgba(255, 0, 0, 0.5);
 }
 
 input {
@@ -163,6 +180,51 @@ ul {
   z-index: 10;
   display: flex;
   align-items: center;
+  &__burger {
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    span {
+      width: 25px;
+      height: 2px;
+      background: #fff;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &::before, &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        margin: auto;
+        width: 25px;
+        height: 2px;
+        background: #fff;
+        transition: var(--transition);
+      }
+      &::before {
+        top: -8px;
+      }
+      &::after {
+        bottom: -8px;
+      }
+    }
+    &.active {
+      span {
+        background: transparent;
+        &::before {
+          transform: rotate(-45deg);
+          top: 0;
+        }
+        &::after {
+          transform: rotate(45deg);
+          bottom: 0;
+        }
+      }
+    }
+  }
   .container {
     display: flex;
     align-items: center;
@@ -442,12 +504,21 @@ ul {
       color: var(--color-primary);
     }
   }
+
+  &__acceptance {
+    .error-text {
+      line-height: 18px;
+      margin-top: 8px;
+      padding-left: 29px;
+    }
+  }
 }
 
 .footer {
-  height: 160px;
+  min-height: 160px;
   border-top: 5px solid var(--color-primary);
   padding-top: 30px;
+  padding-bottom: 30px;
   .container {
     display: flex;
     align-items: flex-start;
@@ -499,6 +570,9 @@ ul {
 
   &__meta {
     width: 106px;
+    svg {
+      width: 106px;
+    }
   }
 
   &__logo {
