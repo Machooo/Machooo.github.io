@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{398:function(e,t,n){"use strict";n.r(t);var o={name:"IndexPage",components:{CreateNote:n(394).default},layout:"default"},l=n(34),component=Object(l.a)(o,(function(){var e=this._self._c;return e("div",{staticClass:"homepage container"},[e("CreateNote")],1)}),[],!1,null,null,null);t.default=component.exports}}]);

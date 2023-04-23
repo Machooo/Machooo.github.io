@@ -1,0 +1,33 @@
+.jobs__item {
+  background: var(--gray-light);
+  padding: 22px 32px 27px;
+  margin-bottom: 30px;
+}
+.jobs__item:last-child {
+  margin-bottom: 0;
+}
+.jobs__title {
+  margin-bottom: 12px;
+}
+.jobs__content {
+  padding-top: 11px;
+  padding-bottom: 30px;
+  display: none;
+}
+.jobs__content p {
+  margin-bottom: 10px;
+}
+.jobs__content ol, .jobs__content ul {
+  margin-bottom: 10px;
+}
+.jobs__toggler {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-bottom: 1px dashed var(--primary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.jobs__toggler:hover {
+  border-color: transparent;
+}

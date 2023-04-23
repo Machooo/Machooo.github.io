@@ -1,0 +1,19 @@
+.tags-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.tags-list__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  padding: 4px 23px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: var(--light-blue);
+  color: var(--black);
+}
