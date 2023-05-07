@@ -37,7 +37,7 @@
     margin-bottom: 20px;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 1140px) {
   .homepage-search__item--button, .homepage-search__item--select {
     min-width: 100%;
   }
@@ -180,7 +180,7 @@
     width: 50%;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 1140px) {
   .homepage-catalog__categories {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
