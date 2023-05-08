@@ -2009,8 +2009,10 @@ body {
 .service-page__content h1:last-child, .service-page__content h2:last-child, .service-page__content h3:last-child {
   margin-bottom: 0;
 }
-.service-page__content p, .service-page__content li {
+.service-page__content p {
   margin-bottom: 20px;
+}
+.service-page__content--main p, .service-page__content--main li {
   color: #000;
 }
 .service-page__content p:last-child, .service-page__content li:last-child {
