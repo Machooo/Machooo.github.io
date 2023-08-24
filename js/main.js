@@ -204,6 +204,25 @@ observer.observe();
         //     });
         // });
     }
+
+    // LANGUAGE SELECTOR
+    $('.header__language-current').on('click', function () {
+        $('.header__language-list').toggleClass('active');
+        $(this).toggleClass('active');
+    });
+
+    $('.header__language-list').on('click', 'a', function (e) {
+        e.preventDefault();
+        $('.header__language-current span').text($(this).find('span').text());
+        $('.header__language-current img').attr('src', $(this).find('img').attr('src'));
+        $('.header__language-list, .header__language-current').removeClass('active');
+
+        if ($(this).hasClass('rtl')) {
+            $('body').addClass('rtl');
+        } else {
+            $('body').removeClass('rtl');
+        }
+    });
 })(jQuery);
 
 // function which convert SVG <img> with .svg className to inline <svg>
